@@ -19,5 +19,5 @@ if(_idle == 0){
 	alarm[0] = irandom_range(30,60);
 } else {
 	rotate_speed = 1;
-	alarm[0] = room_speed*2;
+	alarm[0] = const_rotate_speed_time;
 }

@@ -1,10 +1,11 @@
 /// @description
 
-if(rotate_speed_count >= room_speed*1){
+if(rotate_speed_count >= const_rotate_speed_time){
 	rotate_speed = -rotate_speed;
 	rotate_speed_count = 0
 }
 direction += rotate_speed;
+
 if(instance_exists(obj_par_ally)){
 	var _Searchplayerrange = Searchplayerrange-range_minus;
 	var _view_range = view_range-range_minus;

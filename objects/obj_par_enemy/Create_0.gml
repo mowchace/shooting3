@@ -26,6 +26,7 @@ state = states.free;
 
 // Inseide range
 rotate_speed = 1;
+const_rotate_speed_time = room_speed*2;
 rotate_speed_count = 0;
 found_ally = false;
 direction = irandom_range(1,355);
