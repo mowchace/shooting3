@@ -1,7 +1,6 @@
 // Camera
 global.cameraX = 0;
 global.cameraY = 0;
-target = obj_player;
 
 global.cameraWidth = 500;
 global.cameraHeight = 400;
@@ -12,7 +11,7 @@ view_visible[0] = true;
 camera_set_view_size(view_camera[0],global.cameraWidth,global.cameraHeight);
 
 // Follow target(roomstart firsttime only)
-if(instance_exists(obj_player)){
+if(instance_exists(target)){
 	global.cameraX = target.x - (global.cameraWidth/2);
 	global.cameraY = target.y - (global.cameraHeight/2);
 	

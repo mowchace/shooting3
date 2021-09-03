@@ -6,4 +6,3 @@ if(HP <= 0){
 		var _inst = instance_create_layer(x,y,"Instances",obj_enemy2);
 	}
 }
-

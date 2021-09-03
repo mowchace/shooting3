@@ -12,7 +12,7 @@ with instance_create_layer(other.x+irandom_range(-5,10),other.y+irandom_range(-1
 		size = 1;
 	};
 instance_destroy();
-audio_play_sound(SE_bomb,1,0);
+audio_play_sound(SE_bomb2,1,0);
 var _inst = instance_create_layer(x,y,"Instances",obj_par_bomb);
 with(_inst){
 	attack = other.attack;

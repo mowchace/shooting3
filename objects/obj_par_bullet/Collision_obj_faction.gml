@@ -5,6 +5,11 @@ if(other == creater || other.faction == faction) exit;
 //Damege object
 var _damegepoint = floor(damegePoint*attack/10);
 with (other) {
+	if(object_index != obj_player){
+		if(state == states.free && other.hideattack == true){
+			_damegepoint *= 2;
+		}
+	}
 	HP -= _damegepoint
 	direction = other.direction+180;
 }
@@ -13,4 +18,5 @@ with instance_create_layer(other.x+irandom_range(-5,10),other.y+irandom_range(-1
 		draw_message = _damegepoint;
 		size = 1;
 	};
+
 instance_destroy();

@@ -24,21 +24,23 @@ if(instance_exists(obj_par_ally)){
 		// player find
 		if(_view_range > _deg){
 			var inst = collision_line(x, y, obj_par_ally.x, obj_par_ally.y, obj_collision, false, true);
-			if(inst == noone) {
+			if(inst == noone || found_ally = true){
 				state = states.alart;
 				found_ally = true;
 				var _dir = point_direction(x,y,obj_par_ally.x,obj_par_ally.y)
 				direction = _dir;
 				actionWait = 250;
 				// move near the player
-				if (point_distance(x, y, obj_par_ally.x, obj_par_ally.y) > dashrange){
-					spd = n_spd *r_spd;
-					moveX = lengthdir_x(spd,_dir);
-					moveY = lengthdir_y(spd,_dir);
-				}
-				if(cooltime <= 0){
+				//if (point_distance(x, y, obj_par_ally.x, obj_par_ally.y) > dashrange){
+				spd = n_spd *r_spd;
+				moveX = lengthdir_x(spd,_dir);
+				moveY = lengthdir_y(spd,_dir);
+				//} else {
+				//	spd = n_spd;
+				//}
+				if(inst == noone && cooltime <= 0){
 					var _bltdir = _dir;
-					create_bullet(blttype,attack,_bltdir,bltspd,faction,id);
+					create_bullet(blttype,attack,_bltdir,bltspd,faction,id,noone);
 					cooltime = cooldown;
 				}
 			}
@@ -129,6 +131,7 @@ if(HP <= 0){
 		HP += 10;
 	}
 	var _instblad = instance_create_depth(x,y,1,obj_blad);
+	var _instmeat = instance_create_layer(x,y,"Instances",obj_meat);
 	with (obj_game){score += other.EXP;}
 }
 move_wrap(true,true,0);

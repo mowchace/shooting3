@@ -45,20 +45,18 @@ if(input_hide){
 bltdir = point_direction(x,y,mouse_x,mouse_y);
 if (mouse_check_button(mb_left) && cooldown < 1) {
 		create_bullet(obj_bullet,attack,bltdir,bltspd,faction,id);
-		audio_play_sound(SE_gun_brust01,1,0)
+		screenshake(8,30);
 		cooldown = 5;
 	}
 	cooldown -= 1;
 if (mouse_check_button(mb_right) && powerfullcooldown < 1) {
 	create_bullet(obj_missile,attack,bltdir,bltspd,faction,id);
-	audio_play_sound(SE_rolling_rocket,1,0)
 	powerfullcooldown = 30;
 }
 	powerfullcooldown -= 1;
 if (mouse_check_button(mb_middle) && snipecooldown < 1) {
-	var _bltspd = 30;
-	create_bullet(obj_snipe,attack,bltdir,_bltspd,faction,id);
-	audio_play_sound(SE_gun_rifle_shot_01,1,0)
+	var _bltspd = 20;
+	create_bullet(obj_snipe,attack,bltdir,_bltspd,faction,id,input_hide);
 	snipecooldown = 30;
 }
 	snipecooldown -= 1;

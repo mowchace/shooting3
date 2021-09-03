@@ -33,7 +33,6 @@ direction = irandom_range(1,355);
 range_minus = 0;
 Searchplayerrange = 200;
 view_range = 20;
-dashrange = 100;
 actionWait = 0;
 
 // bullet setting
