@@ -1,4 +1,5 @@
 /// @description
+
 //Check faction
 if(other == creater || other.faction == faction) exit;
 

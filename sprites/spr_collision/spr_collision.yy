@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "effect",
+    "path": "folders/Sprites/effect.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_collision",

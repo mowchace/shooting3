@@ -121,8 +121,15 @@ if (_inst != noone && facing == _inst.playerFancingBefore) {
 */
 
 // APLLY MOVEMENT
+var _len = sprite_height/2;
+		var _XX = x - lengthdir_x(_len,image_angle);
+		var _YY = y - lengthdir_y(_len,image_angle);
+		with(obj_particles){
+			part_particles_create(partSys,_XX,_YY,partTypeExhaust,1);
+		}
 x += moveX;
 y += moveY;
+
 if(HP <= 0){
 	audio_play_sound(SE_gore06,1,0);
 	instance_destroy();

@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "bullet",
-    "path": "folders/Sprites/bullet.yy",
+    "path": "folders/Sprites/effect/bullet.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_bullet",

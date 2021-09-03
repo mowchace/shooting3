@@ -5,6 +5,7 @@ faction = factions.ally;
 n_spd = 5;
 w_spd = 0.5;
 r_spd = 1.3;
+exhaustCounter = 0;
 
 hideLevel = 10;
 

@@ -1,7 +1,8 @@
-if(other == creater || other.faction == faction) exit;
+
 
 //Damege 
-var _damegepoint = floor(damegePoint*attack/10);
+var _damegepoint = floor(damegePoint+attack/20);
+if(other == creater || other.faction == faction) _damegepoint = floor(_damegepoint/2);
 with (other) {
 	HP -= _damegepoint
 }

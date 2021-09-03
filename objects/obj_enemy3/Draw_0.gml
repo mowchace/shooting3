@@ -37,6 +37,7 @@ if (moveX = 0 && moveY = 0) {
 // DRAW SPRITE
 draw_sprite_part(spr_enemy3,0,floor(x_flame)*_flamewidh,y_flame*_flameheight,_flamewidh,_flameheight,_XX,_YY);
 
+
 // INCRIMENT FRAME ANIMATION
 if(!returnflug){
 	if(x_flame < _animelength*(Row+1))	{x_flame += _animespeed/60;}

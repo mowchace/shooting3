@@ -17,7 +17,6 @@ if(invisibletimecool <= damegeinvisibletime){
 }
 
 // INTENDED MOVEMENT
-
 if (input_hide || input_run) {
 	spd = abs((input_hide*w_spd*n_spd) + (input_run*r_spd*n_spd));
 } else {
@@ -44,13 +43,12 @@ if(input_hide){
 // Shoot
 bltdir = point_direction(x,y,mouse_x,mouse_y);
 if (mouse_check_button(mb_left) && cooldown < 1) {
-		create_bullet(obj_bullet,attack,bltdir,bltspd,faction,id);
-		screenshake(8,30);
+		create_bullet(obj_bullet,attack,bltdir,bltspd,faction,id,input_hide);
 		cooldown = 5;
 	}
 	cooldown -= 1;
 if (mouse_check_button(mb_right) && powerfullcooldown < 1) {
-	create_bullet(obj_missile,attack,bltdir,bltspd,faction,id);
+	create_bullet(obj_missile,attack,bltdir,bltspd,faction,id,input_hide);
 	powerfullcooldown = 30;
 }
 	powerfullcooldown -= 1;
@@ -120,6 +118,17 @@ if (_inst != noone && facing == _inst.playerFancingBefore) {
 // APLLY MOVEMENT
 //var _dir = point_direction(0, 0, moveX, moveY);
 //motion_set(_dir, spd);
+	//particle FX
+	//exhaustCounter++;
+	//if(exhaustCounter >= 10){
+	//	exhaustCounter = 0;
+		var _len = sprite_height/2;
+		var _XX = x - lengthdir_x(_len,image_angle);
+		var _YY = y - lengthdir_y(_len,image_angle);
+		with(obj_particles){
+			part_particles_create(partSys,_XX,_YY,partTypeExhaust,1);
+		}
+	//}
 x += moveX;
 y += moveY;
 
