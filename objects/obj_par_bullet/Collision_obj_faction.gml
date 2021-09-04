@@ -7,7 +7,7 @@ if(other == creater || other.faction == faction) exit;
 var _damegepoint = floor(damegePoint*attack/10);
 with (other) {
 	if(object_index != obj_player){
-		if(state == states.free && other.hideattack == true){
+		if(found_flag == false && other.hideattack == true){
 			_damegepoint *= 2;
 		}
 	}

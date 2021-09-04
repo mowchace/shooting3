@@ -1,4 +1,4 @@
-var _rangePlus = irandom_range(-5,5);
+var _rangePlus = irandom_range(-10,10);
 if(count <= 2){
 	if(count = 0){
 		var _inst = instance_create_layer(x,y,"Instances",obj_bomb);

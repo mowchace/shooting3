@@ -1,4 +1,6 @@
-event_inherited()
+/// @description
 
-size = random_range(0.5,1);
-damegePoint = irandom_range(1,3);;
+// Inherit the parent event
+event_inherited();
+
+damegePoint = 10;

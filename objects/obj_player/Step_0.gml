@@ -43,8 +43,9 @@ if(input_hide){
 // Shoot
 bltdir = point_direction(x,y,mouse_x,mouse_y);
 if (mouse_check_button(mb_left) && cooldown < 1) {
-		create_bullet(obj_bullet,attack,bltdir,bltspd,faction,id,input_hide);
-		cooldown = 5;
+	create_bullet(obj_bullet,attack,bltdir,bltspd,faction,id,input_hide);
+	
+	cooldown = 5;
 	}
 	cooldown -= 1;
 if (mouse_check_button(mb_right) && powerfullcooldown < 1) {
@@ -118,7 +119,7 @@ if (_inst != noone && facing == _inst.playerFancingBefore) {
 // APLLY MOVEMENT
 //particle FX
 exhaustCounter++;
-if(exhaustCounter >= 5 && spd != 0 && !input_hide){
+if(exhaustCounter >= 5 && spd != 0  && !input_hide){
 	exhaustCounter = 0;
 	var _len = sprite_height/2;
 	var _XX = x - lengthdir_x(_len,point_direction(x,y,mouse_x,mouse_y))+irandom_range(-5,5);
