@@ -116,19 +116,18 @@ if (_inst != noone && facing == _inst.playerFancingBefore) {
 }
 */
 // APLLY MOVEMENT
-//var _dir = point_direction(0, 0, moveX, moveY);
-//motion_set(_dir, spd);
-	//particle FX
-	//exhaustCounter++;
-	//if(exhaustCounter >= 10){
-	//	exhaustCounter = 0;
-		var _len = sprite_height/2;
-		var _XX = x - lengthdir_x(_len,image_angle);
-		var _YY = y - lengthdir_y(_len,image_angle);
-		with(obj_particles){
-			part_particles_create(partSys,_XX,_YY,partTypeExhaust,1);
-		}
-	//}
+//particle FX
+exhaustCounter++;
+if(exhaustCounter >= 5 && spd != 0 && !input_hide){
+	exhaustCounter = 0;
+	var _len = sprite_height/2;
+	var _XX = x - lengthdir_x(_len,point_direction(x,y,mouse_x,mouse_y))+irandom_range(-5,5);
+	var _YY = y - lengthdir_y(_len,point_direction(x,y,mouse_x,mouse_y))+irandom_range(-5,5);
+	with(obj_particles){
+		part_particles_create(partSys,_XX,_YY,partTypeExhaust,1);
+	}
+}
+
 x += moveX;
 y += moveY;
 

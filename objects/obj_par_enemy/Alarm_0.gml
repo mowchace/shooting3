@@ -6,7 +6,6 @@ moveY = 0;
 var _idle = choose(0,1);
 if(actionWait >= 0) {_idle = 1;}
 
-//if(actionWait >= 0){_idle = 1;}
 if(_idle == 0){
 	var _dir = choose(1,2,3,4)
 	rotate_speed = 0;

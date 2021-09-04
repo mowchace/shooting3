@@ -6,6 +6,7 @@ n_spd = 2;
 w_spd = 0.5;
 r_spd = 1.3;
 spd = n_spd;
+exhaustCounter = 0;
 
 moveX = 0;
 moveY = 0;

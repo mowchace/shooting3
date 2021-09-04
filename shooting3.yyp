@@ -21,6 +21,7 @@
     {"id":{"name":"spr_debli","path":"sprites/spr_debli/spr_debli.yy",},"order":2,},
     {"id":{"name":"spr_snipe","path":"sprites/spr_snipe/spr_snipe.yy",},"order":3,},
     {"id":{"name":"spr_enemy1","path":"sprites/spr_enemy1/spr_enemy1.yy",},"order":0,},
+    {"id":{"name":"obj_bomb_test","path":"objects/obj_bomb_test/obj_bomb_test.yy",},"order":8,},
     {"id":{"name":"obj_enemy2","path":"objects/obj_enemy2/obj_enemy2.yy",},"order":1,},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":3,},
     {"id":{"name":"create_bullet","path":"scripts/create_bullet/create_bullet.yy",},"order":1,},
