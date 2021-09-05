@@ -10,17 +10,18 @@ function create_bullet(_objtype,_atk,_dir,_spd,_faction,_id,_player_hide_state){
 	} else if (_dir > 315 || _dir <= 45) {
 		_XX = x;
 	}
-	
-	switch (_objtype){
-		case obj_bullet:{
-			audio_play_sound(SE_gun_brust01,1,0);
-			with(obj_particles){
+// Create bullet-ammo-particle	
+	if(_objtype != obj_missile){
+		with(obj_particles){
 				if(_dir > 135 && _dir < 225){
 					part_system_depth(partSys,10)
 				}else{part_system_depth(partSys,-10)}
 				part_particles_create(partSys,_XX,_YY,partTypeArmo,1);
-			}
-		};break;
+	}
+	
+	}
+	switch (_objtype){
+		case obj_bullet: audio_play_sound(SE_gun_brust01,1,0);break;
 		case obj_missile: audio_play_sound(SE_canon,1,0);break;
 		case obj_snipe: audio_play_sound(SE_gun_rifle_shot_01,1,0);break;
 		
