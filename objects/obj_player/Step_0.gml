@@ -124,9 +124,7 @@ if(exhaustCounter >= 5 && spd != 0  && !input_hide){
 	var _len = sprite_height/2;
 	var _XX = x - lengthdir_x(_len,point_direction(x,y,mouse_x,mouse_y))+irandom_range(-5,5);
 	var _YY = y - lengthdir_y(_len,point_direction(x,y,mouse_x,mouse_y))+irandom_range(-5,5);
-	with(obj_particles){
-		part_particles_create(partSys,_XX,_YY,partTypeExhaust,1);
-	}
+	create_particles(_XX,_YY,0,"obj_player");
 }
 
 x += moveX;

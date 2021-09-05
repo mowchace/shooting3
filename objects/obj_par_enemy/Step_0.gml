@@ -129,9 +129,7 @@ if(exhaustCounter >= 10 && spd != 0 && state != states.free){
 	var _len = sprite_height/2;
 	var _XX = x - lengthdir_x(_len,direction)+irandom_range(-5,5);
 	var _YY = y - lengthdir_y(_len,direction)+irandom_range(-5,5);
-	with(obj_particles){
-		part_particles_create(partSys,_XX,_YY,partTypeExhaust,1);
-	}
+	create_particles(_XX,_YY,0,"obj_par_enemy");
 }
 x += moveX;
 y += moveY;
@@ -143,7 +141,7 @@ if(HP <= 0){
 		attack += other.EXP*0.1;
 		HP += 10;
 	}
-	var _instblad = instance_create_depth(x,y,1,obj_blad);
+	create_particles(x,y,180,"obj_blad");
 	var _instmeat = instance_create_layer(x,y,"Instances",obj_meat);
 	with (obj_game){score += other.EXP;}
 }

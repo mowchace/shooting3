@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "spr_blad",
-    "path": "sprites/spr_blad/spr_blad.yy",
+    "name": "spr_stump",
+    "path": "sprites/spr_stump/spr_stump.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_par_nutral",
+    "path": "objects/obj_par_nutral/obj_par_nutral.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -21,18 +24,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "effect",
-    "path": "folders/Objects/gameobject/effect.yy",
+    "name": "nutral",
+    "path": "folders/Objects/gameobject/nutral.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_blad",
+  "name": "obj_stump",
   "tags": [],
   "resourceType": "GMObject",
 }

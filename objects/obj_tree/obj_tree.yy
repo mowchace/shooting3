@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_rock",
-    "path": "sprites/spr_rock/spr_rock.yy",
+    "name": "spr_tree",
+    "path": "sprites/spr_tree/spr_tree.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,6 +24,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
@@ -33,7 +34,7 @@
     "path": "folders/Objects/gameobject/nutral.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_rock",
+  "name": "obj_tree",
   "tags": [],
   "resourceType": "GMObject",
 }

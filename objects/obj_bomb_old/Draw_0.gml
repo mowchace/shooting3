@@ -1,1 +1,0 @@
-draw_sprite_ext(spr_bomb,1,x,y,size,size,0,-1,image_alpha);

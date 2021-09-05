@@ -23,10 +23,39 @@ part_type_alpha2(partTypeExplode,1,0);
 part_type_life(partTypeExplode,5,10);
 
 // Bullet ammo
-partTypeArmo = part_type_create();
-part_type_sprite(partTypeArmo,spr_bullet,false,false,false);
-part_type_size(partTypeArmo,.5,.5,0,0);
-part_type_orientation(partTypeArmo,0,270,0,1,0)
-part_type_gravity(partTypeArmo, 0.1, 270);
-part_type_alpha3(partTypeArmo,1,1,0);
-part_type_life(partTypeArmo,20,20);
+partTypeArmmo = part_type_create();
+part_type_sprite(partTypeArmmo,spr_bullet,false,false,false);
+part_type_size(partTypeArmmo,.5,.5,0,0);
+part_type_orientation(partTypeArmmo,0,270,0,1,0)
+part_type_gravity(partTypeArmmo, 0.1, 270);
+part_type_alpha3(partTypeArmmo,1,1,0);
+part_type_life(partTypeArmmo,20,20);
+
+// Blad
+partTypeBlad = part_type_create();
+part_type_sprite(partTypeBlad,spr_blad,false,true,true);
+part_type_size(partTypeBlad,1,2,.1,0);
+part_type_alpha3(partTypeBlad,.1,0.8,0);
+part_type_life(partTypeBlad,20,30);
+
+// Rock_dust
+partTypeRock= part_type_create();
+part_type_sprite(partTypeRock,spr_rock_dust,false,true,true);
+part_type_size(partTypeRock,1,1,0,0);
+part_type_direction(partTypeRock,0,359,0,0);
+part_type_speed(partTypeRock,1,2,.1,0);
+part_type_orientation(partTypeRock,0,270,0,1,0)
+part_type_gravity(partTypeRock, 0.1, 270);
+part_type_alpha3(partTypeRock,1,1,0);
+part_type_life(partTypeRock,20,20);
+
+// Tree_dust
+partTypeTree= part_type_create();
+part_type_sprite(partTypeTree,spr_tree_dust,false,true,true);
+part_type_size(partTypeTree,1,1,0,0);
+part_type_direction(partTypeTree,0,359,0,0);
+part_type_speed(partTypeTree,1,2,.1,0);
+part_type_orientation(partTypeTree,0,270,0,1,0)
+part_type_gravity(partTypeTree, 0.1, 270);
+part_type_alpha3(partTypeTree,1,1,0);
+part_type_life(partTypeTree,20,20);
