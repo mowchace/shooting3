@@ -9,6 +9,8 @@ function spawn_off_camera(_spawnObj,_spawnnum){
 				global.cameraX-_padding,global.cameraY-_padding,
 				global.cameraX+global.cameraWidth+_padding,
 				global.cameraY+global.cameraHeight+_padding)
+				|| position_meeting(_XX,_YY,obj_faction) 
+				|| position_meeting(_XX,_YY,obj_collision)
 				)
 			{			
 					_XX = irandom_range(0,room_width);

@@ -46,6 +46,10 @@ cooldown = 50;
 x_offset = sprite_get_xoffset(mask_index);
 y_offset = sprite_get_yoffset(mask_index);
 
+// Destroy setting
 HP = -1;
 EXP = -1;
+spawnPointPlus = 0;
+
+// Idle move
 alarm[0] = 30;

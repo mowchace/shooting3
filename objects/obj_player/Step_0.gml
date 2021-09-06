@@ -80,9 +80,9 @@ if (moveX = 0 && moveY = 0) {
 }
 // COLLISION CHECKS
 if(moveX != 0){
-	if place_meeting(x+moveX,y,obj_collision){
+	if(place_meeting(x+moveX,y,obj_collision) || place_meeting(x+moveX,y,obj_faction)){
 		repeat(abs(moveX)){
-			if (!place_meeting(x+sign(moveX),y,obj_collision)){
+			if (!place_meeting(x+sign(moveX),y,obj_collision) && !place_meeting(x+sign(moveX),y,obj_faction)){
 				x += sign(moveX);
 			} else {break;}
 		}
@@ -91,9 +91,9 @@ if(moveX != 0){
 }
 // VARTICAL
 if(moveY != 0){
-	if place_meeting(x,y+moveY,obj_collision){
+	if(place_meeting(x,y+moveY,obj_collision) || place_meeting(x,y+moveY,obj_faction)){
 		repeat(abs(moveY)){
-			if (!place_meeting(x,y+sign(moveY),obj_collision)){
+			if (!place_meeting(x,y+sign(moveY),obj_collision) && !place_meeting(x,y+sign(moveY),obj_faction)){
 				y += sign(moveY);
 			} else {break;}
 		}
