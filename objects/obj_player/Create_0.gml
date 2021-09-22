@@ -14,9 +14,9 @@ powerfullcooldown = 0;
 snipecooldown = 0;
 
 attack = 50;
-x_flame = 0;
+x_frame = 0;
 Row = 0;
-y_flame = 0;
+y_frame = 0;
 returnflug = false;
 
 damegeinvisibletime = 5;

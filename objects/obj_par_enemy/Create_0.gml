@@ -11,9 +11,9 @@ exhaustCounter = 0;
 moveX = 0;
 moveY = 0;
 
-x_flame = 0;
+x_frame = 0;
 Row = 0;
-y_flame = 0;
+y_frame = 0;
 returnflug = false;
 
 //state
