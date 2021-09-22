@@ -5,7 +5,12 @@ show_inventory =  true;
 
 inv_slots = 54;
 inv_slots_width = 9;
-inv_slots_height = 3;
+inv_slots_height = 6;
+
+selected_slot = 0;
+pickup_slot = -1;
+mouse_slotx = 0;
+mouse_sloty = 0;
 
 x_buffer = 2;
 y_buffer = 4;
@@ -25,7 +30,7 @@ spr_inv_items_rows = sprite_get_width(spr_inv_items)/cell_size;
 
 //inv_UI_x = (gui_width*0.5) - (inv_UI_width*0.5*scale);
 //inv_UI_y = (gui_height*0.5) - (inv_UI_height*0.5*scale);
-inv_UI_x = gui_width*-0.1*scale;
+inv_UI_x = gui_width*0.1*scale;
 inv_UI_y = gui_height*0.05*scale;
 
 slots_x = inv_UI_x + (9 * scale);

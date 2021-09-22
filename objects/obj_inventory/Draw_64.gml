@@ -16,17 +16,53 @@ repeat(inv_slots){
 		_spr_y = (_iitem div spr_inv_items_columns)*cell_size;
 		//Draw slot and item
 		draw_sprite_part_ext(spr_inv_UI,0,0,0,cell_size,cell_size,_xx,_yy,scale,scale,c_white,1);
-		if(_iitem > 0)draw_sprite_part_ext(
-			spr_inv_items,0,_spr_x,_spr_y,cell_size,cell_size,_xx,_yy,scale,scale,c_white,1
-		);
 		
+		switch(_ii){
+			case selected_slot:
+				if(_iitem > 0)draw_sprite_part_ext(
+					spr_inv_items,0,_spr_x,_spr_y,cell_size,cell_size,_xx,_yy,scale,scale,c_white,1
+				);
+				gpu_set_blendmode(bm_add);
+				draw_sprite_part_ext(spr_inv_UI,0,0,0,cell_size,cell_size,_xx,_yy,scale,scale,c_white,.3);
+				gpu_set_blendmode(bm_normal);
+			break;
+			
+			case pickup_slot:
+				if(_iitem > 0) draw_sprite_part_ext(
+					spr_inv_items,0,_spr_x,_spr_y,cell_size,cell_size,_xx,_yy,scale,scale,c_white,0.2
+				);
+			break;
+			
+			default:
+				if(_iitem > 0) draw_sprite_part_ext(
+					spr_inv_items,0,_spr_x,_spr_y,cell_size,cell_size,_xx,_yy,scale,scale,c_white,1
+				);
+			break;
+		}
 		//Draw item number
 		if(_iitem > 0){
 			var _num = _inv_grid[# 1,_ii];
+			draw_set_font(fnt_inventory_num);
+			draw_text_color(_xx+1,_yy+1,string(_num),c_white,c_white,c_white,c_white,1);
 			draw_text_color(_xx,_yy,string(_num),_c,_c,_c,_c,1);
 		}
 		// Increment
 		_ii += 1;
 		_ix = _ii mod inv_slots_width;
 		_iy = _ii div inv_slots_width;
+}
+
+// moution itempickup
+if(pickup_slot != -1){
+	//Item
+	_iitem = _inv_grid[# 0,pickup_slot]
+	_spr_x = (_iitem mod spr_inv_items_columns)*cell_size;
+	_spr_y = (_iitem div spr_inv_items_columns)*cell_size;	
+	draw_sprite_part_ext(
+		spr_inv_items,0,_spr_x,_spr_y,cell_size,cell_size,mousex,mousey,scale,scale,c_white,0.8
+	); 
+	
+	var item_num = _inv_grid[# 1,pickup_slot]
+	draw_text_color(mousex+(cell_size*scale*0.5),mousey+1,string(item_num),c_white,c_white,c_white,c_white,1);
+	draw_text_color(mousex+(cell_size*scale*0.5),mousey,string(item_num),_c,_c,_c,_c,1);
 }
