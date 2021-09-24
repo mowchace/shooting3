@@ -7,7 +7,7 @@ input_Down = keyboard_check(ord("S"));
 
 input_run = keyboard_check(vk_shift);
 input_hide = keyboard_check(vk_control);
-
+if(keyboard_check_pressed(ord("Z"))){global.pickupmode = !global.pickupmode}
 
 // RESET MOVE VARIABLES
 moveX = 0;
@@ -40,25 +40,28 @@ if(input_hide){
 	}
 }
 
-// Shoot
-bltdir = point_direction(x,y,mouse_x,mouse_y);
-if (mouse_check_button(mb_left) && cooldown < 1) {
-	create_bullet(obj_bullet,attack,bltdir,bltspd,faction,id,input_hide);
-	
-	cooldown = 5;
+// don't shoot pickupmode or showinventorymode
+if(!global.pickupmode && !global.show_inventory){
+	// Shoot
+	bltdir = point_direction(x,y,mouse_x,mouse_y);
+	if (mouse_check_button(mb_left) && cooldown < 1) {
+		create_bullet(obj_bullet,attack,bltdir,bltspd,faction,id,input_hide);
+		cooldown = 5;
+		}
+	if (mouse_check_button(mb_right) && powerfullcooldown < 1) {
+		create_bullet(obj_missile,attack,bltdir,bltspd,faction,id,input_hide);
+		powerfullcooldown = 30;
 	}
-	cooldown -= 1;
-if (mouse_check_button(mb_right) && powerfullcooldown < 1) {
-	create_bullet(obj_missile,attack,bltdir,bltspd,faction,id,input_hide);
-	powerfullcooldown = 30;
+	if (mouse_check_button(mb_middle) && snipecooldown < 1) {
+		var _bltspd = 20;
+		create_bullet(obj_snipe,attack,bltdir,_bltspd,faction,id,input_hide);
+		snipecooldown = 30;
+	}
 }
-	powerfullcooldown -= 1;
-if (mouse_check_button(mb_middle) && snipecooldown < 1) {
-	var _bltspd = 20;
-	create_bullet(obj_snipe,attack,bltdir,_bltspd,faction,id,input_hide);
-	snipecooldown = 30;
-}
-	snipecooldown -= 1;
+cooldown -= 1;
+powerfullcooldown -= 1;
+snipecooldown -= 1;
+
 // GET DIRECTION PLAYER IS FACING
 /*
 var _direction = point_direction(obj_Player.x,obj_Player.y,mouse_x,mouse_y);

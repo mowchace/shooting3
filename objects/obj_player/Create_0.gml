@@ -1,5 +1,7 @@
 event_inherited();
 
+global.pickupmode = false;
+
 faction = factions.ally;
 
 n_spd = 5;

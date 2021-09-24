@@ -7,6 +7,8 @@ switch (room){
 	case rm_game:{
 		var _draw = draw_set_font(-1);
 		draw_text(x,y,"HP:"+string(global.playerHP));
-		draw_text(x,y+20,"SCORE:"+string(score));
+		if(global.pickupmode){
+			draw_text(x,y+20,"PickUpMode");
+		}
 	} break;
 }

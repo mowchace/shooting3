@@ -1,5 +1,5 @@
 // Inventory back
-if(!show_inventory)exit;
+if(!global.show_inventory)exit;
 draw_sprite_part_ext(spr_inv_UI,0,cell_size,0,inv_UI_width,inv_UI_height,inv_UI_x,inv_UI_y,scale,scale,c_white,1);
 var _c = c_black;
 // Inventory
@@ -51,6 +51,23 @@ repeat(inv_slots){
 		_ix = _ii mod inv_slots_width;
 		_iy = _ii div inv_slots_width;
 }
+
+//Draw item description
+var _iinfo_grid = ds_items_info,_description = "";
+//enum item number get
+_iitem = _inv_grid[# 0,selected_slot];
+
+if(_iitem > 0){
+	draw_set_font(fnt_inventory_num);
+	//Item Name
+	_description = _iinfo_grid[# 0,_iitem] + "." + _iinfo_grid[# 2,_iitem]
+	// wrap the text
+	_c = c_black;
+	draw_text_ext_color(description_x,description_y,_description,
+	string_height("M"),inv_UI_width*scale -(x_buffer*2),_c,_c,_c,_c,1);
+	
+}
+
 
 // moution itempickup
 if(pickup_slot != -1){

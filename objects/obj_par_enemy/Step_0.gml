@@ -43,6 +43,7 @@ if(instance_exists(obj_par_ally)){
 					create_bullet(blttype,attack,_bltdir,bltspd,faction,id,noone);
 					cooltime = cooldown;
 				}
+				cooltime -= 1;
 			}
 		} else {
 			spd = n_spd;
@@ -56,7 +57,6 @@ if(instance_exists(obj_par_ally)){
 	} 
 }
 actionWait -= 1;
-cooltime -= 1;
 rotate_speed_count += 1
 
 // bullet shoot

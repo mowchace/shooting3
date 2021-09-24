@@ -35,6 +35,7 @@ range_minus = 0;
 Searchplayerrange = 200;
 view_range = 20;
 actionWait = 0;
+findwait = 0;
 
 // bullet setting
 attack = 0;
