@@ -21,13 +21,14 @@ if(drop_move){
 		} else {
 			// item pickup
 			var _item = item_spr_num;
+			var _item_num = item_num;
 			with(obj_inventory){
 				var _ds_inv = ds_inventory;
 				var _picked_up = false;
 				//check if item exists in inventory alredy
 				var _yy = 0; repeat(inv_slots){
 					if(_ds_inv[# 0,_yy] == _item){
-						_ds_inv[# 1,_yy] += 1;
+						_ds_inv[# 1,_yy] += _item_num;
 						_picked_up = true;
 						break;
 					} else {
@@ -39,7 +40,7 @@ if(drop_move){
 					var _yy = 0; repeat(inv_slots){
 						if(_ds_inv[# 0,_yy] == item.None){
 							_ds_inv[# 0,_yy] = _item;
-							_ds_inv[# 1,_yy] += 1;
+							_ds_inv[# 1,_yy] += _item_num;
 							_picked_up = true;
 							break;
 						} else {
@@ -50,6 +51,43 @@ if(drop_move){
 			}
 			//DESTROY ITEM IF PICKED_UP
 			if(_picked_up){
+				#region Create Notification
+				if(!instance_exists(obj_notification)){instance_create_layer(0,0,"Instances",obj_notification);}
+				var _item = item_spr_num;
+				with(obj_notification){
+					if(!ds_exists(ds_notifications,ds_type_grid)){ //Create Grid
+						ds_notifications = ds_grid_create(2,1);
+						var _not_grid =	ds_notifications;
+						// Item num
+						_not_grid[# 0,0] = _item_num;
+						// Item Name
+						_not_grid[# 1,0] = obj_inventory.ds_items_info[# 0,_item];
+					} else { //Add to Grid
+						event_perform(ev_other,ev_user0);
+						var _not_grid =	ds_notifications;
+						var _grid_height = ds_grid_height(_not_grid);
+						var _name = obj_inventory.ds_items_info[# 0,_item];
+						var _in_grid = false;
+						
+						var _yy = 0;repeat(_grid_height){
+							if(_name == _not_grid[# 1,_yy]){// Are We in Grid alredy?
+								_not_grid[# 0,_yy] += _item_num;
+								_in_grid = true;
+								break;
+							}
+							_yy++;
+						}
+						
+						if(!_in_grid){
+							ds_grid_resize(_not_grid,2,_grid_height+1);
+							// Item num
+							_not_grid[# 0,_grid_height] = _item_num;
+							// Item Name
+							_not_grid[# 1,_grid_height] = obj_inventory.ds_items_info[# 0,_item];
+						}
+					}
+				}
+				#endregion
 				instance_destroy();
 				show_debug_message("picked up")
 			}

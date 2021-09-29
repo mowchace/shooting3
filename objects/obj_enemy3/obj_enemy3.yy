@@ -28,7 +28,11 @@
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"DropItem1","path":"objects/obj_faction/obj_faction.yy",},"objectId":{"name":"obj_faction","path":"objects/obj_faction/obj_faction.yy",},"value":"item.Artichoke","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"DropItem1_Drop_Percentage","path":"objects/obj_faction/obj_faction.yy",},"objectId":{"name":"obj_faction","path":"objects/obj_faction/obj_faction.yy",},"value":"90","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"DropItem1_Max_num","path":"objects/obj_faction/obj_faction.yy",},"objectId":{"name":"obj_faction","path":"objects/obj_faction/obj_faction.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "enemy",
     "path": "folders/Objects/gameobject/enemy.yy",

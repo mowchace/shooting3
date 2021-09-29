@@ -142,7 +142,9 @@ if(HP <= 0){
 		HP += 10;
 	}
 	create_particles(x,y,180,"obj_blad");
-	var _instmeat = instance_create_layer(x,y,"Instances",obj_meat);
+	create_item(DropItem1,irandom_range(DropItem1_Max_num,DropItem1_minimam_num),x,y,DropItem1_Drop_Percentage);
+	create_item(DropItem2,irandom_range(DropItem2_Max_num,DropItem2_minimam_num),x,y,DropItem2_Drop_Percentage);
+	create_item(DropItem3,irandom_range(DropItem3_Max_num,DropItem3_minimam_num),x,y,DropItem3_Drop_Percentage);
 	with (obj_game){score += other.EXP;}
 }
-move_wrap(true,true,0);
+//move_wrap(true,true,0);

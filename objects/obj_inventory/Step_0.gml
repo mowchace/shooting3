@@ -39,26 +39,31 @@ var inv_grid = ds_inventory;
 var selectingslot_item = inv_grid[# 0,selected_slot];
 
 if(pickup_slot != -1){
-	if(mouse_check_button_pressed(mb_right)){
+	if(mouse_check_button_pressed(mb_left)){
 			// Drop item if item pick up and mouse position not on inventory 
 		if(!_mouse_in_inventory){
 			#region Drop Item into Game world
 				var _pickup_itme = inv_grid[# 0,pickup_slot];
-				inv_grid[# 1,pickup_slot] -= 1;
+				var _pickup_itme_num = inv_grid[# 1,pickup_slot];
+				//inv_grid[# 1,3up_slot] -= 1;
+				inv_grid[# 1,pickup_slot] = 0;
+				inv_grid[# 0,pickup_slot] = item.None;
+				pickup_slot = -1; 
 				//Destroy item in inventory if it was last one
-				if(inv_grid[# 1,pickup_slot] == 0){
-					inv_grid[# 0,pickup_slot] = item.None;
-					pickup_slot = -1; 
-				}
+					//if(inv_grid[# 1,pickup_slot] == 0){
+					//	inv_grid[# 0,pickup_slot] = item.None;
+					//	pickup_slot = -1; 
+					//}
 				//Create World Drop Item
-				var _inst = instance_create_layer(obj_player.x,obj_player.y,"Instances",obj_item);
+				create_item(_pickup_itme,_pickup_itme_num,obj_player.x,obj_player.y,100);
+				/*var _inst = instance_create_layer(obj_player.x,obj_player.y,"Instances",obj_item);
 				with(_inst){
 					item_spr_num = _pickup_itme;
 					//get sprite row and collumn
 					x_frame = item_spr_num mod (spr_width/cell_size);
 					y_frame = item_spr_num div (spr_width/cell_size);
 				}
-				show_debug_message("dropped an item");
+				show_debug_message("dropped an item");*/
 			#endregion
 		} else if(selectingslot_item == item.None){
 			inv_grid[# 0, selected_slot] = inv_grid[# 0,pickup_slot];
@@ -99,13 +104,14 @@ if(pickup_slot != -1){
 				inv_grid[# 0,selected_slot] = item.None;
 			}
 			//Create World Drop Item
-			var _inst = instance_create_layer(obj_player.x,obj_player.y,"Instances",obj_item);
+			create_item(selectingslot_item,1,obj_player.x,obj_player.y,100);
+			/*var _inst = instance_create_layer(obj_player.x,obj_player.y,"Instances",obj_item);
 			with(_inst){
 				item_spr_num = selectingslot_item;
 				//get sprite row and collumn
 				x_frame = item_spr_num mod (spr_width/cell_size);
 				y_frame = item_spr_num div (spr_width/cell_size);
-			}
+			}*/
 	}
 	//Drop pickup Item into new slot
 	if(mouse_check_button_pressed(mb_right)){

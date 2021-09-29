@@ -4,6 +4,7 @@ spr_width = sprite_get_width(item_spr);
 spr_height = sprite_get_height(item_spr);
 
 item_spr_num = -1
+item_num = 0;
 x_frame = 0;
 y_frame = 0;
 
