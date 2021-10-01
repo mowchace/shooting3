@@ -36,16 +36,18 @@ selected_slot = min(inv_slots-1,mouse_slotx + (mouse_sloty*inv_slots_width));
 #endregion
 // pickup Item
 var inv_grid = ds_inventory;
+var _item_info = ds_items_info;
 var selectingslot_item = inv_grid[# 0,selected_slot];
 
 if(pickup_slot != -1){
-	if(mouse_check_button_pressed(mb_left)){
-			// Drop item if item pick up and mouse position not on inventory 
+	if(mouse_check_button_pressed(mb_right)){
+		// Drop item if item pick up and mouse position not on inventory 
 		if(!_mouse_in_inventory){
 			#region Drop Item into Game world
 				var _pickup_itme = inv_grid[# 0,pickup_slot];
 				var _pickup_itme_num = inv_grid[# 1,pickup_slot];
-				//inv_grid[# 1,3up_slot] -= 1;
+				//inv_grid[# 1,pickup_slot] -= 1;
+				//Destroy item in inventory
 				inv_grid[# 1,pickup_slot] = 0;
 				inv_grid[# 0,pickup_slot] = item.None;
 				pickup_slot = -1; 
@@ -96,7 +98,22 @@ if(pickup_slot != -1){
 		}
 	}
 } else if(selectingslot_item != item.None){
-	//Drop Item into Game world
+	#region Use Item
+	if(mouse_check_button_pressed(mb_left)){
+		// Decrese Item if itemType is UseItem
+		if(_item_info[# 2,selectingslot_item+1] == itemType.UseItem){
+			inv_grid[# 1,selected_slot] -= 1;
+			//Destroy item in inventory if it was last one
+			if(inv_grid[# 1,selected_slot] == 0){
+				inv_grid[# 0,selected_slot] = item.None;
+			}
+			use_Item(_item_info[# 4,selectingslot_item+1],0,0,0,obj_player)
+		}
+		show_debug_message(_item_info[# 2,selectingslot_item+1])
+		show_debug_message(itemType.UseItem)
+	}
+	#endregion
+	#region Drop Item into Game world
 	if(mouse_check_button_pressed(mb_middle)){
 			inv_grid[# 1,selected_slot] -= 1;
 			//Destroy item in inventory if it was last one
@@ -113,6 +130,7 @@ if(pickup_slot != -1){
 				y_frame = item_spr_num div (spr_width/cell_size);
 			}*/
 	}
+	#endregion
 	//Drop pickup Item into new slot
 	if(mouse_check_button_pressed(mb_right)){
 		pickup_slot = selected_slot;

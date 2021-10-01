@@ -41,7 +41,7 @@ if(input_hide){
 }
 
 // don't shoot pickupmode or showinventorymode
-if(!global.pickupmode && !global.show_inventory){
+if(!global.show_inventory){
 	// Shoot
 	bltdir = point_direction(x,y,mouse_x,mouse_y);
 	if (mouse_check_button(mb_left) && cooldown < 1) {

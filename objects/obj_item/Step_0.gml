@@ -61,12 +61,12 @@ if(drop_move){
 						// Item num
 						_not_grid[# 0,0] = _item_num;
 						// Item Name
-						_not_grid[# 1,0] = obj_inventory.ds_items_info[# 0,_item];
+						_not_grid[# 1,0] = obj_inventory.ds_items_info[# 1,_item+1];
 					} else { //Add to Grid
 						event_perform(ev_other,ev_user0);
 						var _not_grid =	ds_notifications;
 						var _grid_height = ds_grid_height(_not_grid);
-						var _name = obj_inventory.ds_items_info[# 0,_item];
+						var _name = obj_inventory.ds_items_info[# 1,_item+1];
 						var _in_grid = false;
 						
 						var _yy = 0;repeat(_grid_height){
@@ -83,7 +83,7 @@ if(drop_move){
 							// Item num
 							_not_grid[# 0,_grid_height] = _item_num;
 							// Item Name
-							_not_grid[# 1,_grid_height] = obj_inventory.ds_items_info[# 0,_item];
+							_not_grid[# 1,_grid_height] = obj_inventory.ds_items_info[# 1,_item];
 						}
 					}
 				}

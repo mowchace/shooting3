@@ -13,6 +13,7 @@
     {"id":{"name":"obj_tree","path":"objects/obj_tree/obj_tree.yy",},"order":2,},
     {"id":{"name":"spr_message_UI","path":"sprites/spr_message_UI/spr_message_UI.yy",},"order":5,},
     {"id":{"name":"spr_tree_dust","path":"sprites/spr_tree_dust/spr_tree_dust.yy",},"order":4,},
+    {"id":{"name":"scr_use_Item","path":"scripts/scr_use_Item/scr_use_Item.yy",},"order":8,},
     {"id":{"name":"SE_gun_brust01","path":"sounds/SE_gun_brust01/SE_gun_brust01.yy",},"order":0,},
     {"id":{"name":"SE_gore06","path":"sounds/SE_gore06/SE_gore06.yy",},"order":1,},
     {"id":{"name":"obj_par_enemy","path":"objects/obj_par_enemy/obj_par_enemy.yy",},"order":3,},
@@ -122,9 +123,11 @@
   "TextureGroups": [
     {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"ItemData.csv","resourceType":"GMIncludedFile",},
+  ],
   "MetaData": {
-    "IDEVersion": "2.3.4.583",
+    "IDEVersion": "2.3.5.589",
   },
   "resourceVersion": "1.4",
   "name": "shooting3",

@@ -9,7 +9,7 @@ var _yy = 0; repeat(_grid_height){
 		100,(gui_height/2)+(_yy*str_height)-(_grid_height*str_height),
 		_not_sign + string(_not_grid[# 0,_yy]) + " " + string(_not_grid[# 1,_yy]),
 		c,c,c,c,not_alpha
-	);
+	);d
 	_yy++;
 }
 
