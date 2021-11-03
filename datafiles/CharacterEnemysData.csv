@@ -1,0 +1,5 @@
+ID,Name,HP,MP,Strength,Endurance,Dexterity,Perception,Master,Will,Magical_power,Charisma,Agility,Luck,EXP,DropItem1,DropItem1_Max_num,DropItem1_minimam_num,DropItem1_Drop_Percentage,DropItem2,DropItem2_Max_num,DropItem2_minimam_num,DropItem2_Drop_Percentage,DropItem3,DropItem3_Max_num,DropItem3_minimam_num,DropItem3_Drop_Percentage
+0,None,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,Devil,100,100,50,1,0,0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0
+2,Camereon,50,100,10,2,0,0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0
+3,Cocko,25,100,10,3,0,0,0,0,0,0,0,0,100,3,3,1,70,0,0,0,0,0,0,0,0

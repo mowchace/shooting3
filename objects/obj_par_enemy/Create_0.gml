@@ -15,6 +15,10 @@ x_frame = 0;
 Row = 0;
 y_frame = 0;
 returnflug = false;
+//Status Date
+HP = Endurance*15;
+attack = Strength*1.5;
+EXP = (HP + attack)*0.5;
 
 //state
 enum states {
@@ -38,19 +42,14 @@ actionWait = 0;
 findwait = 0;
 
 // bullet setting
-attack = 0;
-blttype = noone;
-bltspd = 5;
+attack = Strength;
+blttype = asset_get_index(blttypename);
+bltspd = Perception;
 cooltime = 50;
 cooldown = 50;
 
 x_offset = sprite_get_xoffset(mask_index);
 y_offset = sprite_get_yoffset(mask_index);
-
-// Destroy setting
-HP = -1;
-EXP = -1;
-spawnPointPlus = 0;
 
 // Idle move
 alarm[0] = 30;

@@ -27,7 +27,9 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"animationnum","path":"objects/obj_par_bullet/obj_par_bullet.yy",},"objectId":{"name":"obj_par_bullet","path":"objects/obj_par_bullet/obj_par_bullet.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "effect",
     "path": "folders/Objects/gameobject/effect.yy",

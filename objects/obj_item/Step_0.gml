@@ -6,7 +6,7 @@ if(drop_move){
 } else {
 	// pickup Game World Item
 	//if(!keyboard_check(ord("Z"))) exit;
-	if(!global.pickupmode)exit;
+	if(!global.pickupmode || !instance_exists(obj_player))exit;
 	var _px = obj_player.x;
 	var _py = obj_player.y;
 	var _r = DropAndPickuplength;

@@ -98,19 +98,19 @@ if(pickup_slot != -1){
 		}
 	}
 } else if(selectingslot_item != item.None){
-	#region Use Item
+	#region Item Use or Equipment
 	if(mouse_check_button_pressed(mb_left)){
 		// Decrese Item if itemType is UseItem
-		if(_item_info[# 2,selectingslot_item+1] == itemType.UseItem){
+		if(inv_grid[# 2,selectingslot_item] == itemType.UseItem){
 			inv_grid[# 1,selected_slot] -= 1;
 			//Destroy item in inventory if it was last one
 			if(inv_grid[# 1,selected_slot] == 0){
 				inv_grid[# 0,selected_slot] = item.None;
 			}
 			use_Item(_item_info[# 4,selectingslot_item+1],0,0,0,obj_player)
+		} else if(inv_grid[# 2,selectingslot_item] == itemType.EquipmentItem){
+			
 		}
-		show_debug_message(_item_info[# 2,selectingslot_item+1])
-		show_debug_message(itemType.UseItem)
 	}
 	#endregion
 	#region Drop Item into Game world

@@ -88,6 +88,10 @@ if(moveX != 0){
 		}
 		moveX = 0;
 	}
+	// Not Go to outside room
+	if(x < 0 || x > room_width){
+		moveX = -moveX;
+	}
 }
 // VARTICAL
 if(moveY != 0){
@@ -98,6 +102,10 @@ if(moveY != 0){
 			} else {break;}
 		}
 		moveY = 0;
+	}
+	// Not Go to outside room
+	if(y < 0 || y > room_height){
+		moveY = -moveY;
 	}
 }
 
@@ -137,14 +145,5 @@ y += moveY;
 if(HP <= 0){
 	audio_play_sound(SE_gore06,1,0);
 	instance_destroy();
-	with (obj_player){
-		attack += other.EXP*0.1;
-		HP += 10;
-	}
-	create_particles(x,y,180,"obj_blad");
-	create_item(DropItem1,irandom_range(DropItem1_Max_num,DropItem1_minimam_num),x,y,DropItem1_Drop_Percentage);
-	create_item(DropItem2,irandom_range(DropItem2_Max_num,DropItem2_minimam_num),x,y,DropItem2_Drop_Percentage);
-	create_item(DropItem3,irandom_range(DropItem3_Max_num,DropItem3_minimam_num),x,y,DropItem3_Drop_Percentage);
-	with (obj_game){score += other.EXP;}
 }
 //move_wrap(true,true,0);

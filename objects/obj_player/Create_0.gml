@@ -15,6 +15,7 @@ cooldown = 0;
 powerfullcooldown = 0;
 snipecooldown = 0;
 
+
 attack = 50;
 x_frame = 0;
 Row = 0;
@@ -31,22 +32,60 @@ bltspd = 16;
 x_offset = sprite_get_xoffset(mask_index);
 y_offset = sprite_get_yoffset(mask_index);
 
-HP = 100;
-//OBJECT STATUS
-	// 0 = Items Name
-	// 1 = Items Type
-	// 2 = Items effect HP
-	// 3 = Items effect MP
-	// 4 = Items effect Strength
-	// 5 = Items effect Endurance
-	// 6 = Items effect Dexterity
-	// 7 = Items effect Perception
-	// 8 = Items effect Master
-	// 9 = Items effect Will
-	// 10 = Items effect Magical power
-	// 11 = Items effect Charisma
-	// 12 = Items effect Agility
-	// 13 = Items effect Luck
-	// 14 = Items effect Stamina
-	// 15 = Items effect Satiety
-	// 16 = Items Description
+//Player Status
+
+ds_characterData = load_csv("PlayerData.csv");
+
+var _YY,_XX;
+ds_grid_value_exists(ds_characterData, 0, 0, 0, ds_grid_height(ds_characterData), CharacterDataID){
+	_XX = 1;
+	_YY = ds_grid_value_y(ds_characterData, 0, 0, 0, ds_grid_height(ds_characterData), CharacterDataID);
+	Name = ds_characterData[# _XX++,_YY];
+	Level = ds_characterData[# _XX++,_YY];
+	MaxHP = ds_characterData[# _XX++,_YY];
+	HP = ds_characterData[# _XX++,_YY];
+	MaxMP = ds_characterData[# _XX++,_YY];
+	MP = ds_characterData[# _XX++,_YY];
+	CarryWeight = ds_characterData[# _XX++,_YY];
+	Weight = ds_characterData[# _XX++,_YY];
+	MaxStamina = ds_characterData[# _XX++,_YY];
+	Stamina = ds_characterData[# _XX++,_YY];
+	MaxSatiety = ds_characterData[# _XX++,_YY];
+	Satiety = ds_characterData[# _XX++,_YY];
+	Strength = ds_characterData[# _XX++,_YY];
+	Endurance = ds_characterData[# _XX++,_YY];
+	Dexterity = ds_characterData[# _XX++,_YY];
+	Perception = ds_characterData[# _XX++,_YY];
+	Master = ds_characterData[# _XX++,_YY];
+	Will = ds_characterData[# _XX++,_YY];
+	Magical_power = ds_characterData[# _XX++,_YY];
+	Charisma = ds_characterData[# _XX++,_YY];
+	Agility = ds_characterData[# _XX++,_YY];
+	Luck = ds_characterData[# _XX++,_YY];
+	EXP = ds_characterData[# _XX++,_YY];
+	NextLevelEXP = ds_characterData[# _XX++,_YY];
+}
+
+Level -= 0;
+MaxHP -= 0;
+HP -= 0;
+MaxMP -= 0;
+MP -= 0;
+CarryWeight -= 0;
+Weight -= 0;
+MaxStamina -= 0;
+Stamina -= 0;
+MaxSatiety -= 0;
+Satiety -= 0;
+Strength -= 0;
+Endurance -= 0;
+Dexterity -= 0;
+Perception -= 0;
+Master -= 0;
+Will -= 0;
+Magical_power -= 0;
+Charisma -= 0;
+Agility -= 0;
+Luck -= 0;
+EXP -= 0;
+NextLevelEXP -= 0;
