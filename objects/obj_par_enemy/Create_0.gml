@@ -44,9 +44,9 @@ findwait = 0;
 // bullet setting
 attack = Strength;
 blttype = asset_get_index(blttypename);
-bltspd = Perception;
-cooltime = 50;
-cooldown = 50;
+bltspd = bullettspeed;
+cooltime = bullettcooltime;
+cooldown = bullettcooldown;
 
 x_offset = sprite_get_xoffset(mask_index);
 y_offset = sprite_get_yoffset(mask_index);
