@@ -1,4 +1,4 @@
-/// @description
+/*/// @description
 event_inherited();
 faction = factions.enemy;
 
@@ -54,11 +54,11 @@ ds_grid_value_exists(ds_characterData, 0, 0, 0, 10, CharacterDataID){
 //state
 /*enum states {
 	free,
-	detect,
-	alart,
+	wander,
+	alert,
 	evasion,
 }*/
-state = states.free;
+/*state = states.free;
 
 // Inseide range
 rotate_speed = 1;
@@ -74,7 +74,7 @@ findwait = 0;
 
 // bullet setting
 attack = 0;
-blttype = noone;
+atktype = noone;
 bltspd = 5;
 cooltime = 50;
 cooldown = 50;

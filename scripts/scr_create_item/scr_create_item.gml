@@ -1,7 +1,6 @@
 //description Item Drop script
 function create_item(_DropItem_spr_num,_DropItem_num,_XX,_YY,_DropPercentage){
 	if(_DropItem_spr_num == item.None)exit;
-	show_debug_message(_DropItem_spr_num);
 		var _randompercentage = irandom_range(0,100);
 		if(_randompercentage <= _DropPercentage){
 			var _inst = instance_create_layer(_XX,_YY,"Instances",obj_item);

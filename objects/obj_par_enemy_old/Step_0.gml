@@ -88,6 +88,10 @@ if(moveX != 0){
 		}
 		moveX = 0;
 	}
+	// Not Go to outside room
+	if(x < 0 || x > room_width){
+		moveX = -moveX;
+	}
 }
 // VARTICAL
 if(moveY != 0){
@@ -98,6 +102,10 @@ if(moveY != 0){
 			} else {break;}
 		}
 		moveY = 0;
+	}
+	// Not Go to outside room
+	if(y < 0 || y > room_height){
+		moveY = -moveY;
 	}
 }
 
@@ -138,4 +146,4 @@ if(HP <= 0){
 	audio_play_sound(SE_gore06,1,0);
 	instance_destroy();
 }
-//move_wrap(true,true,0);
+move_wrap(true,true,0);

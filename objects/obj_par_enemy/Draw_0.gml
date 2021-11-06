@@ -10,13 +10,13 @@ if(found_flag) {
 draw_sprite_ext(sprite_index, image_index, x, y, 1, 1, 0, col, 1);
 
 // 視界範囲の右側を線分で描画
-var dx1 = lengthdir_x(_Searchplayerrange, direction-_view_range);
-var dy1 = lengthdir_y(_Searchplayerrange, direction-_view_range);
+var dx1 = lengthdir_x(_Searchplayerrange, range_direction-_view_range);
+var dy1 = lengthdir_y(_Searchplayerrange, range_direction-_view_range);
 draw_line_colour(x, y, x+dx1, y+dy1, col, col);
 
 // 視界範囲の左側を線分で描画
-var dx2 = lengthdir_x(_Searchplayerrange, direction+_view_range);
-var dy2 = lengthdir_y(_Searchplayerrange, direction+_view_range);
+var dx2 = lengthdir_x(_Searchplayerrange, range_direction+_view_range);
+var dy2 = lengthdir_y(_Searchplayerrange, range_direction+_view_range);
 draw_line_colour(x, y, x+dx2, y+dy2, col, col);
 
 // 視界範囲の先端の左右をつなぐ

@@ -32,7 +32,7 @@
     "path": "folders/Objects/gameobject/effect.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_par_bullet",
+  "name": "obj_par_attack",
   "tags": [],
   "resourceType": "GMObject",
 }

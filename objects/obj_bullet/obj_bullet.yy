@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_par_bullet",
-    "path": "objects/obj_par_bullet/obj_par_bullet.yy",
+    "name": "obj_par_attack",
+    "path": "objects/obj_par_attack/obj_par_attack.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -28,7 +28,7 @@
   ],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"animationnum","path":"objects/obj_par_bullet/obj_par_bullet.yy",},"objectId":{"name":"obj_par_bullet","path":"objects/obj_par_bullet/obj_par_bullet.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"animationnum","path":"objects/obj_par_attack/obj_par_attack.yy",},"objectId":{"name":"obj_par_attack","path":"objects/obj_par_attack/obj_par_attack.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "effect",

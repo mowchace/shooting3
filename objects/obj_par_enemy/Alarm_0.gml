@@ -1,5 +1,5 @@
-/// discription Idle
-if(state != states.free)exit;
+/*/// discription Idle
+if(state != states.idle)exit;
 moveX = 0;
 moveY = 0;
 
