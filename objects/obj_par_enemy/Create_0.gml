@@ -18,27 +18,30 @@ enum states {
 }
 state = states.idle;
 found_flag = false;
+found_time = 0;
+//------------------
+counter = 0;
+// player seach range
+rotate_speed = 1;
+const_rotate_speed_time = room_speed*2;
+rotate_speed_count = 0;
+range_direction = direction;
+range_base = Seach_range_base;
+range_plus = 0; 
+range_minus = 0;
+Searchplayerrange = 100;
+view_range = 20;
+
+
+my_dir = irandom_range(0,359);
+moveX = lengthdir_x(spd,my_dir);
+moveY = lengthdir_y(spd,my_dir);
+
 
 states_array[states.idle] = enemy_state_idle;
 states_array[states.wander] = enemy_state_wander;
 states_array[states.alert] = enemy_state_alert;
 states_array[states.attack] = enemy_state_attack;
-//------------------
-counter = 0;
-// Inseide range
-rotate_speed = 1;
-const_rotate_speed_time = room_speed*2;
-rotate_speed_count = 0;
-range_direction = direction;
-range_plus = 0; 
-range_minus = 0;
-Searchplayerrange = 100;
-view_range = 20;
-actionWait = 0;
-
-my_dir = irandom_range(0,359);
-moveX = lengthdir_x(spd,my_dir);
-moveY = lengthdir_y(spd,my_dir);
 
 //my_slash = noone;
 /*
@@ -62,7 +65,8 @@ EXP = (HP + Strength)*0.5;
 
 // attack setting
 attack = Strength;
-atktype = asset_get_index(Attacktypename);
+Meelatktype1 = asset_get_index(MeelAttacktypename1);
+Rangeatktype1 = asset_get_index(RangeAttacktypename1);
 atkspd = Attackspeed;
 cooltime = Attackcooltime;
 cooldown = Attackcooldown;

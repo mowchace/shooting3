@@ -40,7 +40,7 @@ if(instance_exists(obj_par_ally)){
 				//}
 				if(inst == noone && cooltime <= 0){
 					var _bltdir = _dir;
-					create_bullet(atktype,attack,_bltdir,bltspd,faction,id,noone);
+					create_attack(atktype,attack,_bltdir,bltspd,faction,id,noone);
 					cooltime = cooldown;
 				}
 				cooltime -= 1;

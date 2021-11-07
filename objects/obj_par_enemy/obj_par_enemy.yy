@@ -34,12 +34,17 @@
     {"varType":1,"value":"50","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"Strength","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"5","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"Endurance","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"5","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"Perception","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":1,"value":"64","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"Seach_range_base","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"30","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"Alert_range_plus","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":6,"value":"\"obj_bullet\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
         "\"obj_bullet\"",
         "\"obj_snipe\"",
+      ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"RangeAttacktypename1","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":6,"value":"\"obj_snipe\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
+        "\"obj_bullet\"",
+        "\"obj_snipe\"",
         "\"obj_missile\"",
-      ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"Attacktypename","tags":[],"resourceType":"GMObjectProperty",},
+      ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"MeelAttacktypename1","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"5","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"Attackspeed","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"50","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"Attackcooltime","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"50","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"Attackcooldown","tags":[],"resourceType":"GMObjectProperty",},

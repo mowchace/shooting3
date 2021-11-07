@@ -1,9 +1,12 @@
 /// @description
-script_execute(states_array[state])
-/*
+if(rotate_speed_count >= const_rotate_speed_time){
+	rotate_speed = -rotate_speed;
+	rotate_speed_count = 0
+}
+range_direction += rotate_speed;
 if(instance_exists(obj_par_ally)){
-	var _Searchplayerrange = Searchplayerrange-range_minus;
-	var _view_range = view_range-range_minus;
+	var _Searchplayerrange = Searchplayerrange+range_plus-range_minus;
+	var _view_range = view_range+range_plus-range_minus;
 	// player seach start
 	if(point_distance(x,y,obj_par_ally.x,obj_par_ally.y) < _Searchplayerrange){
 		// Serch move
@@ -19,45 +22,30 @@ if(instance_exists(obj_par_ally)){
 		// player find
 		if(_view_range > _deg){
 			var inst = collision_line(x, y, obj_par_ally.x, obj_par_ally.y, obj_collision, false, true);
-			if(inst == noone || found_flag = true){
-				state = states.alert;
-				found_flag = true;
+			if(inst == noone){
 				var _dir = point_direction(x,y,obj_par_ally.x,obj_par_ally.y)
-				direction = _dir;
 				range_direction = _dir;
-				actionWait = 250;
-				// move near the player
-				//if (point_distance(x, y, obj_par_ally.x, obj_par_ally.y) > dashrange){
-				spd = r_spd;
-				moveX = lengthdir_x(spd,_dir);
-				moveY = lengthdir_y(spd,_dir);
-				//} else {
-				//	spd = n_spd;
-				//}
-				if(inst == noone && cooltime <= 0){
-					var _bltdir = _dir;
-					create_bullet(atktype,attack,_bltdir,bltspd,faction,id,noone);
-					cooltime = cooldown;
+				if(state = !states.attack){
+					state = states.alert;
 				}
 			}
 		} 
-		else {
-			spd = n_spd;
-			moveX = 0;
-			moveY = 0;
-			if(found_flag){
-				state = states.wander;
-				alarm[1] = 5;
-			}
-		}
+
 	} 
 }
-*/
-actionWait -= 1;
-rotate_speed_count += 1
+script_execute(states_array[state])
 
+rotate_speed_count += 1
+if(found_time > 0){found_time -= 1};
+// Find_flag remove
+if(found_time <= 0){
+	found_flag = false;
+};
 // Attack cool down
-if(!cooltime < 0){cooltime -= 1;}
+if(!cooltime <= 0){cooltime -= 1;}
+show_debug_message("found_time:"+string(found_time));
+show_debug_message("cooltime:"+string(cooltime));
+show_debug_message("counter:"+string(counter));
 
 // COLLISION CHECKS and room in
 if(moveX != 0){

@@ -11,11 +11,27 @@ function enemy_state_attack(){
 	//Transition Triggers
 	if(image_index > image_number-1){state = states.alert;}
 	*/
-	if(instance_exists(obj_par_ally) && cooltime <= 0){
+	if(instance_exists(obj_par_ally)){
+		var inst = collision_line(x, y, obj_par_ally.x, obj_par_ally.y, obj_collision, false, true);
 		var _dir = point_direction(x,y,obj_par_ally.x,obj_par_ally.y)
-		create_bullet(atktype,attack,_dir,atkspd,faction,id,noone);
-		cooltime = cooldown;
-		if(!collision_circle(x,y,32,obj_player,0,0)){
+		range_direction =_dir;
+		moveX = lengthdir_x(spd,_dir);
+		moveY = lengthdir_y(spd,_dir);
+		// if collision_line is noone bigin attack
+		if(inst == noone){
+			if(collision_circle(x,y,range_base,obj_player,0,0)){
+				// Melee attack
+				create_attack(Meelatktype1,attack,_dir,atkspd,faction,id,noone);
+			} else {
+				// Ranged attack
+				if(cooltime <= 0){
+					create_attack(Rangeatktype1,attack,_dir,atkspd,faction,id,noone);
+					cooltime = cooldown;
+				}
+			}
+		}
+		//Transition Triggers
+		if(!collision_circle(x,y,(range_base+range_plus)*4-range_minus,obj_player,0,0)){
 			state = states.alert;
 		}
 	}else{

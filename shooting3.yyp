@@ -19,7 +19,7 @@
     {"id":{"name":"scr_enemy_state_wander","path":"scripts/scr_enemy_state_wander/scr_enemy_state_wander.yy",},"order":1,},
     {"id":{"name":"obj_par_attack","path":"objects/obj_par_attack/obj_par_attack.yy",},"order":9,},
     {"id":{"name":"scr_use_Item","path":"scripts/scr_use_Item/scr_use_Item.yy",},"order":8,},
-    {"id":{"name":"scr_damege_create","path":"scripts/scr_damege_create/scr_damege_create.yy",},"order":10,},
+    {"id":{"name":"scr_create_damege","path":"scripts/scr_create_damege/scr_create_damege.yy",},"order":10,},
     {"id":{"name":"scr_enemy_state_alert","path":"scripts/scr_enemy_state_alert/scr_enemy_state_alert.yy",},"order":2,},
     {"id":{"name":"SE_gun_brust01","path":"sounds/SE_gun_brust01/SE_gun_brust01.yy",},"order":0,},
     {"id":{"name":"SE_gore06","path":"sounds/SE_gore06/SE_gore06.yy",},"order":1,},
