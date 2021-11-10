@@ -40,28 +40,6 @@ if(input_hide){
 	}
 }
 
-// don't shoot pickupmode or showinventorymode
-if(!global.show_inventory){
-	// Shoot
-	bltdir = point_direction(x,y,mouse_x,mouse_y);
-	if (mouse_check_button(mb_left) && cooldown < 1) {
-		create_attack(obj_bullet,attack,bltdir,bltspd,faction,id,input_hide);
-		cooldown = 5;
-		}
-	if (mouse_check_button(mb_right) && powerfullcooldown < 1) {
-		create_attack(obj_missile,attack,bltdir,bltspd,faction,id,input_hide);
-		powerfullcooldown = 30;
-	}
-	if (mouse_check_button(mb_middle) && snipecooldown < 1) {
-		var _bltspd = 20;
-		create_attack(obj_snipe,attack,bltdir,_bltspd,faction,id,input_hide);
-		snipecooldown = 30;
-	}
-}
-cooldown -= 1;
-powerfullcooldown -= 1;
-snipecooldown -= 1;
-
 // GET DIRECTION PLAYER IS FACING
 /*
 var _direction = point_direction(obj_Player.x,obj_Player.y,mouse_x,mouse_y);
@@ -132,6 +110,28 @@ if(exhaustCounter >= 5 && spd != 0  && !input_hide){
 
 x += moveX;
 y += moveY;
+
+// don't shoot pickupmode or showinventorymode
+if(!global.show_inventory){
+	// Shoot
+	bltdir = point_direction(x,y,mouse_x,mouse_y);
+	if (mouse_check_button(mb_left) && cooldown < 1) {
+		create_attack(obj_bullet,attack,bltdir,bltspd,faction,id,input_hide);
+		cooldown = 5;
+		}
+	if (mouse_check_button(mb_right) && powerfullcooldown < 1) {
+		create_attack(obj_missile,attack,bltdir,bltspd,faction,id,input_hide);
+		powerfullcooldown = 30;
+	}
+	if (mouse_check_button(mb_middle) && snipecooldown < 1) {
+		var _bltspd = 20;
+		create_attack(obj_snipe,attack,bltdir,_bltspd,faction,id,input_hide);
+		snipecooldown = 30;
+	}
+}
+cooldown -= 1;
+powerfullcooldown -= 1;
+snipecooldown -= 1;
 
 move_wrap(true,true,0)
 global.playerHP = HP

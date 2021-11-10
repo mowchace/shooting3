@@ -36,10 +36,14 @@ if(instance_exists(obj_par_ally)){
 script_execute(states_array[state])
 
 rotate_speed_count += 1
-if(found_time > 0){found_time -= 1};
-// Find_flag remove
-if(found_time <= 0){
-	found_flag = false;
+if(found_flag == true){found_time -= 1
+	// Find_flag remove
+	if(found_time <= 0){
+		found_flag = false;
+		state = states.alert;
+		range_plus = 0;
+		spd = n_spd;
+	};
 };
 // Attack cool down
 if(!cooltime <= 0){cooltime -= 1;}

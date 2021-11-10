@@ -22,6 +22,13 @@ part_type_size(partTypeExplode,.1,1,.05,0);
 part_type_alpha2(partTypeExplode,1,0);
 part_type_life(partTypeExplode,5,10);
 
+// gunflash
+partTypegunflash = part_type_create();
+part_type_sprite(partTypegunflash,spr_gunflash,true,false,false);
+part_type_size(partTypegunflash,.7,1.3,0,0);
+part_type_alpha3(partTypegunflash,1,1,0);
+part_type_life(partTypegunflash,5,5);
+
 // Bullet ammo
 partTypeArmmo = part_type_create();
 part_type_sprite(partTypeArmmo,spr_bullet,false,false,false);

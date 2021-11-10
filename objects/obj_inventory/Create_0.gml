@@ -1,7 +1,7 @@
 /// @description
 depth = -1;
 scale = 1;
-global.show_inventory =  true;
+global.show_inventory =  false;
 
 inv_slots = 54;
 inv_slots_width = 9;
