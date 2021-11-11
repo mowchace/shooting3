@@ -1,4 +1,8 @@
 /// @description
+//if(wander_flag == true){state = states.wander};
+if(alert_flag == true){state = states.alert};
+if(attack_flag == true){state = states.attack};
+script_execute(states_array[state])
 if(rotate_speed_count >= const_rotate_speed_time){
 	rotate_speed = -rotate_speed;
 	rotate_speed_count = 0
@@ -22,34 +26,60 @@ if(instance_exists(obj_par_ally)){
 		// player find
 		if(_view_range > _deg){
 			var inst = collision_line(x, y, obj_par_ally.x, obj_par_ally.y, obj_collision, false, true);
-			if(inst == noone){
-				var _dir = point_direction(x,y,obj_par_ally.x,obj_par_ally.y)
+			var inst2 = collision_line(x, y, obj_par_ally.x, obj_par_ally.y, obj_par_enemy, false, true);
+			var inst3 = collision_line(x, y, obj_par_ally.x, obj_par_ally.y, obj_par_nutral, false, true);
+			var _dir = point_direction(x,y,obj_par_ally.x,obj_par_ally.y)
+			if(inst == noone && inst2 == noone && inst3 == noone){
+				create_emotion(emotion.alertextensyon);
 				range_direction = _dir;
-				if(state = !states.attack){
-					state = states.alert;
-				}
+				moveX = lengthdir_x(spd,_dir);
+				moveY = lengthdir_y(spd,_dir);
+			} else {
+				create_emotion(emotion.question);
+				moveX = 0;
+				moveY = 0;
 			}
 		} 
 
 	} 
 }
-script_execute(states_array[state])
+
+
 
 rotate_speed_count += 1
-if(found_flag == true){found_time -= 1
+if(attack_flag == true){
+	attack_time -= 1
 	// Find_flag remove
-	if(found_time <= 0){
-		found_flag = false;
-		state = states.alert;
-		range_plus = 0;
-		spd = n_spd;
+	if(attack_time <= 0){
+		attack_flag = false;
+		//wander_flag = true;
+		//wander_time = room_speed*10;
+		state = states.wander;
+		spd = r_spd;
 	};
 };
+if(alert_flag == true){
+	alert_time -= 1
+	//Alert flag remove
+	if(!attack_flag){
+		if(alert_time <= 0){
+			alert_flag = false;
+			range_plus = 0;
+		}
+	}
+}
+//if(wander_flag == true){
+//	wander_time -= 1
+//	// Find_flag remove
+//	if(wander_time <= 0){
+//		wander_flag = false;
+//		range_plus = 0;
+//		state = states.idle;
+//		spd = w_spd;
+//	};
+//};
 // Attack cool down
 if(!cooltime <= 0){cooltime -= 1;}
-show_debug_message("found_time:"+string(found_time));
-show_debug_message("cooltime:"+string(cooltime));
-show_debug_message("counter:"+string(counter));
 
 // COLLISION CHECKS and room in
 if(moveX != 0){

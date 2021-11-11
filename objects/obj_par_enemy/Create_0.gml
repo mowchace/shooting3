@@ -14,11 +14,15 @@ enum states {
 	wander,
 	alert,
 	attack,
-	evasion,
 }
 state = states.idle;
-found_flag = false;
-found_time = 0;
+attack_flag = false;
+attack_time = 0;
+alert_flag = false;
+alert_time = 0;
+wander_flag = false;
+wander_time = 0;
+
 //------------------
 counter = 0;
 // player seach range
@@ -29,7 +33,7 @@ range_direction = direction;
 range_base = Seach_range_base;
 range_plus = 0; 
 range_minus = 0;
-Searchplayerrange = 100;
+Searchplayerrange = Seach_range_base*2;
 view_range = 20;
 
 

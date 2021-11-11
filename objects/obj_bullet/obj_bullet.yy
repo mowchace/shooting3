@@ -31,8 +31,8 @@
     {"propertyId":{"name":"animationnum","path":"objects/obj_par_attack/obj_par_attack.yy",},"objectId":{"name":"obj_par_attack","path":"objects/obj_par_attack/obj_par_attack.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "effect",
-    "path": "folders/Objects/gameobject/effect.yy",
+    "name": "atk",
+    "path": "folders/Objects/gameobject/effect/atk.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bullet",

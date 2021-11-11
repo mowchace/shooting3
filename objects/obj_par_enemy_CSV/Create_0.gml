@@ -64,7 +64,7 @@ ds_grid_value_exists(ds_characterData, 0, 0, 0, 10, CharacterDataID){
 rotate_speed = 1;
 const_rotate_speed_time = room_speed*2;
 rotate_speed_count = 0;
-found_flag = false;
+attack_flag = false;
 direction = irandom_range(1,355);
 range_minus = 0;
 Searchplayerrange = 200;

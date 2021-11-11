@@ -23,8 +23,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "meta",
-    "path": "folders/Objects/meta.yy",
+    "name": "gameobject",
+    "path": "folders/Objects/gameobject.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_faction",

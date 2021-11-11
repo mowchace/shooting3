@@ -6,12 +6,12 @@ function enemy_state_alert(){
 		moveY = lengthdir_y(spd,my_dir);
 		range_direction = my_dir;
 		//Transition Triggers
-		if(!collision_circle(x,y,range_base+range_plus-range_minus,obj_player,0,0)){
+		if(!collision_circle(x,y,range_base*2+range_plus-range_minus,obj_player,0,0)){
 			state = states.idle;
 		}
 		if(collision_circle(x,y,range_base+range_plus-range_minus,obj_player,0,0)){
-			found_flag = true;
-			found_time = room_speed*10;
+			attack_flag = true;
+			attack_time = room_speed*10;
 			range_plus = Alert_range_plus;
 			spd = n_spd * r_spd;
 			state = states.attack;

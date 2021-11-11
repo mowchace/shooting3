@@ -24,9 +24,9 @@ if(instance_exists(obj_par_ally)){
 		// player find
 		if(_view_range > _deg){
 			var inst = collision_line(x, y, obj_par_ally.x, obj_par_ally.y, obj_collision, false, true);
-			if(inst == noone || found_flag = true){
+			if(inst == noone || attack_flag = true){
 				state = states.alert;
-				found_flag = true;
+				attack_flag = true;
 				var _dir = point_direction(x,y,obj_par_ally.x,obj_par_ally.y)
 				direction = _dir;
 				actionWait = 250;
@@ -49,7 +49,7 @@ if(instance_exists(obj_par_ally)){
 			spd = n_spd;
 			moveX = 0;
 			moveY = 0;
-			if(found_flag){
+			if(attack_flag){
 				state = states.wander;
 				alarm[1] = 5;
 			}

@@ -4,7 +4,7 @@ function enemy_state_idle(){
 	moveX = 0;
 	moveY = 0;
 	//Trandition Triggers
-	if(counter >= room_speed*3){
+	if(counter >= room_speed*2){
 		var _change = choose(0,1);
 		switch(_change){
 			case 0: state =states.wander;

@@ -28,8 +28,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "effect",
-    "path": "folders/Objects/gameobject/effect.yy",
+    "name": "atk",
+    "path": "folders/Objects/gameobject/effect/atk.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_par_attack",

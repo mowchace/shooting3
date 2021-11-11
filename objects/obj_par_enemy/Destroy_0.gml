@@ -1,7 +1,9 @@
 /// @description
-with (obj_player){
-	attack += other.EXP*0.1;
-	HP += 10;
+if(instance_exists(obj_player)){
+	with (obj_player){
+		attack += other.EXP*0.1;
+		HP += 10;
+	}
 }
 create_particles(x,y,180,"obj_blad");
 create_item(DropItem1,irandom_range(DropItem1_Max_num,DropItem1_minimam_num),x,y,DropItem1_Drop_Percentage);

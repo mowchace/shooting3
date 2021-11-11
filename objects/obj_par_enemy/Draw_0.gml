@@ -1,7 +1,7 @@
 var col = c_white;
 var _Searchplayerrange = Searchplayerrange-range_minus;
 var _view_range = view_range-range_minus;
-if(found_flag) {
+if(attack_flag) {
     // プレイヤーを見つけたら色を赤くする
     col = c_red;
 }
