@@ -35,7 +35,7 @@ if (moveX = 0 && moveY = 0) {
 
 
 // DRAW SPRITE
-draw_sprite_part(spr_enemy3,0,floor(x_frame)*_flamewidh,y_frame*_flameheight,_flamewidh,_flameheight,_XX,_YY);
+draw_sprite_part(spr_base,0,floor(x_frame)*_flamewidh,y_frame*_flameheight,_flamewidh,_flameheight,_XX,_YY);
 
 
 // INCRIMENT FRAME ANIMATION

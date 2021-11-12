@@ -7,6 +7,7 @@ w_spd = 0.5;
 r_spd = 1.3;
 spd = w_spd;
 exhaustCounter = 0;
+flash = 0;
 
 //state
 enum states {
@@ -20,8 +21,6 @@ attack_flag = false;
 attack_time = 0;
 alert_flag = false;
 alert_time = 0;
-wander_flag = false;
-wander_time = 0;
 
 //------------------
 counter = 0;
@@ -41,6 +40,11 @@ my_dir = irandom_range(0,359);
 moveX = lengthdir_x(spd,my_dir);
 moveY = lengthdir_y(spd,my_dir);
 
+spr_base = noone;
+spr_idle = spr_base;
+spr_wander = spr_base;
+spr_alert = spr_base;
+spr_attack = spr_base;
 
 states_array[states.idle] = enemy_state_idle;
 states_array[states.wander] = enemy_state_wander;

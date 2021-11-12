@@ -14,14 +14,18 @@ function enemy_state_attack(){
 	if(instance_exists(obj_par_ally)){
 		var inst = collision_line(x, y, obj_par_ally.x, obj_par_ally.y, obj_collision, false, true);
 		var _dir = point_direction(x,y,obj_par_ally.x,obj_par_ally.y)
+		direction = _dir;
 		range_direction =_dir;
 		moveX = lengthdir_x(spd,_dir);
 		moveY = lengthdir_y(spd,_dir);
 		// if collision_line is noone bigin attack
 		if(inst == noone){
 			if(collision_circle(x,y,range_base,obj_player,0,0)){
-				// Melee attack
-				create_attack(Meelatktype1,attack,_dir,atkspd,faction,id,noone);
+				if(cooltime <= 0){
+					// Melee attack
+					create_attack(Meelatktype1,attack,_dir,atkspd,faction,id,noone);
+					cooltime = cooldown/3;	
+				}
 			} else {
 				// Ranged attack
 				if(cooltime <= 0){
@@ -38,5 +42,5 @@ function enemy_state_attack(){
 		state = states.idle;
 	}
 	//Sprite
-	sprite_index = spr_enemy1;
+	//sprite_index = spr_attack;
 }

@@ -21,5 +21,5 @@ function enemy_state_idle(){
 		}
 	}
 	//Sprite
-	sprite_index = spr_enemy1;
+	//sprite_index = spr_idle;
 }

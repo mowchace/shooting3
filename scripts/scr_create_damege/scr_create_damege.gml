@@ -8,6 +8,7 @@ function create_damege(_damegepoint,_obj,_direction){
 		HP -= _damegepoint
 		direction = _direction+180;
 		range_direction = direction;
+		flash = 3;
 	}
 	create_damege_font(x,y,_damegepoint)
 }

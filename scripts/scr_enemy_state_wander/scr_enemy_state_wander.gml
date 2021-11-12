@@ -24,6 +24,6 @@ function enemy_state_wander(){
 	}
 	
 	//Sprite
-	sprite_index = spr_enemy2;
-	image_xscale = sign(moveX);
+	//sprite_index = spr_wander;
+	//image_xscale = sign(moveX);
 }

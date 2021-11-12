@@ -35,6 +35,7 @@ function create_attack(_objType,_atk,_dir,_spd,_faction,_id,_player_hide_state){
 		case obj_snipe: {
 			audio_play_sound(SE_gun_rifle_shot_01,1,0);
 			create_particles(_XX,_YY,_dir,object_get_name(_objType));
+			create_particles(_XX2,_YY2,_dir,"obj_par_bullet");
 		}break;
 		case obj_missile: audio_play_sound(SE_canon,1,0);break;
 	}

@@ -30,12 +30,16 @@ if(instance_exists(obj_par_ally)){
 			var inst3 = collision_line(x, y, obj_par_ally.x, obj_par_ally.y, obj_par_nutral, false, true);
 			var _dir = point_direction(x,y,obj_par_ally.x,obj_par_ally.y)
 			if(inst == noone && inst2 == noone && inst3 == noone){
-				create_emotion(emotion.alertextensyon);
+				if(state == states.idle || state == states.wander){create_emotion(emotion.question);}
+				else if(state == states.alert){create_emotion(emotion.alertextensyon);}
+				else if(state == states.attack){create_emotion(emotion.attackextensyon);}
 				range_direction = _dir;
 				moveX = lengthdir_x(spd,_dir);
 				moveY = lengthdir_y(spd,_dir);
 			} else {
-				create_emotion(emotion.question);
+				if(state == states.attack){
+					create_emotion(emotion.question);
+				}
 				moveX = 0;
 				moveY = 0;
 			}
@@ -52,8 +56,6 @@ if(attack_flag == true){
 	// Find_flag remove
 	if(attack_time <= 0){
 		attack_flag = false;
-		//wander_flag = true;
-		//wander_time = room_speed*10;
 		state = states.wander;
 		spd = r_spd;
 	};
@@ -63,21 +65,13 @@ if(alert_flag == true){
 	//Alert flag remove
 	if(!attack_flag){
 		if(alert_time <= 0){
+			create_emotion(emotion.question);
 			alert_flag = false;
 			range_plus = 0;
 		}
 	}
 }
-//if(wander_flag == true){
-//	wander_time -= 1
-//	// Find_flag remove
-//	if(wander_time <= 0){
-//		wander_flag = false;
-//		range_plus = 0;
-//		state = states.idle;
-//		spd = w_spd;
-//	};
-//};
+
 // Attack cool down
 if(!cooltime <= 0){cooltime -= 1;}
 
@@ -91,10 +85,6 @@ if(moveX != 0){
 		}
 		moveX = 0;
 	}
-	// Not Go to outside room
-	if(x < 0 || x > room_width){
-		moveX = -moveX;
-	}
 }
 // VARTICAL
 if(moveY != 0){
@@ -105,10 +95,6 @@ if(moveY != 0){
 			} else {break;}
 		}
 		moveY = 0;
-	}
-	// Not Go to outside room
-	if(y < 0 || y > room_height){
-		moveY = -moveY;
 	}
 }
 
@@ -131,4 +117,3 @@ if(HP <= 0){
 	instance_destroy();
 }
 move_wrap(true,true,0);
-show_debug_message("state:"+string(state))
