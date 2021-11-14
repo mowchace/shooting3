@@ -9,11 +9,6 @@ w_spd = 0.5;
 r_spd = 1.3;
 exhaustCounter = 0;
 
-healthbar_width = 30;
-healthbar_height = 2;
-healthbar_x = 2;
-healthbar_y = 10;
-
 hideLevel = 10;
 
 cooldown = 0;

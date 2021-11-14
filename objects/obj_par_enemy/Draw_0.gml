@@ -20,4 +20,7 @@ draw_line_colour(x, y, x+dx2, y+dy2, col, col);
 // 視界範囲の先端の左右をつなぐ
 draw_line_colour(x+dx1, y+dy1, x+dx2, y+dy2, col, col);
 
-
+// HPバー表示
+healthbar_x = x;
+healthbar_y = y-sprite_height*3/4;
+draw_sprite_stretched(spr_healthbar,0,healthbar_x,healthbar_y,(HP/MaxHP)*healthbar_width,healthbar_height);

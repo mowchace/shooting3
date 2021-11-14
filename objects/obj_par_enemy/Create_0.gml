@@ -9,6 +9,11 @@ spd = w_spd;
 exhaustCounter = 0;
 flash = 0;
 
+healthbar_width = 10;
+healthbar_height = 2;
+healthbar_x = 0;
+healthbar_y = 0;
+
 //state
 enum states {
 	idle,
@@ -68,7 +73,8 @@ text = dialogue_array[state[irandom_range(0,len-1)]];
 */
 //Status Date
 
-HP = Endurance*15;
+MaxHP = Endurance*15;
+HP = MaxHP;
 EXP = (HP + Strength)*0.5;
 
 // attack setting

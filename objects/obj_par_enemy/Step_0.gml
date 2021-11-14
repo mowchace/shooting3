@@ -100,6 +100,7 @@ if(moveY != 0){
 
 x += moveX;
 y += moveY;
+
 // APLLY MOVEMENT
 
 // Exhaust
