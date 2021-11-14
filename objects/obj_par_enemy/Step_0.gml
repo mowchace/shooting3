@@ -37,11 +37,11 @@ if(instance_exists(obj_par_ally)){
 				moveX = lengthdir_x(spd,_dir);
 				moveY = lengthdir_y(spd,_dir);
 			} else {
-				if(state == states.attack){
-					create_emotion(emotion.question);
+				create_emotion(emotion.question);
+				if(state != states.attack){
+					moveX = 0;
+					moveY = 0;
 				}
-				moveX = 0;
-				moveY = 0;
 			}
 		} 
 

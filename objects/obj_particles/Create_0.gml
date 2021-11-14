@@ -38,6 +38,12 @@ part_type_gravity(partTypeArmmo, 0.1, 270);
 part_type_alpha3(partTypeArmmo,1,1,0);
 part_type_life(partTypeArmmo,20,20);
 
+// gunhit
+partTypegunhit = part_type_create();
+part_type_sprite(partTypegunhit,spr_gunhit,true,false,false);
+part_type_size(partTypegunhit,.5,1.5,0,0);
+part_type_life(partTypegunhit,5,5);
+
 // Blad
 partTypeBlad = part_type_create();
 part_type_sprite(partTypeBlad,spr_blad,false,true,true);

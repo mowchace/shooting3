@@ -1,2 +1,2 @@
 faction =factions.nutral;
-n_spd = 0
+flash = 0;

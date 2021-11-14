@@ -1,3 +1,4 @@
+event_inherited();
 var _animelength = 3;
 var _flamewidh = 14;
 var _flameheight = 20;
