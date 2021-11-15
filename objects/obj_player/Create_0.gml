@@ -9,10 +9,13 @@ w_spd = 0.5;
 r_spd = 1.3;
 exhaustCounter = 0;
 
-healthbar_width = 30;
-healthbar_height = 2;
-healthbar_x = 2;
-healthbar_y = 10;
+base_x = 5;
+base_y = 20;
+
+healthbar_width = 100;
+healthbar_height = 18;
+healthbar_x = 5;
+healthbar_y = 5+base_y;
 
 hideLevel = 10;
 
@@ -38,8 +41,12 @@ x_offset = sprite_get_xoffset(mask_index);
 y_offset = sprite_get_yoffset(mask_index);
 
 //Player Status
-
-ds_characterData = load_csv("PlayerData.csv");
+NextLevelbaseEXP = 50;
+if(file_exists("PlayerData.csv"))
+	ds_characterData = load_csv("PlayerData.csv");
+else{
+	ds_characterData = ds_grid_create(25,3);
+}
 
 var _YY,_XX;
 ds_grid_value_exists(ds_characterData, 0, 0, 0, ds_grid_height(ds_characterData), CharacterDataID){
@@ -93,4 +100,4 @@ Charisma -= 0;
 Agility -= 0;
 Luck -= 0;
 EXP -= 0;
-NextLevelEXP -= 0;
+NextLevelEXP = 50;

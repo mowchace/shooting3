@@ -3,9 +3,6 @@ gamePausedImage = 0;
 viewX = 0;
 viewY = 0;
 
-global.playerHP = 0;
-score = 0;
-lives = 3;
 randomize();
 
 enum factions {

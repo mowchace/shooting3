@@ -75,7 +75,7 @@ text = dialogue_array[state[irandom_range(0,len-1)]];
 
 MaxHP = Endurance*15;
 HP = MaxHP;
-EXP = (HP + Strength)*0.5;
+EXP = (MaxHP + Strength)*0.5;
 
 // attack setting
 attack = Strength;

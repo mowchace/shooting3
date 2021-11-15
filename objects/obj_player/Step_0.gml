@@ -134,8 +134,7 @@ powerfullcooldown -= 1;
 snipecooldown -= 1;
 
 move_wrap(true,true,0)
-global.playerHP = HP
+//global.playerHP = HP
 if(HP <= 0){
-	if(HP < 0){global.playerHP = 0};
 	instance_destroy();
 }

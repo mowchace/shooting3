@@ -6,7 +6,6 @@ switch (room){
 	} break;
 	case rm_game:{
 		draw_set_font(-1);
-		draw_text(x,y,"HP:"+string(global.playerHP));
 		if(global.pickupmode){
 			draw_text(x,y+20,"PickUpMode");
 		}
