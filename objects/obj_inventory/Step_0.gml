@@ -107,7 +107,7 @@ if(pickup_slot != -1){
 			if(inv_grid[# 1,selected_slot] == 0){
 				inv_grid[# 0,selected_slot] = item.None;
 			}
-			use_Item(_item_info[# 4,selectingslot_item+1],0,0,0,obj_player)
+			use_Item(_item_info[# 4,selectingslot_item+1],1,1,obj_player)
 		} else if(inv_grid[# 2,selectingslot_item] == itemType.EquipmentItem){
 			
 		}
