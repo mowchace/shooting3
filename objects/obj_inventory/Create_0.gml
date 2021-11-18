@@ -45,7 +45,7 @@ description_y = inv_UI_y + (265 *scale);
 // 3 = weight
 
 //ds_inventory = ds_grid_create(2,inv_slots);
-ds_inventory = ds_grid_create(3,inv_slots);
+ds_inventory = ds_grid_create(4,inv_slots);
 
 #region Items
 enum item {

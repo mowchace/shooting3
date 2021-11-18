@@ -60,7 +60,7 @@ _iitem = _inv_grid[# 0,selected_slot];
 if(_iitem > 0){
 	draw_set_font(fnt_inventory_num);
 	//Item Name
-	_description = string(_iinfo_grid[# 1,_iitem+1]) + "." + string(_iinfo_grid[# 18,_iitem+1])
+	_description = string(_iinfo_grid[# 1,_iitem+1]) + "." + string(_iinfo_grid[# 21,_iitem+1])
 	// wrap the text
 	_c = c_black;
 	draw_text_ext_color(description_x,description_y,_description,

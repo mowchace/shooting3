@@ -29,10 +29,10 @@ inputmagnitude = (input_Right-input_Left != 0) || (input_Down-input_Up != 0);
 moveX = lengthdir_x(inputmagnitude * spd,inputDirection);
 moveY = lengthdir_y(inputmagnitude * spd,inputDirection);
 
-// hidelevel hand over the obj_par_enemy
+// HideLevel hand over the obj_par_enemy
 if(input_hide){
 	with(obj_par_enemy){
-		range_minus = other.hideLevel;
+		range_minus = other.HideLevel;
 	}
 } else {
 	with(obj_par_enemy){
@@ -112,20 +112,23 @@ x += moveX;
 y += moveY;
 
 // don't shoot pickupmode or showinventorymode
+show_debug_message("RangeATK:"+string(RangeATK));
+show_debug_message("Dexterity:"+string(Dexterity));
+
 if(!global.show_inventory){
 	// Shoot
 	bltdir = point_direction(x,y,mouse_x,mouse_y);
 	if (mouse_check_button(mb_left) && cooldown < 1) {
-		create_attack(obj_bullet,attack,bltdir,bltspd,faction,id,input_hide);
+		create_attack(obj_bullet,RangeATK,bltdir,bltspd,faction,id,input_hide);
 		cooldown = 5;
 		}
 	if (mouse_check_button(mb_right) && powerfullcooldown < 1) {
-		create_attack(obj_missile,attack,bltdir,bltspd,faction,id,input_hide);
+		create_attack(obj_missile,RangeATK,bltdir,bltspd,faction,id,input_hide);
 		powerfullcooldown = 30;
 	}
 	if (mouse_check_button(mb_middle) && snipecooldown < 1) {
 		var _bltspd = 20;
-		create_attack(obj_snipe,attack,bltdir,_bltspd,faction,id,input_hide);
+		create_attack(obj_snipe,RangeATK,bltdir,_bltspd,faction,id,input_hide);
 		snipecooldown = 30;
 	}
 }

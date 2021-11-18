@@ -75,6 +75,10 @@ text = dialogue_array[state[irandom_range(0,len-1)]];
 
 MaxHP = Endurance*15;
 HP = MaxHP;
+//　防御
+DEF = random_range(Endurance,Endurance*1.5);
+//　回避
+PRO = random_range(Endurance,Endurance*1.5);
 EXP = (MaxHP + Strength)*0.5;
 
 // attack setting

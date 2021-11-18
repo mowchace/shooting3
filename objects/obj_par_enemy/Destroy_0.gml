@@ -5,7 +5,6 @@ create_item(DropItem2,irandom_range(DropItem2_Max_num,DropItem2_minimam_num),x,y
 create_item(DropItem3,irandom_range(DropItem3_Max_num,DropItem3_minimam_num),x,y,DropItem3_Drop_Percentage);
 if(instance_exists(obj_player)){
 	with (obj_player){
-		attack += other.EXP;
 		EXP += other.EXP;
 		if(EXP >= NextLevelEXP){
 			Levelup()

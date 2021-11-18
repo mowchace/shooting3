@@ -101,15 +101,53 @@ if(pickup_slot != -1){
 	#region Item Use or Equipment
 	if(mouse_check_button_pressed(mb_left)){
 		// Decrese Item if itemType is UseItem
-		if(inv_grid[# 2,selectingslot_item] == itemType.UseItem){
+		switch(inv_grid[# 2,selectingslot_item]){
+			case itemType.UseItem:
 			inv_grid[# 1,selected_slot] -= 1;
 			//Destroy item in inventory if it was last one
 			if(inv_grid[# 1,selected_slot] == 0){
 				inv_grid[# 0,selected_slot] = item.None;
 			}
-			use_Item(_item_info[# 4,selectingslot_item+1],1,1,obj_player)
-		} else if(inv_grid[# 2,selectingslot_item] == itemType.EquipmentItem){
-			
+			var _DX=4,_DY=selectingslot_item+1;
+					with(obj_player){
+						MaxHP += _item_info[# _DX++,_DY];
+						HP += _item_info[# _DX++,_DY];
+						MaxMP += _item_info[# _DX++,_DY];
+						MP += _item_info[# _DX++,_DY];
+						Stamina += _item_info[# _DX++,_DY];
+						MaxSatiety += _item_info[# _DX++,_DY];
+						Satiety += _item_info[# _DX++,_DY];
+						Strength += _item_info[# _DX++,_DY];
+						Endurance += _item_info[# _DX++,_DY];
+						Dexterity += _item_info[# _DX++,_DY];
+						Perception += _item_info[# _DX++,_DY];
+						Master += _item_info[# _DX++,_DY];
+						Will += _item_info[# _DX++,_DY];
+						Magical_power += _item_info[# _DX++,_DY];
+						Charisma += _item_info[# _DX++,_DY];
+						Agility += _item_info[# _DX++,_DY];
+						Luck += _item_info[# _DX++,_DY];
+					}
+			//use_Item(_item_info[# 2,selectingslot_item+1],1,obj_player)
+		case itemType.EquipmentItem:
+			EquipmentFlag = true;
+			with(obj_player){
+				MaxHPPlus = _item_info[# _DX++,_DY];
+				MaxMPPlus = _item_info[# _DX++,_DY];
+				MaxStaminaPlus = _item_info[# _DX++,_DY];
+				MaxSatietyPlus = _item_info[# _DX++,_DY];
+				MaxSatietyPlus = _item_info[# _DX++,_DY];
+				StrengthPlus = _item_info[# _DX++,_DY];
+				EndurancePlus = _item_info[# _DX++,_DY];
+				DexterityPlus = _item_info[# _DX++,_DY];
+				PerceptionPlus = _item_info[# _DX++,_DY];
+				MasterPlus = _item_info[# _DX++,_DY];
+				WillPlus = _item_info[# _DX++,_DY];
+				Magical_powerPlus = _item_info[# _DX++,_DY];
+				CharismaPlus = _item_info[# _DX++,_DY];
+				AgilityPlus = _item_info[# _DX++,_DY];
+				LuckPlus = _item_info[# _DX++,_DY];
+			}
 		}
 	}
 	#endregion

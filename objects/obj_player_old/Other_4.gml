@@ -1,1 +1,0 @@
-global.playerHP = HP;
