@@ -8,8 +8,8 @@ function Levelup(){
 	MaxSatiety += irandom_range(0,30);
 	Satiety += irandom_range(0,30);
 	Strength += irandom_range(0,30);
-	Endurance += irandom_range(0,10000);
-	Dexterity += irandom_range(0,10000);
+	Endurance += irandom_range(0,30);
+	Dexterity += irandom_range(0,30);
 	Perception += irandom_range(0,30);
 	Master += irandom_range(0,30);
 	Will += irandom_range(0,30);
@@ -18,6 +18,7 @@ function Levelup(){
 	Agility += irandom_range(0,30);
 	Luck += irandom_range(0,30);
 	HP = MaxHP;
+	statas_change_excute();
 	if(Level <= 300){
 		NextLevelEXP = NextLevelbaseEXP*Level*1.5;
 	}else{

@@ -1,4 +1,5 @@
 event_inherited();
+state = playerstate_free;
 
 global.pickupmode = false;
 
@@ -7,6 +8,8 @@ faction = factions.ally;
 n_spd = 5;
 w_spd = 0.5;
 r_spd = 1.3;
+roll_speed = 10;
+roll_distance = 52;
 exhaustCounter = 0;
 
 draw_base_x = 5;
@@ -21,9 +24,6 @@ healthbar_y = 5+draw_base_y;
 cooldown = 0;
 powerfullcooldown = 0;
 snipecooldown = 0;
-
-
-
 
 x_frame = 0;
 Row = 0;
@@ -94,7 +94,6 @@ ds_grid_value_exists(ds_characterData, 0, 0, 0, ds_grid_height(ds_characterData)
 	LuckPlus = ds_characterData[# _XX++,_YY];
 }
 
-
 Level -= 0;
 MaxHP -= 0;
 MaxHPPlus -= 0;
@@ -144,8 +143,8 @@ Equipment_RangeATK_point = 0;
 //Equipment_DEF_Waist = 0;
 //Equipment_DEF_leg = 0;
 //Equipment_DEF_finger = 0;
-//Equipment_DEF_point = 0;
-//Equipment_PRO_point = 0;
+Equipment_DEF_point = 0;
+Equipment_PRO_point = 0;
 Strength_MeeleeATK = ((Strength+StrengthPlus)+(Dexterity+DexterityPlus)/10)+(Strength+StrengthPlus)/10*Equipment_StrengthMeleeATK_point;
 Dexterity_MeeleeATK = (Strength+StrengthPlus)/10+(Dexterity+DexterityPlus)/10*Equipment_DexterityMeleeATK_point;
 RangeATK = ((Dexterity+DexterityPlus)+(Perception+PerceptionPlus))+Equipment_RangeATK_point;

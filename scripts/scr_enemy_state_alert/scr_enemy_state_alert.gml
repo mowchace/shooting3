@@ -7,10 +7,14 @@ function enemy_state_alert(){
 		range_direction = _dir;
 		direction = _dir
 		//Transition Triggers
-		if(!collision_circle(x,y,range_base*2+range_plus-range_minus,obj_player,0,0)){
+		var _range1 = range_base*2+range_plus-range_minus;
+		if(_range1 <= range_base){_range1 = range_base;}
+		if(!collision_circle(x,y,_range1,obj_player,0,0)){
 			state = states.idle;
 		}
-		if(collision_circle(x,y,range_base+range_plus-range_minus,obj_player,0,0)){
+		var _range2 = range_base+range_plus-range_minus;
+		if(_range2 <= range_base/4){_range2 = range_base/4;}
+		if(collision_circle(x,y,_range2,obj_player,0,0)){
 			attack_flag = true;
 			attack_time = room_speed*10;
 			range_plus = Alert_range_plus;

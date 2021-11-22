@@ -3,21 +3,20 @@ var _animelength = 3;
 var _flamewidh = 14;
 var _flameheight = 20;
 var _animespeed = 10;
-var _direction = point_direction(x,y,mouse_x,mouse_y);
 
 var _XX = x-x_offset;
 var _YY = y-y_offset;
 
-if (_direction > 45 && _direction <= 135) {
+if (direction > 45 && direction <= 135) {
 	y_frame = 3; Row = 0;
-//} else if (_direction > 95 && _direction <= 170) {
+//} else if (direction > 95 && direction <= 170) {
 //	//Left UP
 //	y_frame = 2; Row =1;
-} else if (_direction > 135 && _direction <= 225) {
+} else if (direction > 135 && direction <= 225) {
 	y_frame = 1; Row = 0;
-} else if (_direction > 225 && _direction <= 315) {
+} else if (direction > 225 && direction <= 315) {
 	y_frame = 0; Row = 0;
-} else if (_direction > 315 || _direction <= 45) {
+} else if (direction > 315 || direction <= 45) {
 	y_frame = 2; Row = 0;
 }
 if (moveX = 0 && moveY = 0) {

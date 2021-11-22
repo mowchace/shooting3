@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_rock",
-    "path": "sprites/spr_rock/spr_rock.yy",
+    "name": "spr_middlerock",
+    "path": "sprites/spr_middlerock/spr_middlerock.yy",
   },
   "solid": false,
   "visible": true,
@@ -33,7 +33,7 @@
     "path": "folders/Objects/gameobject/nutral.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_rock",
+  "name": "obj_midlerock",
   "tags": [],
   "resourceType": "GMObject",
 }

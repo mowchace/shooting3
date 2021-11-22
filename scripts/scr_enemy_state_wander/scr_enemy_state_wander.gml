@@ -15,7 +15,9 @@ function enemy_state_wander(){
 	}
 	if(instance_exists(obj_par_ally)){
 		// something find
-		if(collision_circle(x,y,range_base+range_plus+range_minus,obj_player,0,0)){
+		var _range = range_base+range_plus-range_minus;
+		if(_range <= range_base/4){_range = range_base/4;}
+		if(collision_circle(x,y,_range,obj_player,0,0)){
 			var _inst1 = collision_line(x, y, obj_par_ally.x, obj_par_ally.y, obj_collision, false, true);
 			if(_inst1 == noone){
 				state = states.alert;

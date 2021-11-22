@@ -1,7 +1,9 @@
 event_inherited();
 var col = c_white;
 var _Searchplayerrange = Searchplayerrange-range_minus;
+if(_Searchplayerrange <= range_base/4){_Searchplayerrange = range_base/4;}
 var _view_range = view_range-range_minus;
+if(_view_range <= view_range/4){_view_range = view_range/4;}
 if(attack_flag) {
     // プレイヤーを見つけたら色を赤くする
     col = c_red;

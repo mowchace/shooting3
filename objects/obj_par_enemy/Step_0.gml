@@ -10,7 +10,9 @@ if(rotate_speed_count >= const_rotate_speed_time){
 range_direction += rotate_speed;
 if(instance_exists(obj_par_ally)){
 	var _Searchplayerrange = Searchplayerrange+range_plus-range_minus;
+	if(_Searchplayerrange <= (Searchplayerrange+range_plus)/3){_Searchplayerrange = (Searchplayerrange+range_plus)/3}
 	var _view_range = view_range+range_plus-range_minus;
+	if(_view_range <= (view_range+range_plus)/3){_view_range = (view_range+range_plus)/3}
 	// player seach start
 	if(point_distance(x,y,obj_par_ally.x,obj_par_ally.y) < _Searchplayerrange){
 		// Serch move
@@ -75,28 +77,8 @@ if(alert_flag == true){
 // Attack cool down
 if(!cooltime <= 0){cooltime -= 1;}
 
-// COLLISION CHECKS and room in
-if(moveX != 0){
-	if(place_meeting(x+moveX,y,obj_collision) || place_meeting(x+moveX,y,obj_faction)){
-		repeat(abs(moveX)){
-			if (!place_meeting(x+sign(moveX),y,obj_collision) && !place_meeting(x+sign(moveX),y,obj_faction)){
-				x += sign(moveX);
-			} else {break;}
-		}
-		moveX = 0;
-	}
-}
-// VARTICAL
-if(moveY != 0){
-	if(place_meeting(x,y+moveY,obj_collision) || place_meeting(x,y+moveY,obj_faction)){
-		repeat(abs(moveY)){
-			if (!place_meeting(x,y+sign(moveY),obj_collision) && !place_meeting(x,y+sign(moveY),obj_faction)){
-				y += sign(moveY);
-			} else {break;}
-		}
-		moveY = 0;
-	}
-}
+//Collision check
+Collision();
 
 x += moveX;
 y += moveY;
@@ -107,10 +89,7 @@ y += moveY;
 exhaustCounter++;
 if(exhaustCounter >= 10 && spd != 0 && state != states.idle && state != states.wander){
 	exhaustCounter = 0;
-	var _len = sprite_height/2;
-	var _XX = x - lengthdir_x(_len,direction)+irandom_range(-5,5);
-	var _YY = y - lengthdir_y(_len,direction)+irandom_range(-5,5);
-	create_particles(_XX,_YY,0,"obj_par_enemy");
+	create_dash_exhaust("obj_par_enemy");
 }
 
 if(HP <= 0){
