@@ -1,5 +1,6 @@
 event_inherited();
 state = playerstate_free;
+laststate = state;
 
 global.pickupmode = false;
 
@@ -11,6 +12,8 @@ r_spd = 1.3;
 roll_speed = 10;
 roll_distance = 52;
 exhaustCounter = 0;
+
+animespeed = 10;
 
 draw_base_x = 5;
 draw_base_y = 20;
@@ -145,6 +148,7 @@ Equipment_RangeATK_point = 0;
 //Equipment_DEF_finger = 0;
 Equipment_DEF_point = 0;
 Equipment_PRO_point = 0;
+// 攻撃
 Strength_MeeleeATK = ((Strength+StrengthPlus)+(Dexterity+DexterityPlus)/10)+(Strength+StrengthPlus)/10*Equipment_StrengthMeleeATK_point;
 Dexterity_MeeleeATK = (Strength+StrengthPlus)/10+(Dexterity+DexterityPlus)/10*Equipment_DexterityMeleeATK_point;
 RangeATK = ((Dexterity+DexterityPlus)+(Perception+PerceptionPlus))+Equipment_RangeATK_point;
@@ -153,3 +157,5 @@ DEF = (Endurance+EndurancePlus)+Equipment_DEF_point;
 //　回避
 PRO = (Dexterity+DexterityPlus)/2+(Perception+PerceptionPlus)/2+(Will+WillPlus)+Equipment_PRO_point;
 HideLevel = (Dexterity+DexterityPlus)/2+(Perception+PerceptionPlus)/2+(Will+WillPlus)/5;
+moveX = 0;
+moveY = 0;

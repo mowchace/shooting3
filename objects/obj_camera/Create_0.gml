@@ -11,3 +11,5 @@ displaywidth = displayscale*global.cameraWidth;
 displayHeight = displayscale*global.cameraHeight;
 
 target = obj_player;
+
+surface_resize(application_surface,RESOLUTION_W,RESOLUTION_H);

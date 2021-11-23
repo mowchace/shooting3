@@ -1,6 +1,7 @@
 /// @description
 event_inherited();
 faction = factions.enemy;
+animespeed = 10;
 
 n_spd = 2;
 w_spd = 0.5;
@@ -16,12 +17,14 @@ healthbar_y = 0;
 
 //state
 enum states {
+	stop,
 	idle,
 	wander,
 	alert,
 	attack,
 }
 state = states.idle;
+laststate = state;
 attack_flag = false;
 attack_time = 0;
 alert_flag = false;
@@ -51,6 +54,7 @@ spr_wander = spr_base;
 spr_alert = spr_base;
 spr_attack = spr_base;
 
+states_array[states.stop] = stateLocked;
 states_array[states.idle] = enemy_state_idle;
 states_array[states.wander] = enemy_state_wander;
 states_array[states.alert] = enemy_state_alert;

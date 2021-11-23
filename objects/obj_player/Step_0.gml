@@ -1,3 +1,10 @@
+event_inherited();
+if(global.gamePaused){
+	animespeed = 0;
+	 exit;
+}else{
+	animespeed = 10;
+}
 // UPDATE INPUT
 speed = 0;
 direction = point_direction(x,y,mouse_x,mouse_y)

@@ -8,17 +8,3 @@ switch(room){
 		if (keyboard_check_pressed(ord("R"))) {room_restart();}
 		break;
 }
-/*if(keyboard_check_pressed(vk_escape)){
-	global.gamePaused = !global.gamePaused;
-	if(global.gamePaused){
-		with (obj_faction) {
-			other.gamePausedImage = n_spd;
-			n_spd = 0;
-		}
-	} else {
-		with (obj_faction) {
-			n_spd = other.gamePausedImage;
-		}
-	}
-	
-}*/

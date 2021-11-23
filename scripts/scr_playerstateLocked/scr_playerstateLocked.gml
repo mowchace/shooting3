@@ -1,0 +1,4 @@
+function stateLocked(){
+// do nothing
+
+}

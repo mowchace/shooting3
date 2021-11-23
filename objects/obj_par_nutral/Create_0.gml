@@ -2,7 +2,7 @@
 event_inherited();
 
 attack_flag = true;
-
+animespeed = 10;
 healthbar_width = 10;
 healthbar_height = 2;
 healthbar_x = 0;

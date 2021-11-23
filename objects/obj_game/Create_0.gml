@@ -1,7 +1,10 @@
 global.gamePaused = false;
-gamePausedImage = 0;
+global.textSpeed = 0.75;
+Pausebltlife = 0;
+Pausebltspeed = 0;
 viewX = 0;
 viewY = 0;
+
 
 randomize();
 
@@ -16,3 +19,4 @@ enum enemys{
 	enemy2 = obj_enemy2, 
 	enemy3 = obj_enemy3 
 }
+//surface_resize(application_surface,RESOLUTION_W,RESOLUTION_H);

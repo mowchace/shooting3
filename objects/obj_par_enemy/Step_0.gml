@@ -1,5 +1,13 @@
 /// @description
-//if(wander_flag == true){state = states.wander};
+event_inherited();
+if(global.gamePaused){
+	image_speed = 0;
+	animespeed = 0;
+	exit;
+}else{
+	image_speed = 10;
+	animespeed = 10;
+}
 if(alert_flag == true){state = states.alert};
 if(attack_flag == true){state = states.attack};
 script_execute(states_array[state])

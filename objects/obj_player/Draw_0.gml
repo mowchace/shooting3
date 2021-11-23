@@ -2,7 +2,6 @@ event_inherited();
 var _animelength = 3;
 var _flamewidh = 14;
 var _flameheight = 20;
-var _animespeed = 10;
 
 var _XX = x-x_offset;
 var _YY = y-y_offset;
@@ -28,10 +27,10 @@ draw_sprite_part(spr_player,0,floor(x_frame)*_flamewidh,y_frame*_flameheight,_fl
 
 // INCRIMENT FRAME ANIMATION
 if(!returnflug){
-	if(x_frame < _animelength*(Row+1))	{x_frame += _animespeed/60;}
-	else						{returnflug = !returnflug;}
+	if(x_frame < _animelength*(Row+1)){x_frame += animespeed/60;}
+	else{returnflug = !returnflug;}
 }else {
-	if(x_frame > (Row*_animelength))	{x_frame -= _animespeed/60;x_frame =floor(x_frame);}
+	if(x_frame > (Row*_animelength)){x_frame -= animespeed/60;x_frame =floor(x_frame);}
 	else						{returnflug = !returnflug;}
 }
 
