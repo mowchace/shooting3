@@ -25,22 +25,25 @@ function create_attack(_objType,_atk,_dir,_spd,_faction,_id,_player_hide_state){
 	_XX2 += _X_plus2;
 	_YY2 += _Y_plus2;
 	
-// Create bullet particle	
+// Create bullet particle
+	var _inst;
 	switch (_objType){
 		case obj_bullet: {
-			audio_play_sound(SE_gun_brust01,1,0);
+			audio_play_sound(SE_gun_machingun,1,0);
 			create_particles(_XX,_YY,_dir,object_get_name(_objType));
 			create_particles(_XX2,_YY2,_dir,"obj_par_bullet");
+			play_sound_after(SE_ammo,room_speed/2);
 		}break;
 		case obj_snipe: {
 			audio_play_sound(SE_gun_rifle_shot_01,1,0);
 			create_particles(_XX,_YY,_dir,object_get_name(_objType));
 			create_particles(_XX2,_YY2,_dir,"obj_par_bullet");
+			play_sound_after(SE_ammo,room_speed/2);
 		}break;
 		case obj_missile: audio_play_sound(SE_canon,1,0);break;
 	}
 	
-	var _inst = instance_create_layer(x,y-5,"Instances",_objType);
+	_inst = instance_create_layer(x,y-5,"Instances",_objType);
 	with (_inst){
 		direction = _dir;
 		image_angle = _dir;

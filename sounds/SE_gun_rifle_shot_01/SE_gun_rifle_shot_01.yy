@@ -13,8 +13,8 @@
   "soundFile": "SE_gun_rifle_shot_01.ogg",
   "duration": 2.191701,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "attack",
+    "path": "folders/Sounds/attack.yy",
   },
   "resourceVersion": "1.0",
   "name": "SE_gun_rifle_shot_01",

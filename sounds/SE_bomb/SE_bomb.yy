@@ -13,8 +13,8 @@
   "soundFile": "SE_bomb.mp3",
   "duration": 0.914286,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "attack",
+    "path": "folders/Sounds/attack.yy",
   },
   "resourceVersion": "1.0",
   "name": "SE_bomb",

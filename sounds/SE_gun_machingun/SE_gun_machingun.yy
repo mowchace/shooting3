@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.2,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "SE_bomb2.wav",
-  "duration": 1.370531,
+  "soundFile": "SE_gun_machingun.mp3",
+  "duration": 2.328,
   "parent": {
     "name": "attack",
     "path": "folders/Sounds/attack.yy",
   },
   "resourceVersion": "1.0",
-  "name": "SE_bomb2",
+  "name": "SE_gun_machingun",
   "tags": [],
   "resourceType": "GMSound",
 }

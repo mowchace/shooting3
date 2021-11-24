@@ -13,8 +13,8 @@
   "soundFile": "SE_rolling_rocket.mp3",
   "duration": 3.265306,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "attack",
+    "path": "folders/Sounds/attack.yy",
   },
   "resourceVersion": "1.0",
   "name": "SE_rolling_rocket",

@@ -13,8 +13,8 @@
   "soundFile": "SE_gun_brust01.ogg",
   "duration": 0.097483,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "attack",
+    "path": "folders/Sounds/attack.yy",
   },
   "resourceVersion": "1.0",
   "name": "SE_gun_brust01",
