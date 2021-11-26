@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "spr_stump",
-    "path": "sprites/spr_stump/spr_stump.yy",
+    "name": "spr_bullet",
+    "path": "sprites/spr_bullet/spr_bullet.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_par_nutral",
-    "path": "objects/obj_par_nutral/obj_par_nutral.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -25,17 +22,17 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_par_enemy","path":"objects/obj_par_enemy/obj_par_enemy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_collision","path":"objects/obj_collision/obj_collision.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [
-    {"propertyId":{"name":"AttributeType","path":"objects/obj_faction/obj_faction.yy",},"objectId":{"name":"obj_faction","path":"objects/obj_faction/obj_faction.yy",},"value":"\"Normal\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-  ],
+  "overriddenProperties": [],
   "parent": {
-    "name": "nutral",
-    "path": "folders/Objects/gameobject/nutral.yy",
+    "name": "Item",
+    "path": "folders/Objects/gameobject/Item.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_stump",
+  "name": "obj_bullet",
   "tags": [],
   "resourceType": "GMObject",
 }

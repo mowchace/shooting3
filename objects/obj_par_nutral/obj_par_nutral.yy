@@ -27,7 +27,9 @@
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"AttributeType","path":"objects/obj_faction/obj_faction.yy",},"objectId":{"name":"obj_faction","path":"objects/obj_faction/obj_faction.yy",},"value":"\"Iron\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "nutral",
     "path": "folders/Objects/gameobject/nutral.yy",

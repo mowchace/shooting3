@@ -1,3 +1,5 @@
+/// @description
+
 //Check faction
 if(other == creater || other.faction == faction) exit;
 //Damege object
@@ -8,11 +10,6 @@ if((direction > 315 || direction <= 45) || (direction > 135 && direction <= 225)
 	direction += 180;
 }
 with(other){
-	range_plus = 30;
-	spd = n_spd;
-	alert_flag = true;
-	alert_time = room_speed;
-	create_emotion(emotion.alertextensyon);
 	if(attribute == "Iron"){
 		create_attack(obj_reflect,_damegepoint/2,-other.direction+irandom_range(-45,45),other.speed,faction,id,noone);
 	}

@@ -17,5 +17,5 @@ HP = MaxHP;
 DEF = 0;
 //　回避
 EXP = MaxHP/3;
-SE = SE_gore06;
+SE = SE_elona_crush;
 particleName = "";

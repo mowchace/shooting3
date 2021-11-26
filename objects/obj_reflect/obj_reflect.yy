@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "spr_tree",
-    "path": "sprites/spr_tree/spr_tree.yy",
+    "name": "spr_snipe",
+    "path": "sprites/spr_snipe/spr_snipe.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_par_nutral",
-    "path": "objects/obj_par_nutral/obj_par_nutral.yy",
+    "name": "obj_par_attack",
+    "path": "objects/obj_par_attack/obj_par_attack.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -24,19 +24,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [
-    {"propertyId":{"name":"AttributeType","path":"objects/obj_faction/obj_faction.yy",},"objectId":{"name":"obj_faction","path":"objects/obj_faction/obj_faction.yy",},"value":"\"Normal\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-  ],
+  "overriddenProperties": [],
   "parent": {
-    "name": "nutral",
-    "path": "folders/Objects/gameobject/nutral.yy",
+    "name": "atk",
+    "path": "folders/Objects/gameobject/effect/atk.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_tree",
+  "name": "obj_reflect",
   "tags": [],
   "resourceType": "GMObject",
 }

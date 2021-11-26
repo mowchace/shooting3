@@ -38,6 +38,7 @@
   "overriddenProperties": [
     {"propertyId":{"name":"obj_faction","path":"objects/obj_faction/obj_faction.yy",},"objectId":{"name":"obj_faction","path":"objects/obj_faction/obj_faction.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"CharacterDataID","path":"objects/obj_par_ally/obj_par_ally.yy",},"objectId":{"name":"obj_par_ally","path":"objects/obj_par_ally/obj_par_ally.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"AttributeType","path":"objects/obj_faction/obj_faction.yy",},"objectId":{"name":"obj_faction","path":"objects/obj_faction/obj_faction.yy",},"value":"\"Iron\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "ally",
