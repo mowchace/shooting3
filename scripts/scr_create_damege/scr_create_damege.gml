@@ -1,6 +1,7 @@
 function create_damege(_damegepoint,_obj,_direction){
+	var _damege;
 	with (_obj) {
-		var _damege = _damegepoint-DEF;
+		 _damege =	round(_damegepoint-DEF);
 		if(_damege <= 0){_damege = 0};
 		if(object_index != obj_player){
 			if(attack_flag == false && other.hideattack == true){
@@ -12,5 +13,5 @@ function create_damege(_damegepoint,_obj,_direction){
 		range_direction = direction;
 		flash = 3;
 	}
-	create_damege_font(x,y,_damegepoint)
+	create_damege_font(x,y,_damege)
 }

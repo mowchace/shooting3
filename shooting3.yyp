@@ -34,6 +34,7 @@
     {"id":{"name":"SE_gun_brust01","path":"sounds/SE_gun_brust01/SE_gun_brust01.yy",},"order":4,},
     {"id":{"name":"SE_gore06","path":"sounds/SE_gore06/SE_gore06.yy",},"order":1,},
     {"id":{"name":"obj_par_enemy","path":"objects/obj_par_enemy/obj_par_enemy.yy",},"order":3,},
+    {"id":{"name":"SE_bullet_reflect","path":"sounds/SE_bullet_reflect/SE_bullet_reflect.yy",},"order":9,},
     {"id":{"name":"SE_gun_machingun","path":"sounds/SE_gun_machingun/SE_gun_machingun.yy",},"order":8,},
     {"id":{"name":"SE_canon","path":"sounds/SE_canon/SE_canon.yy",},"order":3,},
     {"id":{"name":"spr_textbox_bg1","path":"sprites/spr_textbox_bg1/spr_textbox_bg1.yy",},"order":8,},
@@ -191,7 +192,7 @@
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"PlayerData.csv","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2.3.6.595",
+    "IDEVersion": "2.3.7.603",
   },
   "resourceVersion": "1.4",
   "name": "shooting3",

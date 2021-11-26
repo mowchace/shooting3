@@ -40,7 +40,13 @@ function create_attack(_objType,_atk,_dir,_spd,_faction,_id,_player_hide_state){
 			create_particles(_XX2,_YY2,_dir,"obj_par_bullet");
 			play_sound_after(SE_ammo,room_speed/2);
 		}break;
-		case obj_missile: audio_play_sound(SE_canon,1,0);break;
+		case obj_missile:{
+			audio_play_sound(SE_canon,1,0);
+		}break;
+		case obj_bullet: {
+			audio_play_sound(SE_bullet_reflect,1,0);
+			_objType = obj_bullet;
+		}break;
 	}
 	
 	_inst = instance_create_layer(x,y-5,"Instances",_objType);
