@@ -51,7 +51,7 @@ function create_attack(_objType,_atk,_dir,_spd,_faction,_id,_player_hide_state){
 	with (_inst){
 		direction = _dir;
 		image_angle = _dir;
-		speed = _spd;
+		baseSpeed = _spd;
 		attack = _atk;
 		faction = _faction;
 		creater = _id;

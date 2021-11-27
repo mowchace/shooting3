@@ -12,7 +12,10 @@ if(keyboard_check_pressed(vk_space)){
 		if(instance_exists(obj_textQueued)){
 			with(obj_textQueued){ticket--;}
 		}else{
-			with(obj_player){state = laststate;}
+			/*with(obj_player){state = laststate;}
+			with(obj_par_enemy){state = laststate;}
+			*/
+			global.gamePaused = false;
 		}
 	}else{
 		if(textProgress > 2){

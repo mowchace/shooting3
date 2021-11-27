@@ -18,17 +18,19 @@ function newTextBox(_textmessage,_background){
 		}else{
 			background = 0;
 		}
-		with(obj_player){
-			if(state != stateLocked){
-				laststate = state;
-				state = stateLocked;
-			}
-		}
-		with(obj_par_enemy){
-			if(state != states.stop){
-				laststate = state;
-				state = states.stop;
-			}
+	}
+	global.gamePaused = true;
+	/*with(obj_player){
+		if(state != stateLocked){
+			laststate = state;
+			state = stateLocked;
 		}
 	}
+	with(obj_par_enemy){
+		if(state != states.stop){
+			laststate = state;
+			state = states.stop;
+		}
+	}
+	*/
 }
