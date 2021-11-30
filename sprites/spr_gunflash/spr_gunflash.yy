@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "effect",
-    "path": "folders/Sprites/effect.yy",
+    "name": "particles",
+    "path": "folders/Sprites/effect/particles.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_gunflash",

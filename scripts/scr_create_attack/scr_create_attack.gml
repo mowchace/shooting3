@@ -43,6 +43,9 @@ function create_attack(_objType,_atk,_dir,_spd,_faction,_id,_player_hide_state){
 		case obj_missile:{
 			audio_play_sound(SE_canon,1,0);
 		}break;
+		case obj_par_bomb:{
+			audio_play_sound(SE_bomb2,1,0);
+		}break;
 		case obj_reflect: {
 			audio_play_sound(SE_bullet_reflect,1,0);
 		}break;
