@@ -18,7 +18,7 @@ part_type_life(partTypeExhaust,20,20);
 // Explode
 partTypeExplode = part_type_create();
 part_type_sprite(partTypeExplode,spr_bomb,true,true,true);
-part_type_size(partTypeExplode,.1,1,.05,0);
+part_type_size(partTypeExplode,1,3,.05,0);
 part_type_alpha2(partTypeExplode,1,0);
 part_type_life(partTypeExplode,5,10);
 
