@@ -15,7 +15,8 @@ input_Down = keyboard_check(ord("S"));
 
 input_run = keyboard_check(vk_shift);
 input_hide = keyboard_check(vk_control);
-input_action = keyboard_check(vk_space);
+input_action = keyboard_check_pressed(vk_space);
+input_action_other = keyboard_check_pressed(ord("E"));
 if(keyboard_check_pressed(ord("Z"))){global.pickupmode = !global.pickupmode}
 
 // RESET MOVE VARIABLES
@@ -41,6 +42,23 @@ if(input_action){
 	state = playerstate_roll;
 	moveDistanceRemaining = roll_distance;
 }
+// Activekey logic
+if(input_action_other){
+	var _activateX = lengthdir_x(10,direction);
+	var _activateY = lengthdir_y(30,direction);
+	activate = instance_position(x+_activateX,y+_activateY,obj_par_entities);
+	
+	if(activate != noone && activate.entityActivateScript != -1){
+		scr_ExcuteArray(activate.entityActivateScript,activate.entityActivateArgs);
+		// Make an npc face the player
+		if(activate.entityNPC){
+			with(activate){
+				direction = point_direction(x,y,other.x,other.y);
+				image_index = CARDINAL_DIR;
+			}
+		}
+	}
+}
 script_execute(state);
 
 // don't shoot pickupmode or showinventorymode
@@ -65,8 +83,8 @@ if(!global.show_inventory){
 cooldown -= 1;
 powerfullcooldown -= 1;
 snipecooldown -= 1;
-
 move_wrap(true,true,0)
+depth = -bbox_bottom;
 //global.playerHP = HP
 if(HP <= 0){
 	instance_destroy();

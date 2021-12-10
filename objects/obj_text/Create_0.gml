@@ -11,3 +11,6 @@ lerpProgress = 0;
 textProgress = 0;
 
 background = 0;
+
+responses = ["RESPONSE A","RESPONSE B"];
+responseSelected = 0;

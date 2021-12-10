@@ -30,7 +30,6 @@ if(exhaustCounter >= 5 && spd != 0 && !input_hide){
 	exhaustCounter = 0;
 }
 
-
 x += moveX;
 y += moveY;
 

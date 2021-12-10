@@ -1,12 +1,15 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_signpost",
+    "path": "sprites/spr_signpost/spr_signpost.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_par_entities",
-    "path": "objects/obj_par_entities/obj_par_entities.yy",
+    "name": "obj_par_nutral",
+    "path": "objects/obj_par_nutral/obj_par_nutral.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -22,23 +25,15 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
-  "properties": [
-    {"varType":6,"value":"\"Normal\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
-        "\"Normal\"",
-        "\"Slime\"",
-        "\"Iron\"",
-        "\"Magic\"",
-      ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"AttributeType","tags":[],"resourceType":"GMObjectProperty",},
-  ],
+  "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "gameobject",
-    "path": "folders/Objects/gameobject.yy",
+    "name": "nutral",
+    "path": "folders/Objects/gameobject/nutral.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_faction",
+  "name": "obj_signpost",
   "tags": [],
   "resourceType": "GMObject",
 }
