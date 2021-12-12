@@ -61,22 +61,27 @@ if(input_action_other){
 }
 script_execute(state);
 
-// don't shoot pickupmode or showinventorymode
 
+attack_positionX = x;
+attack_positionY = y-5;
+attack_particlepositionX = x;
+attack_particlepositionY = y-sprite_height/3;
+
+// don't shoot pickupmode or showinventorymode
 if(!global.show_inventory){
 	// Shoot
 	direction = point_direction(x,y,mouse_x,mouse_y);
 	if (mouse_check_button(mb_left) && cooldown < 1) {
-		create_attack(obj_bullet,RangeATK,direction,bltspd,faction,id,input_hide);
+		create_attack(obj_bullet,RangeATK,direction,bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
 		cooldown = 5;
 		}
 	if (mouse_check_button(mb_right) && powerfullcooldown < 1) {
-		create_attack(obj_missile,RangeATK,direction,bltspd,faction,id,input_hide);
+		create_attack(obj_missile,RangeATK,direction,bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
 		powerfullcooldown = 30;
 	}
 	if (mouse_check_button(mb_middle) && snipecooldown < 1) {
 		var _bltspd = 20;
-		create_attack(obj_snipe,RangeATK,direction,_bltspd,faction,id,input_hide);
+		create_attack(obj_snipe,RangeATK,direction,_bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
 		snipecooldown = 30;
 	}
 }

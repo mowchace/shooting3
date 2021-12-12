@@ -98,5 +98,6 @@ x_offset = sprite_get_xoffset(mask_index);
 y_offset = sprite_get_yoffset(mask_index);
 x_frame = 0;
 y_frame = 0;
+
 returnflug = false;
 Row = 0;

@@ -1,23 +1,23 @@
-var _flameheight = 60;
-var _XX = x-x_offset;
-var _YY = y-y_offset;
+//var _flameheight = 60;
+//var _XX = x-x_offset;
+//var _YY = y-y_offset;
+
 switch(state){
 	case states.idle:
 		sprite_index = spr_enemy4_idle;
-		draw_self();
+	break;
+	case states.wander:
+		sprite_index = spr_enemy4_idle;
 	break;
 	case states.alert:
 		sprite_index = spr_enemy4_alert;
-		draw_self();
 	break;
 	case states.attack:
 		sprite_index = spr_enemy4_attack;
-		draw_self();
 	break;
-	default:
-		spr_base = spr_enemy4_alert;
-		var _animelength = 6;
-		var _flamewidh = 75;
+		//spr_base = spr_enemy4_alert;
+		//var _animelength = 6;
+		//var _flamewidh = 75;
 
 	//	if(instance_exists(obj_player)){
 	//		if (direction > 45 && direction <= 135) {
@@ -57,9 +57,11 @@ switch(state){
 	//		else						{returnflug = !returnflug;}
 	//	}
 	//draw_rectangle_color(bbox_left,bbox_top,bbox_right,bbox_bottom,c_yellow,c_yellow,c_yellow,c_yellow,true);
-	break;
+}
+if(moveX != 0){
+	image_xscale = -sign(moveX);
 }
 if(HP <= HP/3){
 	sprite_index = spr_enemy4_damage;
-	draw_self();
 }
+draw_self();

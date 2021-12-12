@@ -67,6 +67,7 @@
     {"id":{"name":"obj_bomb","path":"objects/obj_bomb/obj_bomb.yy",},"order":0,},
     {"id":{"name":"obj_text","path":"objects/obj_text/obj_text.yy",},"order":10,},
     {"id":{"name":"obj_enemy2","path":"objects/obj_enemy2/obj_enemy2.yy",},"order":1,},
+    {"id":{"name":"spr_enemy4_mask","path":"sprites/spr_enemy4_mask/spr_enemy4_mask.yy",},"order":6,},
     {"id":{"name":"spr_inventory_equipmentItem_item","path":"sprites/spr_inventory_equipmentItem_item/spr_inventory_equipmentItem_item.yy",},"order":3,},
     {"id":{"name":"spr_siba","path":"sprites/spr_siba/spr_siba.yy",},"order":6,},
     {"id":{"name":"scr_ExcuteArray","path":"scripts/scr_ExcuteArray/scr_ExcuteArray.yy",},"order":19,},

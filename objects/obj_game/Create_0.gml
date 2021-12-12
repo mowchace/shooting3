@@ -15,8 +15,9 @@ enum factions {
 }
 
 enum enemys{
-	enemy1 = obj_enemy2, 
+	enemy1 = obj_enemy1, 
 	enemy2 = obj_enemy2, 
-	enemy3 = obj_enemy3 
+	enemy3 = obj_enemy3,
+	enemy4 = obj_enemy4,
 }
 //surface_resize(application_surface,RESOLUTION_W,RESOLUTION_H);

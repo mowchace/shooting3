@@ -14,7 +14,7 @@ with(other){
 	alert_time = room_speed;
 	create_emotion(emotion.alertextensyon);
 	if(attribute == "Iron"){
-		create_attack(obj_reflect,_damegepoint/2,-other.direction+irandom_range(-45,45),other.speed,faction,id,noone);
+		create_attack(obj_reflect,_damegepoint/2,-other.direction+irandom_range(-45,45),other.speed,faction,id,noone,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
 	}
 }
 instance_destroy();

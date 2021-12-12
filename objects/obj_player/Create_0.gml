@@ -33,6 +33,8 @@ Row = 0;
 y_frame = 0;
 returnflug = false;
 
+
+
 damegeinvisibletime = 5;
 invisibletimecool = 5;
 
