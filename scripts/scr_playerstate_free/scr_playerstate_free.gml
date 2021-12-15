@@ -19,7 +19,7 @@ if (moveX = 0 && moveY = 0) {
 
 
 //Collision check
-Collision();
+Collision(throu_flag);
 
 
 // APLLY MOVEMENT

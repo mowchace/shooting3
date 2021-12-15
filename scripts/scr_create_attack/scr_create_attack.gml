@@ -57,8 +57,8 @@ function create_attack(_objType,_atk,_dir,_spd,_faction,_id,_player_hide_state,_
 		attack = _atk;
 		faction = _faction;
 		creater = _id;
+		hideattack = _player_hide_state;
 		if(faction == factions.enemy) image_blend = c_red;
-		if(_player_hide_state == true) hideattack = true;
 	}
 	//if(_objType != "meeleattack"){
 	//	var _inst = instance_create_layer(x,y-5,"Instances",obj_gunflash);

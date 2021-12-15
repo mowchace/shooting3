@@ -4,8 +4,8 @@ function playerstate_roll(){
 	moveY = lengthdir_y(inputmagnitude*roll_speed,inputDirection);
 	moveDistanceRemaining = max(0,moveDistanceRemaining-roll_speed);
 	//Collision check
-	Collision();
-	var _collided = Collision();
+	throu_flag = 0;
+	var _collided = Collision(throu_flag);
 	
 	//Update sprite
 	//sprite_index = spriteRoll;
@@ -13,8 +13,15 @@ function playerstate_roll(){
 	//image_index = (CARDINAL_DIR * _totalFrames) + ((1-(moveDistanceRemaining/roll_distance)))*_totalFrames;
 	x += moveX;
 	y += moveY;
+	throu_flag = 1;
 	//Change state
 	if(moveDistanceRemaining <= 0){
 		state = playerstate_free;
+	}
+	
+	if(_collided){
+		//state = playerstate_bonk;
+		//moveDistanceRemaining = distanceBonk;
+		global.cameraShake = 4;
 	}
 }

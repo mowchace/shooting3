@@ -9,6 +9,7 @@ r_spd = 1.3;
 spd = w_spd;
 exhaustCounter = 0;
 flash = 0;
+throu_flag = 1;
 
 healthbar_width = 10;
 healthbar_height = 2;
@@ -101,3 +102,6 @@ y_frame = 0;
 
 returnflug = false;
 Row = 0;
+
+// SE
+deth_SE = SE_gore06;

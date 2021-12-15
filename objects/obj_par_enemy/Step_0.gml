@@ -88,7 +88,7 @@ if(entityNPC != true){
 	if(!cooltime <= 0){cooltime -= 1;}
 }
 //Collision check
-Collision();
+Collision(throu_flag);
 
 x += moveX;
 y += moveY;
@@ -108,7 +108,6 @@ if(exhaustCounter >= 10 && spd != 0 && state != states.idle && state != states.w
 }
 
 if(HP <= 0){
-	audio_play_sound(SE_gore06,1,0);
 	instance_destroy();
 }
 move_wrap(true,true,0);

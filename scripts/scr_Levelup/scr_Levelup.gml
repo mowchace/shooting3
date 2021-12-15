@@ -9,7 +9,7 @@ function Levelup(){
 	Satiety += irandom_range(0,30);
 	Strength += irandom_range(0,30);
 	Endurance += irandom_range(0,30);
-	Dexterity += irandom_range(0,30);
+	Dexterity += irandom_range(0,3000);
 	Perception += irandom_range(0,30);
 	Master += irandom_range(0,30);
 	Will += irandom_range(0,30);

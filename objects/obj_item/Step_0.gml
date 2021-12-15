@@ -89,7 +89,7 @@ if(drop_move){
 				}
 				#endregion
 				instance_destroy();
-				show_debug_message("picked up")
+				//show_debug_message("picked up")
 			}
 		}
 	}

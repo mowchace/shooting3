@@ -27,6 +27,7 @@ healthbar_y = 5+draw_base_y;
 cooldown = 0;
 powerfullcooldown = 0;
 snipecooldown = 0;
+throu_flag = 1;
 
 x_frame = 0;
 Row = 0;

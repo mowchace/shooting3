@@ -12,6 +12,8 @@ if((direction > 315 || direction <= 45) || (direction > 135 && direction <= 225)
 with(other){
 	if(attribute == "Iron"){
 		create_attack(obj_reflect,_damegepoint/2+Dexterity_MeeleeATK,-other.direction+irandom_range(-45,45),other.speed,faction,id,noone,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
+	}else{
+		audio_play_sound(hit_SE,0,0);
 	}
 }
 instance_destroy();
