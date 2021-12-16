@@ -5,8 +5,9 @@ function deth_spr(_spr,_bomb_num){
 		if(_bomb_num != 0){
 			bomb_flag = true;
 			obj = obj_par_bomb;
+			ATK = (other.DEF+other.attack)*5;
 			spd = other.Attackspeed;
-			faction = other.faction
+			faction = noone;
 			creater = other.id;
 		}
 	}
