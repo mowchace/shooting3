@@ -10,7 +10,7 @@ function spawn_off_camera(_spawnObj,_spawnnum){
 				global.cameraX+global.cameraWidth+_padding,
 				global.cameraY+global.cameraHeight+_padding)
 				|| position_meeting(_XX,_YY,obj_faction) 
-				|| position_meeting(_XX,_YY,obj_collision)
+				|| position_meeting(_XX,_YY,obj_par_entities)
 				//|| !position_empty(_XX,_YY)
 				)
 			{			

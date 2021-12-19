@@ -39,8 +39,10 @@ inputmagnitude = (input_Right-input_Left != 0) || (input_Down-input_Up != 0);
 
 // Change state
 if(input_action){
-	state = playerstate_roll;
-	moveDistanceRemaining = roll_distance;
+	if(state != playerstate_bonk){
+		state = playerstate_roll;
+		moveDistanceRemaining = roll_distance;
+	}
 }
 // Activekey logic
 if(input_action_other){
@@ -61,11 +63,9 @@ if(input_action_other){
 }
 script_execute(state);
 
-
-attack_positionX = x;
-attack_positionY = y-5;
-attack_particlepositionX = x;
-attack_particlepositionY = y-sprite_height/3;
+x += moveX;
+y += moveY;
+move_shadow();
 
 // don't shoot pickupmode or showinventorymode
 if(!global.show_inventory){

@@ -16,7 +16,7 @@ function enemy_state_idle(){
 		if(_range <= range_base/4){_range = range_base/4};
 		// something find
 		if(collision_circle(x,y,_range,obj_player,0,0)){
-			var _inst1 = collision_line(x, y, obj_par_ally.x, obj_par_ally.y, obj_collision, false, true);
+			var _inst1 = collision_line(x, y, obj_par_ally.x, obj_par_ally.y, obj_par_nutral, false, true);
 			if(_inst1 == noone){
 				state = states.alert;
 			}

@@ -1,3 +1,4 @@
+event_inherited();
 //var _flameheight = 60;
 //var _XX = x-x_offset;
 //var _YY = y-y_offset;

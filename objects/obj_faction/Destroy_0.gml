@@ -1,0 +1,1 @@
+instance_destroy(collision_instance_id);

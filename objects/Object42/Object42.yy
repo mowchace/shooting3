@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_collision",
-    "path": "sprites/spr_collision/spr_collision.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -24,11 +21,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "meta",
-    "path": "folders/Objects/meta.yy",
+    "name": "shooting3",
+    "path": "shooting3.yyp",
   },
   "resourceVersion": "1.0",
-  "name": "obj_collision",
+  "name": "Object42",
   "tags": [],
   "resourceType": "GMObject",
 }

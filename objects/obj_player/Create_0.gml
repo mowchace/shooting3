@@ -10,9 +10,13 @@ n_spd = 5;
 w_spd = 0.5;
 r_spd = 1.3;
 roll_speed = 10;
-roll_distance = 52;
-exhaustCounter = 0;
+roll_distance = 64;
+bonk_speed = 2;
+bonk_distance = 64;
+bonk_distanceheight = 24;
+z = 0;
 
+exhaustCounter = 0;
 animespeed = 10;
 
 draw_base_x = 5;

@@ -1,4 +1,5 @@
 /// @description
+event_inherited();
 audio_play_sound(deth_SE,1,0);
 switch(attribute){
 	case "Iron": create_particles(x,y,180,"obj_rock");break;

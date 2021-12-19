@@ -37,11 +37,12 @@ if(entityNPC != true){
 			var _deg = darccos(_dot);
 			// player find
 			if(_view_range > _deg){
-				var inst = collision_line(x, y, obj_par_ally.x, obj_par_ally.y, obj_collision, false, true);
+				//var inst = collision_line(x, y, obj_par_ally.x, obj_par_ally.y, obj_collision, false, true);
 				var inst2 = collision_line(x, y, obj_par_ally.x, obj_par_ally.y, obj_par_enemy, false, true);
 				var inst3 = collision_line(x, y, obj_par_ally.x, obj_par_ally.y, obj_par_nutral, false, true);
 				var _dir = point_direction(x,y,obj_par_ally.x,obj_par_ally.y)
-				if(inst == noone && inst2 == noone && inst3 == noone){
+				//if(inst == noone && inst2 == noone && inst3 == noone){
+				if(inst2 == noone && inst3 == noone){
 					if(state == states.idle || state == states.wander){create_emotion(emotion.question);}
 					else if(state == states.alert){create_emotion(emotion.alertextensyon);}
 					else if(state == states.attack){create_emotion(emotion.attackextensyon);}
@@ -92,11 +93,7 @@ Collision(throu_flag);
 
 x += moveX;
 y += moveY;
-
-attack_positionX = x;
-attack_positionY = y-5;
-attack_particlepositionX = x;
-attack_particlepositionY = y-sprite_height/3;
+move_shadow();
 
 // APLLY MOVEMENT
 

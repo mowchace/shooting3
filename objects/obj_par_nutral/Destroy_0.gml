@@ -1,3 +1,4 @@
+event_inherited();
 create_particles(x,y,0,particleName);
 if(create_instance != noone){
 	destroy_create_enemy(x,y,create_instance,respawn_instance_num)

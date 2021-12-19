@@ -7,10 +7,7 @@ if(global.gamePaused){
 	animespeed = 1;
 }
 
-attack_positionX = x;
-attack_positionY = y-5;
-attack_particlepositionX = x;
-attack_particlepositionY = y-sprite_height/3;
+attack_position_change();
 
 if(HP <= 0){
 	audio_play_sound(SE,1,0);

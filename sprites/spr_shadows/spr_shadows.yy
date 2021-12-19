@@ -2,7 +2,7 @@
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
-  "origin": 9,
+  "origin": 4,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
@@ -15,7 +15,7 @@
   "VTile": false,
   "For3D": false,
   "width": 14,
-  "height": 20,
+  "height": 5,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"62bc876a-1bc8-44cb-9e77-8ec7bc8caf84","path":"sprites/spr_shadow/spr_shadow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"62bc876a-1bc8-44cb-9e77-8ec7bc8caf84","path":"sprites/spr_shadow/spr_shadow.yy",},"LayerId":{"name":"6c577def-7592-48e2-bd84-e7b3f41e9d75","path":"sprites/spr_shadow/spr_shadow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_shadow","path":"sprites/spr_shadow/spr_shadow.yy",},"resourceVersion":"1.0","name":"62bc876a-1bc8-44cb-9e77-8ec7bc8caf84","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"caf14fce-b5fd-4b7b-865e-3439a2d37af0","path":"sprites/spr_shadows/spr_shadows.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"caf14fce-b5fd-4b7b-865e-3439a2d37af0","path":"sprites/spr_shadows/spr_shadows.yy",},"LayerId":{"name":"6c577def-7592-48e2-bd84-e7b3f41e9d75","path":"sprites/spr_shadows/spr_shadows.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_shadows","path":"sprites/spr_shadows/spr_shadows.yy",},"resourceVersion":"1.0","name":"caf14fce-b5fd-4b7b-865e-3439a2d37af0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_shadow","path":"sprites/spr_shadow/spr_shadow.yy",},
+    "spriteId": {"name":"spr_shadows","path":"sprites/spr_shadows/spr_shadows.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"92bf2ed3-d885-4e17-aa47-d8bd8abce207","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"62bc876a-1bc8-44cb-9e77-8ec7bc8caf84","path":"sprites/spr_shadow/spr_shadow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"66ccf503-ce23-4c51-9d08-dc47a043bcf3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"caf14fce-b5fd-4b7b-865e-3439a2d37af0","path":"sprites/spr_shadows/spr_shadows.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -55,12 +55,12 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 7,
-    "yorigin": 18,
+    "yorigin": 2,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_shadow","path":"sprites/spr_shadow/spr_shadow.yy",},
+    "parent": {"name":"spr_shadows","path":"sprites/spr_shadows/spr_shadows.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_shadow",
+    "name": "spr_shadows",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -97,7 +97,7 @@
     "path": "folders/Sprites/object.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_shadow",
+  "name": "spr_shadows",
   "tags": [],
   "resourceType": "GMSprite",
 }

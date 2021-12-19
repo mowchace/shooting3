@@ -13,11 +13,11 @@ if(drop_move){
 	// item pickup if exists item in player pickup rectangle
 	if(point_in_rectangle(_px,_py,x-_r,y-_r,x+_r,y+_r)){
 		//ARE WE ON TOP OF THE PLAYER?
-		_r = 2;
+		//_r = 2;
 		if (!point_in_rectangle(_px,_py,x-_r,y-_r,x+_r,y+_r)){
 			// move towards the player for pickup
-			x = lerp(x,_px,0.3);
-			y = lerp(y,_py,0.3);
+			//x = lerp(x,_px,0.3);
+			//y = lerp(y,_py,0.3);
 		} else {
 			// item pickup
 			var _item = item_spr_num;
