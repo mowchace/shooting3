@@ -17,6 +17,7 @@ function create_particles(_XX,_YY,_dir,_objTypeName){
 											part_type_orientation(partTypegunflash, _dir, _dir, 5, 5, true);break
 					case "obj_gunhit":	part_particles_create(partSys,_XX,_YY,partTypegunhit,1);
 										part_system_depth(partSys,-10);break
+					case "obj_punch": part_particles_create(partSys,_XX,_YY,partTypepunch,1);break;
 				}
 	}
 }

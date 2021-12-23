@@ -23,7 +23,7 @@ if (moveX = 0 && moveY = 0) {
 }
 
 // DRAW SPRITE
-draw_sprite_part(spr_player,0,floor(x_frame)*_flamewidh,y_frame*_flameheight,_flamewidh,_flameheight,floor(_XX),floor(_YY-z));
+draw_sprite_part(spr_player,0,floor(x_frame)*_flamewidh,floor(y_frame)*_flameheight,_flamewidh,_flameheight,floor(_XX),floor(_YY-z));
 
 // INCRIMENT FRAME ANIMATION
 if(!returnflug){

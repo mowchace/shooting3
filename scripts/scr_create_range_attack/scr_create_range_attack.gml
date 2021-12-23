@@ -1,4 +1,4 @@
-function create_attack(_objType,_atk,_dir,_spd,_faction,_id,_player_hide_state,_attackpositionX,_attackpositionY,_attackparticlepositionX,_attackparticlepositionY){
+function create_range_attack(_objType,_atk,_dir,_spd,_faction,_id,_player_hide_state,_attackpositionX,_attackpositionY,_attackparticlepositionX,_attackparticlepositionY){
 	// Empty cartridge case
 	var _X_plus = lengthdir_x(sprite_width/2,_dir);
 	var _Y_plus = lengthdir_y(sprite_height/3,_dir);

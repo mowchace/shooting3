@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_create_attack",
+  "name": "scr_create_range_attack",
   "tags": [],
   "resourceType": "GMScript",
 }

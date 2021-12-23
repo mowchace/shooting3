@@ -1,5 +1,5 @@
 /// @description Set no Motion
-damegePoint = 0;
+damegePoint = random_range(damegePoint_min,damegePoint_max);
 attack = 0;
 baseSpeed = speed;
 life = room_speed*LifeTime;

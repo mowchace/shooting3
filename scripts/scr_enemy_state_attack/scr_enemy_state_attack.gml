@@ -23,13 +23,13 @@ function enemy_state_attack(){
 			if(collision_circle(x,y,range_base,obj_player,0,0)){
 				// Melee attack
 				if(cooltime <= 0){
-					create_attack(Meelatktype1,attack,_dir,atkspd,faction,id,noone,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
+					create_range_attack(Meelatktype1,attack,_dir,atkspd,faction,id,noone,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
 					cooltime = cooldown/3;	
 				}
 			} else {
 				// Ranged attack
 				if(cooltime <= 0){
-					create_attack(Rangeatktype1,attack,_dir,atkspd,faction,id,noone,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
+					create_range_attack(Rangeatktype1,attack,_dir,atkspd,faction,id,noone,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
 					cooltime = cooldown;
 				}
 			}

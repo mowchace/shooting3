@@ -1,1 +1,1 @@
-instance_destroy(collision_instance_id);
+instance_destroy(shadow_instance_id);

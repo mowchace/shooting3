@@ -14,7 +14,6 @@ function playerstate_bonk(){
 	//y += moveY;
 	//Change height
 	z = sin((moveDistanceRemaining/bonk_distance)*pi)*bonk_distanceheight;
-	//Change state
 	if(moveDistanceRemaining <= 0){
 		state = playerstate_free;
 	}

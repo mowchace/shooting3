@@ -1,1 +1,1 @@
-draw_sprite_ext(spr_shadows,0,x,y,Xscal,Yscal,0,0,1)
+draw_sprite_ext(spr_shadows,0,floor(x),floor(y-z),Xscal,Yscal,0,0,1)
