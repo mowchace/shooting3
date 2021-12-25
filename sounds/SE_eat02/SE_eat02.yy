@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.1,
   "preload": false,
@@ -13,8 +14,8 @@
   "soundFile": "SE_eat02.ogg",
   "duration": 1.34356,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "SE",
+    "path": "folders/Sounds/SE.yy",
   },
   "resourceVersion": "1.0",
   "name": "SE_eat02",

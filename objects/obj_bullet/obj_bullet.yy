@@ -28,6 +28,7 @@
   "overriddenProperties": [
     {"propertyId":{"name":"animationnum","path":"objects/obj_par_attack/obj_par_attack.yy",},"objectId":{"name":"obj_par_attack","path":"objects/obj_par_attack/obj_par_attack.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"damegePoint_max","path":"objects/obj_par_attack/obj_par_attack.yy",},"objectId":{"name":"obj_par_attack","path":"objects/obj_par_attack/obj_par_attack.yy",},"value":"1.5","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"Characteristic","path":"objects/obj_par_attack/obj_par_attack.yy",},"objectId":{"name":"obj_par_attack","path":"objects/obj_par_attack/obj_par_attack.yy",},"value":"\"normal\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "atk",

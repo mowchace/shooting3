@@ -28,7 +28,7 @@
   ],
   "properties": [
     {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"animationnum","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":1,"value":"1","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"LifeTime","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":1,"value":"60","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"LifeTime","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":6,"value":"\"Armor piercer \"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
         "\"normal\"",
         "\"Armor piercer \"",

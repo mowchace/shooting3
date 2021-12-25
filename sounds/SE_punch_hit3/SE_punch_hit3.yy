@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.3,
+  "volume": 0.5,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "SE_canon.wav",
-  "duration": 0.325156,
+  "soundFile": "SE_punch_hit3.mp3",
+  "duration": 0.444082,
   "parent": {
     "name": "attack",
     "path": "folders/Sounds/SE/attack.yy",
   },
   "resourceVersion": "1.0",
-  "name": "SE_canon",
+  "name": "SE_punch_hit3",
   "tags": [],
   "resourceType": "GMSound",
 }

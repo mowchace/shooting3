@@ -72,7 +72,16 @@ if(!global.show_inventory){
 	// Shoot
 	direction = point_direction(x,y,mouse_x,mouse_y);
 	if (mouse_check_button(mb_left) && cooldown < 1) {
-		create_melee_attack(obj_punch,Strength_MeeleeATK,direction,0,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
+		switch(Equipment_weapon_1){
+			case "obj_punch":{
+				show_debug_message(Strength)
+				show_debug_message(StrengthPlus)
+				create_melee_attack(asset_get_index(Equipment_weapon_1),Strength_MeleeATK,direction,0,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
+			}break;
+			default:{
+				create_range_attack(asset_get_index(Equipment_weapon_1),RangeATK,direction,bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
+			}break
+		}
 		cooldown = 5;
 		}
 	if (mouse_check_button(mb_right) && powerfullcooldown < 1) {

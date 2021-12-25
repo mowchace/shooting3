@@ -15,7 +15,7 @@
   "duration": 1.056,
   "parent": {
     "name": "attack",
-    "path": "folders/Sounds/attack.yy",
+    "path": "folders/Sounds/SE/attack.yy",
   },
   "resourceVersion": "1.0",
   "name": "SE_gunhit_metal1",

@@ -1,4 +1,5 @@
 /// @description
+/*
 draw_text(draw_base_x,1,"Level:"+string(Level))
 draw_text(draw_base_x,draw_base_y,"EXP:"+string(EXP))
 draw_text(draw_base_x,draw_base_y*2,"NextLevelEXP:"+string(NextLevelEXP))

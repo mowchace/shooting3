@@ -14,8 +14,8 @@
   "soundFile": "SE_elona_crush.wav",
   "duration": 0.673288,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "SE",
+    "path": "folders/Sounds/SE.yy",
   },
   "resourceVersion": "1.0",
   "name": "SE_elona_crush",

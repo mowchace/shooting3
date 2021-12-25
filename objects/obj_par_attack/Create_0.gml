@@ -1,8 +1,9 @@
 /// @description Set no Motion
 damegePoint = random_range(damegePoint_min,damegePoint_max);
+damegePoint_Calculated_value = 0;
 attack = 0;
 baseSpeed = speed;
-life = room_speed*LifeTime;
+life = LifeTime;
 faction = undefined;
 creater = undefined;
 hideattack = false;

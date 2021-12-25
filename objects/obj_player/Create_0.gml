@@ -65,6 +65,7 @@ ds_grid_value_exists(ds_characterData, 0, 0, 0, ds_grid_height(ds_characterData)
 	_YY = ds_grid_value_y(ds_characterData, 0, 0, 0, ds_grid_height(ds_characterData), CharacterDataID);
 	Name = ds_characterData[# _XX++,_YY];
 	Level = ds_characterData[# _XX++,_YY];
+	Equipment_weapon_1 = ds_characterData[# _XX++,_YY];
 	MaxHP = ds_characterData[# _XX++,_YY];
 	MaxHPPlus = ds_characterData[# _XX++,_YY];
 	HP = ds_characterData[# _XX++,_YY];
@@ -156,8 +157,8 @@ Equipment_RangeATK_point = 0;
 Equipment_DEF_point = 0;
 Equipment_PRO_point = 0;
 // 攻撃
-Strength_MeeleeATK = ((Strength+StrengthPlus)+(Dexterity+DexterityPlus)/10)+(Strength+StrengthPlus)/10*Equipment_StrengthMeleeATK_point;
-Dexterity_MeeleeATK = (Strength+StrengthPlus)/10+(Dexterity+DexterityPlus)/10*Equipment_DexterityMeleeATK_point;
+Strength_MeleeATK = ((Strength+StrengthPlus)+(Dexterity+DexterityPlus)/10)+(Strength+StrengthPlus)/10*Equipment_StrengthMeleeATK_point;
+Dexterity_MeleeATK = (Strength+StrengthPlus)/10+(Dexterity+DexterityPlus)/10*Equipment_DexterityMeleeATK_point;
 RangeATK = ((Dexterity+DexterityPlus)+(Perception+PerceptionPlus))+Equipment_RangeATK_point;
 //　防御
 DEF = (Endurance+EndurancePlus)+Equipment_DEF_point;

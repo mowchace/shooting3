@@ -11,7 +11,7 @@ function create_melee_attack(_objType,_atk,_dir,_spd,_faction,_id,_player_hide_s
 	var _inst,_spr,_width,_height;
 	switch (_objType){
 		case obj_punch: {
-			audio_play_sound(SE_gun_machingun,1,0);
+			audio_play_sound(SE_punch,1,0);
 			_spr = spr_punching;
 			_width = sprite_get_width(_spr)/2;
 			_height = sprite_get_height(_spr)/2;

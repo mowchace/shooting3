@@ -1,6 +1,6 @@
 ItemID,Name,Type,Weight,MaxHP,HP,MaxMP,MP,MaxSatiety,Satiety,Strength,Endurance,Dexterity,Perception,Master,Will,Magical_power,Charisma,Agility,Luck,Stamina,Description
 0,Nothing,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"""Nothing"""
-1,Tomato,1,0.1,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"""It's red vegiable"""
+1,Tomato,1,0.1,0,10,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,"""It's red vegiable"""
 2,Potato,1,0.1,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 3,Carrot,1,0.1,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 4,Artichoke,1,0.1,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -11,8 +11,8 @@ ItemID,Name,Type,Weight,MaxHP,HP,MaxMP,MP,MaxSatiety,Satiety,Strength,Endurance,
 9,Stone,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 10,Bucket,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 11,Chair,3,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-12,Picture,3,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-13,Axe,2,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+12,Picture,2,0.1,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,
+13,Axe,2,5,100,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,100,
 14,Potion,1,0.1,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 15,Starfish,1,0.1,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 16,Mushroom,1,0.5,0,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,

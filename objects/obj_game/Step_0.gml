@@ -5,6 +5,8 @@ switch(room){
 		if(keyboard_check_pressed(vk_enter)){room_goto(rm_game);}
 		break;
 	case rm_game:
-		if (keyboard_check_pressed(ord("R"))) {room_restart();}
+		if (keyboard_check_pressed(ord("R"))) {
+			audio_stop_sound(bgm_mm2battle);
+			room_restart();}
 		break;
 }

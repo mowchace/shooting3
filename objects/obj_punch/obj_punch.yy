@@ -23,9 +23,13 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"LifeTime","path":"objects/obj_par_attack/obj_par_attack.yy",},"objectId":{"name":"obj_par_attack","path":"objects/obj_par_attack/obj_par_attack.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "atk",
     "path": "folders/Objects/gameobject/effect/atk.yy",

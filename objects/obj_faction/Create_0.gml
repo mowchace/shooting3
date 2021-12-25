@@ -11,4 +11,9 @@ with(shadow_instance_id){
 	Yscal = other.Shadow_Yscal;
 }
 
+attack_positionX = 0;
+attack_positionY = 0;
+attack_particlepositionX = 0;
+attack_particlepositionY = 0;
+
 health_bar_draw = false;

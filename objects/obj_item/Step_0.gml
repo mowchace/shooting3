@@ -83,7 +83,7 @@ if(drop_move){
 							// Item num
 							_not_grid[# 0,_grid_height] = _item_num;
 							// Item Name
-							_not_grid[# 1,_grid_height] = obj_inventory.ds_items_info[# 1,_item];
+							_not_grid[# 1,_grid_height] = obj_inventory.ds_items_info[# 1,_item+1];
 						}
 					}
 				}
