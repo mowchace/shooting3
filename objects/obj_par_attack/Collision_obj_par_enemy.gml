@@ -8,7 +8,6 @@ if((direction > 315 || direction <= 45) || (direction > 135 && direction <= 225)
 	direction += 180;
 }
 with(other){
-	health_bar_draw = true;
 	range_plus = 30;
 	spd = n_spd;
 	alert_flag = true;

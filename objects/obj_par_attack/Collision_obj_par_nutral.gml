@@ -8,7 +8,6 @@ if((direction > 315 || direction <= 45) || (direction > 135 && direction <= 225)
 	direction += 180;
 }
 with(other){
-	health_bar_draw = true;
 	if(attribute == "Iron"){
 		if(other.Characteristic == "normal"){
 			other.damegePoint_Calculated_value /= 2;
