@@ -1,14 +1,11 @@
 {
   "spriteId": {
-    "name": "spr_enemy4_alert",
-    "path": "sprites/spr_enemy4_alert/spr_enemy4_alert.yy",
+    "name": "spr_shadows",
+    "path": "sprites/spr_shadows/spr_shadows.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "spr_enemy4_mask",
-    "path": "sprites/spr_enemy4_mask/spr_enemy4_mask.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
     "name": "obj_par_enemy",

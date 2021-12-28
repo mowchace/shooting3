@@ -34,8 +34,7 @@ if (moveX = 0 && moveY = 0) {
 
 
 // DRAW SPRITE
-draw_sprite_part(spr_base,0,floor(x_frame)*_flamewidh,y_frame*_flameheight,_flamewidh,_flameheight,_XX,_YY);
-
+spritePart = draw_sprite_part(spr_base,0,floor(x_frame)*_flamewidh,y_frame*_flameheight,_flamewidh,_flameheight,_XX,_YY);
 
 // INCRIMENT FRAME ANIMATION
 if(!returnflug){
@@ -47,3 +46,4 @@ if(!returnflug){
 }
 
 draw_rectangle_color(bbox_left,bbox_top,bbox_right,bbox_bottom,c_yellow,c_yellow,c_yellow,c_yellow,true);
+

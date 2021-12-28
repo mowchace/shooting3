@@ -93,7 +93,6 @@ Collision(throu_flag);
 
 x += moveX;
 y += moveY;
-move_shadow();
 
 // APLLY MOVEMENT
 

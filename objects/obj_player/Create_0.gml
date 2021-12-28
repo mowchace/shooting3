@@ -47,8 +47,7 @@ invisibletimecool = 5;
 bltdir = 0;
 bltspd = 16;
 
-x_offset = sprite_get_xoffset(mask_index);
-y_offset = sprite_get_yoffset(mask_index);
+
 
 //Player Status
 NextLevelbaseEXP = 50;
@@ -165,5 +164,3 @@ DEF = (Endurance+EndurancePlus)+Equipment_DEF_point;
 //　回避
 PRO = (Dexterity+DexterityPlus)/2+(Perception+PerceptionPlus)/2+(Will+WillPlus)+Equipment_PRO_point;
 HideLevel = (Dexterity+DexterityPlus)/2+(Perception+PerceptionPlus)/2+(Will+WillPlus)/5;
-moveX = 0;
-moveY = 0;

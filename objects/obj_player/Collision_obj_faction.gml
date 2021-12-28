@@ -1,9 +1,17 @@
 // Check faction
-if(other.faction != factions.enemy){exit};
-
-x += 1;
-y += 1;
-if(invisibletimecool >= damegeinvisibletime){
-	HP -= irandom_range(3,5);
-	invisibletimecool = 10;
+var _move = 2;
+x += _move;
+y += _move;
+with(shadow_instance_id){
+	x = _move;
+	y = _move;
 }
+
+/*
+if(other.faction == factions.enemy){
+	if(invisibletimecool >= damegeinvisibletime){
+		HP -= irandom_range(3,5);
+		invisibletimecool = 10;
+	}
+};
+*/

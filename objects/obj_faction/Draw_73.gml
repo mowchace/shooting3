@@ -1,1 +1,1 @@
-draw_flash();
+draw_flash(spritePart);

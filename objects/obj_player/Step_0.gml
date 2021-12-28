@@ -65,7 +65,6 @@ script_execute(state);
 
 x += moveX;
 y += moveY;
-move_shadow();
 
 // don't shoot pickupmode or showinventorymode
 if(!global.show_inventory){
