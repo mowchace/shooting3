@@ -6,7 +6,7 @@ switch(room){
 		break;
 	case rm_game:
 		if (keyboard_check_pressed(ord("R"))) {
-			audio_stop_sound(bgm_mm2battle);
+			audio_stop_sound(BGM);
 			room_restart();}
 		break;
 }

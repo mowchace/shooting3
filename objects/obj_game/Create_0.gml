@@ -5,6 +5,8 @@ Pausebltspeed = 0;
 viewX = 0;
 viewY = 0;
 
+press_count = 0;
+BGM = bgm_mm2battle;
 
 randomize();
 

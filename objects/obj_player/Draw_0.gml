@@ -35,7 +35,6 @@ if (direction > 337 || direction <= 21) {
 if (moveX = 0 && moveY = 0) {
 	x_frame = Row*3+1;
 }
-show_debug_message(x_frame);
 // DRAW SPRITE
 draw_sprite_part(spr_player,0,floor(x_frame)*_flamewidh,floor(y_frame)*_flameheight,_flamewidh,_flameheight,floor(_XX),floor(_YY-z));
 
@@ -47,6 +46,5 @@ if(!returnflug){
 	if(x_frame > (Row*_animelength)){x_frame -= animespeed/60;}
 	else						{returnflug = !returnflug;}
 }
-show_debug_message("returnflug:"+string(returnflug));
 
 draw_rectangle_color(bbox_left,bbox_top,bbox_right,bbox_bottom,c_yellow,c_yellow,c_yellow,c_yellow,true);
