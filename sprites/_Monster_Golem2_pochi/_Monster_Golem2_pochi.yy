@@ -21,8 +21,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 22,
+  "gridY": 26,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"2dce6d58-5b7c-45d2-9cb3-4bf82e3951d5","path":"sprites/_Monster_Golem2_pochi/_Monster_Golem2_pochi.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"2dce6d58-5b7c-45d2-9cb3-4bf82e3951d5","path":"sprites/_Monster_Golem2_pochi/_Monster_Golem2_pochi.yy",},"LayerId":{"name":"e07fad10-5212-4996-be0c-216da6f40218","path":"sprites/_Monster_Golem2_pochi/_Monster_Golem2_pochi.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},

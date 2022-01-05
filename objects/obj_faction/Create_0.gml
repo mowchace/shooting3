@@ -8,6 +8,10 @@ spritePart = noone;
 x_offset = sprite_get_xoffset(mask_index);
 y_offset = sprite_get_yoffset(mask_index);
 
+animelength = 0;
+flamewidh = 0;
+flameheight = 0;
+
 shadow_instance = instance_create_layer(x+Shadow_positionX_plus,y+Shadow_positionY_plus,"Instances",obj_shadow);
 shadow_instance_id = shadow_instance.id;
 with(shadow_instance_id){

@@ -96,6 +96,7 @@
             {"propertyId":{"name":"entityActivateScript","path":"objects/obj_par_entities/obj_par_entities.yy",},"objectId":{"name":"obj_par_entities","path":"objects/obj_par_entities/obj_par_entities.yy",},"value":"newTextBox","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"entityActivateArgs","path":"objects/obj_par_entities/obj_par_entities.yy",},"objectId":{"name":"obj_par_entities","path":"objects/obj_par_entities/obj_par_entities.yy",},"value":"[\"OK!\",1]","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_QueterNPC","path":"objects/obj_QueterNPC/obj_QueterNPC.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":512.0,"y":160.0,"resourceVersion":"1.0","name":"inst_21D77229","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_enemy5","path":"objects/obj_enemy5/obj_enemy5.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":224.0,"resourceVersion":"1.0","name":"inst_58109FBC","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"TileSet_siba_bg","path":"tilesets/TileSet_siba_bg/TileSet_siba_bg.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":64,"SerialiseHeight":48,"TileSerialiseData":[
 4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,
@@ -179,6 +180,7 @@
     {"name":"inst_7B418018","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_6C18DC78","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_21D77229","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_58109FBC","path":"rooms/rm_game/rm_game.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

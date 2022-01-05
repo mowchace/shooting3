@@ -4,7 +4,7 @@ draw_sprite_part_ext(spr_inv_UI,0,cell_size,0,inv_UI_width,inv_UI_height,inv_UI_
 var _c = c_black;
 // Inventory
 var _ii,_ix,_iy,_xx,_yy,_spr_x,_spr_y,_iitem,_inv_grid;
-_ii = 0; _ix = 0; _iy = 0;_inv_grid = ds_inventory;
+_ii = 0; _ix = 0; _iy = 0;_inv_grid = ds_inventory_use_item;
 repeat(inv_slots){
 		// x,y location for slot
 		_xx = slots_x + ((cell_size+x_buffer)*_ix*scale);

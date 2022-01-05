@@ -73,8 +73,6 @@ if(!global.show_inventory){
 	if (mouse_check_button(mb_left) && cooldown < 1) {
 		switch(Equipment_weapon_1){
 			case "obj_punch":{
-				show_debug_message(Strength)
-				show_debug_message(StrengthPlus)
 				create_melee_attack(asset_get_index(Equipment_weapon_1),Strength_MeleeATK,direction,0,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
 			}break;
 			default:{

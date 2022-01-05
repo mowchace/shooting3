@@ -15,6 +15,8 @@ healthbar_width = 10;
 healthbar_height = 2;
 healthbar_x = 0;
 healthbar_y = 0;
+healthbar_x_plus = 0;
+healthbar_y_plus = 22;
 
 //state
 enum states {

@@ -1,6 +1,6 @@
-function attack_position_change(){
-	attack_positionX = x;
-	attack_positionY = y-5;
-	attack_particlepositionX = x;
-	attack_particlepositionY = y-sprite_height/3;
+function attack_position_change(_attack_positionX,_attack_positionY,_attack_particlepositionX,_attack_particlepositionY){
+	attack_positionX = _attack_positionX;
+	attack_positionY = _attack_positionY;
+	attack_particlepositionX = _attack_particlepositionX;
+	attack_particlepositionY = _attack_particlepositionY;
 }

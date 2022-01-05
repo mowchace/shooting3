@@ -44,7 +44,7 @@
     "path": "folders/Objects/gameobject/enemy.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_enemy3",
+  "name": "obj_enemy5",
   "tags": [],
   "resourceType": "GMObject",
 }

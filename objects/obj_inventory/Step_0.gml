@@ -36,7 +36,7 @@ if(nx >=0 && nx < inv_slots_width && ny >= 0 && ny < inv_slots_height){
 selected_slot = min(inv_slots-1,mouse_slotx + (mouse_sloty*inv_slots_width));
 #endregion
 // pickup Item
-var inv_grid = ds_inventory;
+var inv_grid = ds_inventory_use_item;
 var _item_info = ds_items_info;
 var selectingslot_item = inv_grid[# 0,selected_slot];
 

@@ -23,7 +23,7 @@ if(drop_move){
 			var _item = item_spr_num;
 			var _item_num = item_num;
 			with(obj_inventory){
-				var _ds_inv = ds_inventory;
+				var _ds_inv = ds_inventory_use_item;
 				var _picked_up = false;
 				//check if item exists in inventory alredy
 				var _yy = 0; repeat(inv_slots){

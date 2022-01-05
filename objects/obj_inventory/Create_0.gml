@@ -44,8 +44,8 @@ description_y = inv_UI_y + (265 *scale);
 // 2 = ItemType
 // 3 = weight
 
-//ds_inventory = ds_grid_create(2,inv_slots);
-ds_inventory = ds_grid_create(4,inv_slots);
+//ds_inventory_use_item = ds_grid_create(2,inv_slots);
+ds_inventory_use_item = ds_grid_create(4,inv_slots);
 
 #region Items
 enum item {
@@ -115,15 +115,19 @@ ds_items_info = load_csv("ItemData.csv");
 
 #endregion
 var _YY	= 0;repeat(inv_slots){
-	ds_inventory[# 0,_YY] = irandom_range(1,item.Height-1);
-	ds_inventory[# 1,_YY] = irandom_range(1,10);
-	ds_inventory[# 2,_YY] = ds_items_info[# 2,_YY+1];
+	// 0 = ITEM_NAME
+	ds_inventory_use_item[# 0,_YY] = irandom_range(1,item.Height-1);
+	// 1 = NUMBER
+	ds_inventory_use_item[# 1,_YY] = irandom_range(1,10);
+	// 2 = ItemType
+	ds_inventory_use_item[# 2,_YY] = ds_items_info[# 2,_YY+1];
 	/*
+	// 3 = WEIGHT
 	var _Num,_Weight;
-	_Num = ds_inventory[# 1,_YY];
+	_Num = ds_inventory_use_item[# 1,_YY];
 	// Float Type
 	_Weight = ds_items_info[# 3,_YY+1];
 	*/
-	//ds_inventory[# 3,_YY] = ds_items_info[# 3,_YY+1];
+	//ds_inventory_use_item[# 3,_YY] = ds_items_info[# 3,_YY+1];
 	_YY += 1;
 }

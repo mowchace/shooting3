@@ -21,8 +21,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 26,
+  "gridY": 22,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"76bfd938-9c21-4ce1-8066-5857cd2a3633","path":"sprites/_Animal_Goat_pochi/_Animal_Goat_pochi.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"76bfd938-9c21-4ce1-8066-5857cd2a3633","path":"sprites/_Animal_Goat_pochi/_Animal_Goat_pochi.yy",},"LayerId":{"name":"9cbd216c-246b-4aeb-9249-82e28ac41d07","path":"sprites/_Animal_Goat_pochi/_Animal_Goat_pochi.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
