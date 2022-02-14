@@ -31,19 +31,30 @@ if(sprite_8direction_switch){
 	var _XX = x-x_offset;
 	var _YY = y-y_offset;
 	if(instance_exists(obj_player)){
-		if (direction > 45 && direction <= 135) {
-			y_frame = 3; Row = 0;
-		//} else if (direction > 95 && direction <= 170) {
-		//	//Left UP
-		//	y_frame = 2; Row =1;
-		} else if (direction > 135 && direction <= 225) {
-			y_frame = 1; Row = 0;
-		} else if (direction > 225 && direction <= 315) {
-			y_frame = 0; Row = 0;
-		} else if (direction > 315 || direction <= 45) {
+		if (direction > 337 || direction <= 21) {
+			//Right
 			y_frame = 2; Row = 0;
-		} else {
+		} else if (direction > 22 && direction <= 67) {
+			//Right Up
+			y_frame = 3; Row = 1;
+		} else if (direction > 67 && direction <= 113) {
+			//Up
+			y_frame = 3; Row = 0;
+		} else if (direction > 113 && direction <= 167) {
+			//Left Up
+			y_frame = 2; Row = 1;
+		} else if (direction > 167 && direction <= 203) {
+			//Left
+			y_frame = 1; Row = 0;
+		} else if (direction > 203 && direction <= 247) {
+			//Left Down
+			y_frame = 0; Row = 1;
+		} else if (direction > 247 && direction <= 293) {
+			//Down
 			y_frame = 0; Row = 0;
+		} else if (direction > 293 && direction <= 337) {
+			//Right Down
+			y_frame = 1; Row = 1;
 		}
 	} else {
 		var _dir = choose(1,2,3,4)
