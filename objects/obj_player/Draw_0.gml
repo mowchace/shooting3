@@ -1,4 +1,5 @@
  event_inherited();
+ if(input_hide){i_alpha = 0.5}else{i_alpha = 1;}
 var _animelength = 3;
 var _flamewidh = 14;
 var _flameheight = 20;
@@ -36,7 +37,7 @@ if (moveX = 0 && moveY = 0) {
 	x_frame = Row*3+1;
 }
 // DRAW SPRITE
-draw_sprite_part(spr_player,0,floor(x_frame)*_flamewidh,floor(y_frame)*_flameheight,_flamewidh,_flameheight,floor(_XX),floor(_YY-z));
+draw_sprite_part_ext(spr_player,0,floor(x_frame)*_flamewidh,floor(y_frame)*_flameheight,_flamewidh,_flameheight,floor(_XX),floor(_YY-z),1,1,c_white,i_alpha);
 
 // INCRIMENT FRAME ANIMATION
 if(!returnflug){

@@ -29,6 +29,7 @@
   "properties": [],
   "overriddenProperties": [
     {"propertyId":{"name":"AttributeType","path":"objects/obj_faction/obj_faction.yy",},"objectId":{"name":"obj_faction","path":"objects/obj_faction/obj_faction.yy",},"value":"\"Normal\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"see_through","path":"objects/obj_par_nutral/obj_par_nutral.yy",},"objectId":{"name":"obj_par_nutral","path":"objects/obj_par_nutral/obj_par_nutral.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "nutral",

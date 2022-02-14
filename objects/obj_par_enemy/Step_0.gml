@@ -1,5 +1,6 @@
 /// @description
 event_inherited();
+
 if(global.gamePaused){
 	image_speed = 0;
 	animespeed = 0;
@@ -89,7 +90,7 @@ if(entityNPC != true){
 	if(!cooltime <= 0){cooltime -= 1;}
 }
 //Collision check
-Collision(throu_flag);
+Collision_enemy(throu_flag);
 
 x += moveX;
 y += moveY;

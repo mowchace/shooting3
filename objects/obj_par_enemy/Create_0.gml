@@ -9,7 +9,7 @@ r_spd = 1.3;
 spd = w_spd;
 exhaustCounter = 0;
 flash = 0;
-throu_flag = 1;
+throu_flag = 0;
 
 healthbar_width = 10;
 healthbar_height = 2;

@@ -6,7 +6,7 @@
     "path": "folders/Scripts/State.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_collision2",
+  "name": "scr_collision_enemy",
   "tags": [],
   "resourceType": "GMScript",
 }
