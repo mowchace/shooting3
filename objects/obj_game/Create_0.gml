@@ -21,5 +21,14 @@ enum enemys{
 	enemy2 = obj_enemy2, 
 	enemy3 = obj_enemy3,
 	enemy4 = obj_enemy4,
+	enemy5 = obj_enemy5,
+}
+
+enum nutrals{
+	nutral1 = obj_tree, 
+	nutral2 = obj_stump, 
+	nutral3 = obj_bigrock,
+	nutral4 = obj_slicerock,
+	nutral5 = obj_midlerock,
 }
 //surface_resize(application_surface,RESOLUTION_W,RESOLUTION_H);

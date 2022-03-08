@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_shadows","path":"sprites/spr_shadows/spr_shadows.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_shadows",
     "tags": [],
     "resourceType": "GMSequence",

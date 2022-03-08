@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_siba","path":"sprites/spr_siba/spr_siba.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_siba",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Monster_RabbitMan2_makiba","path":"sprites/_Monster_RabbitMan2_makiba/_Monster_RabbitMan2_makiba.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Monster_RabbitMan2_makiba",
     "tags": [],
     "resourceType": "GMSequence",

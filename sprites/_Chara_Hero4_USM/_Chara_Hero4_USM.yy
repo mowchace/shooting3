@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Chara_Hero4_USM","path":"sprites/_Chara_Hero4_USM/_Chara_Hero4_USM.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Chara_Hero4_USM",
     "tags": [],
     "resourceType": "GMSequence",

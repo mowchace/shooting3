@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Special_Edy","path":"sprites/_Special_Edy/_Special_Edy.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Special_Edy",
     "tags": [],
     "resourceType": "GMSequence",

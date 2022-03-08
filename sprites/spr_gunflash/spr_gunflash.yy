@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gunflash","path":"sprites/spr_gunflash/spr_gunflash.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gunflash",
     "tags": [],
     "resourceType": "GMSequence",

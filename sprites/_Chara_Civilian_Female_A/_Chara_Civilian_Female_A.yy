@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Chara_Civilian_Female_A","path":"sprites/_Chara_Civilian_Female_A/_Chara_Civilian_Female_A.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Chara_Civilian_Female_A",
     "tags": [],
     "resourceType": "GMSequence",

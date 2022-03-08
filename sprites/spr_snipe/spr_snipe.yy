@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_snipe","path":"sprites/spr_snipe/spr_snipe.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_snipe",
     "tags": [],
     "resourceType": "GMSequence",

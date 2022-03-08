@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_middlerock","path":"sprites/spr_middlerock/spr_middlerock.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_middlerock",
     "tags": [],
     "resourceType": "GMSequence",

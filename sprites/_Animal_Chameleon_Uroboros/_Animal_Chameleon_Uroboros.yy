@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Animal_Chameleon_Uroboros","path":"sprites/_Animal_Chameleon_Uroboros/_Animal_Chameleon_Uroboros.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Animal_Chameleon_Uroboros",
     "tags": [],
     "resourceType": "GMSequence",

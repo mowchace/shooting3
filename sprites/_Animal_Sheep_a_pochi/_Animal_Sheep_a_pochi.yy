@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Animal_Sheep_a_pochi","path":"sprites/_Animal_Sheep_a_pochi/_Animal_Sheep_a_pochi.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Animal_Sheep_a_pochi",
     "tags": [],
     "resourceType": "GMSequence",

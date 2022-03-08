@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_debli","path":"sprites/spr_debli/spr_debli.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_debli",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Animal_Rabbit_pochiT","path":"sprites/_Animal_Rabbit_pochiT/_Animal_Rabbit_pochiT.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Animal_Rabbit_pochiT",
     "tags": [],
     "resourceType": "GMSequence",

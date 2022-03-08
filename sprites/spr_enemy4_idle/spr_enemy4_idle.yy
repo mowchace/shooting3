@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_enemy4_idle","path":"sprites/spr_enemy4_idle/spr_enemy4_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_enemy4_idle",
     "tags": [],
     "resourceType": "GMSequence",

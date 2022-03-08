@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Monster_Werewolf_garugaru","path":"sprites/_Monster_Werewolf_garugaru/_Monster_Werewolf_garugaru.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Monster_Werewolf_garugaru",
     "tags": [],
     "resourceType": "GMSequence",

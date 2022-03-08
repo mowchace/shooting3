@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Monster_Gargoyle_Black_Uroboros","path":"sprites/_Monster_Gargoyle_Black_Uroboros/_Monster_Gargoyle_Black_Uroboros.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Monster_Gargoyle_Black_Uroboros",
     "tags": [],
     "resourceType": "GMSequence",

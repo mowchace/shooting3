@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Animal_Parrot_tapis","path":"sprites/_Animal_Parrot_tapis/_Animal_Parrot_tapis.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Animal_Parrot_tapis",
     "tags": [],
     "resourceType": "GMSequence",

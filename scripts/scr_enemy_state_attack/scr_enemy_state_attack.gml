@@ -12,7 +12,7 @@ function enemy_state_attack(){
 	if(image_index > image_number-1){state = states.alert;}
 	*/
 	if(instance_exists(obj_par_ally)){
-		var inst = collision_line(x,y,obj_par_ally.x,obj_par_ally.y,obj_par_nutral,false,true);
+		//var _inst = collision_line(x,y,obj_par_ally.x,obj_par_ally.y,obj_par_nutral,false,true);
 		var _dir = point_direction(x,y,obj_par_ally.x,obj_par_ally.y)
 		direction = _dir;
 		range_direction =_dir;
@@ -22,7 +22,7 @@ function enemy_state_attack(){
 		//if(inst == noone){
 			if(collision_circle(x,y,range_base,obj_player,0,0)){
 				// Melee attack
-				if(cooltime <= 0 && Meelatktype1 != -4){
+				if(cooltime <= 0 && Meelatktype1 != -1){
 					switch(Meelatktype1){
 						case 22: create_melee_attack(Meelatktype1,attack,_dir,atkspd,faction,id,noone,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);break;
 						default: create_range_attack(Meelatktype1,attack,_dir,atkspd,faction,id,noone,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);break;
@@ -32,8 +32,8 @@ function enemy_state_attack(){
 				}
 			} else {
 				// Ranged attack
-				// Rangeatktype1 = -4 == noone;
-				if(cooltime <= 0 && Rangeatktype1 != -4){
+				// Rangeatktype1 = -1 == noone;
+				if(cooltime <= 0 && Rangeatktype1 != -1){
 					create_range_attack(Rangeatktype1,attack,_dir,atkspd,faction,id,noone,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
 					cooltime = cooldown;
 				}

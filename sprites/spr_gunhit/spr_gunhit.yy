@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gunhit","path":"sprites/spr_gunhit/spr_gunhit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gunhit",
     "tags": [],
     "resourceType": "GMSequence",

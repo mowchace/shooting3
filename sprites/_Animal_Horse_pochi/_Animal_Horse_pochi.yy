@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Animal_Horse_pochi","path":"sprites/_Animal_Horse_pochi/_Animal_Horse_pochi.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Animal_Horse_pochi",
     "tags": [],
     "resourceType": "GMSequence",

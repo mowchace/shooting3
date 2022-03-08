@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"move_obj3","path":"sprites/move_obj3/move_obj3.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "move_obj3",
     "tags": [],
     "resourceType": "GMSequence",

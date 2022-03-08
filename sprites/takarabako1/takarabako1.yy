@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"takarabako1","path":"sprites/takarabako1/takarabako1.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "takarabako1",
     "tags": [],
     "resourceType": "GMSequence",

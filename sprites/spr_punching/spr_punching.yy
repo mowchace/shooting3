@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_punching","path":"sprites/spr_punching/spr_punching.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_punching",
     "tags": [],
     "resourceType": "GMSequence",

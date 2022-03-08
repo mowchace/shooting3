@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Chara_Doctor","path":"sprites/_Chara_Doctor/_Chara_Doctor.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Chara_Doctor",
     "tags": [],
     "resourceType": "GMSequence",

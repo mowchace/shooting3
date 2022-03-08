@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tile_collision","path":"sprites/spr_tile_collision/spr_tile_collision.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tile_collision",
     "tags": [],
     "resourceType": "GMSequence",

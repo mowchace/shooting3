@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_meat","path":"sprites/spr_meat/spr_meat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_meat",
     "tags": [],
     "resourceType": "GMSequence",

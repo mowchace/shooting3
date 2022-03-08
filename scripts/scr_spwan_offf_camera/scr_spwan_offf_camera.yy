@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_spwan_off_camera",
+  "name": "scr_spwan_offf_camera",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_enemy4_damage","path":"sprites/spr_enemy4_damage/spr_enemy4_damage.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_enemy4_damage",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Special_Wolfarl","path":"sprites/_Special_Wolfarl/_Special_Wolfarl.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Special_Wolfarl",
     "tags": [],
     "resourceType": "GMSequence",

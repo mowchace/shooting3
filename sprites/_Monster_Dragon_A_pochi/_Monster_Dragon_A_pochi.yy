@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Monster_Dragon_A_pochi","path":"sprites/_Monster_Dragon_A_pochi/_Monster_Dragon_A_pochi.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Monster_Dragon_A_pochi",
     "tags": [],
     "resourceType": "GMSequence",

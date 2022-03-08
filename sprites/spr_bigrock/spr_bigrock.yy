@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bigrock","path":"sprites/spr_bigrock/spr_bigrock.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bigrock",
     "tags": [],
     "resourceType": "GMSequence",

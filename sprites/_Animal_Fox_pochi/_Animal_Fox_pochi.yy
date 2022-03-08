@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Animal_Fox_pochi","path":"sprites/_Animal_Fox_pochi/_Animal_Fox_pochi.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Animal_Fox_pochi",
     "tags": [],
     "resourceType": "GMSequence",

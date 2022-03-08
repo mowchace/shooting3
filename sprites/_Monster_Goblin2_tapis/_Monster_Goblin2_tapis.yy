@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Monster_Goblin2_tapis","path":"sprites/_Monster_Goblin2_tapis/_Monster_Goblin2_tapis.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Monster_Goblin2_tapis",
     "tags": [],
     "resourceType": "GMSequence",

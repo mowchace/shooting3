@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_enemy4_attack","path":"sprites/spr_enemy4_attack/spr_enemy4_attack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_enemy4_attack",
     "tags": [],
     "resourceType": "GMSequence",

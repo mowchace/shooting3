@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Animal_Wolf_pochi","path":"sprites/_Animal_Wolf_pochi/_Animal_Wolf_pochi.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Animal_Wolf_pochi",
     "tags": [],
     "resourceType": "GMSequence",

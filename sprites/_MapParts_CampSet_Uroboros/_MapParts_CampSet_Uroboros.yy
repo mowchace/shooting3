@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_MapParts_CampSet_Uroboros","path":"sprites/_MapParts_CampSet_Uroboros/_MapParts_CampSet_Uroboros.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_MapParts_CampSet_Uroboros",
     "tags": [],
     "resourceType": "GMSequence",

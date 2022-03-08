@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Chara_Devil_USM","path":"sprites/_Chara_Devil_USM/_Chara_Devil_USM.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Chara_Devil_USM",
     "tags": [],
     "resourceType": "GMSequence",

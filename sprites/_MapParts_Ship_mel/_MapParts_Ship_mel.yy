@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_MapParts_Ship_mel","path":"sprites/_MapParts_Ship_mel/_MapParts_Ship_mel.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_MapParts_Ship_mel",
     "tags": [],
     "resourceType": "GMSequence",

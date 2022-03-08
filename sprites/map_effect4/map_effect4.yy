@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"map_effect4","path":"sprites/map_effect4/map_effect4.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "map_effect4",
     "tags": [],
     "resourceType": "GMSequence",

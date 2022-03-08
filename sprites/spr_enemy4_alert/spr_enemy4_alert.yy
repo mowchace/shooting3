@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_enemy4_alert","path":"sprites/spr_enemy4_alert/spr_enemy4_alert.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_enemy4_alert",
     "tags": [],
     "resourceType": "GMSequence",

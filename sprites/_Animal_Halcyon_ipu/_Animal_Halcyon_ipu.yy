@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Animal_Halcyon_ipu","path":"sprites/_Animal_Halcyon_ipu/_Animal_Halcyon_ipu.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Animal_Halcyon_ipu",
     "tags": [],
     "resourceType": "GMSequence",

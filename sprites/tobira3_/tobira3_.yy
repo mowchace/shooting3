@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"tobira3_","path":"sprites/tobira3_/tobira3_.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "tobira3_",
     "tags": [],
     "resourceType": "GMSequence",

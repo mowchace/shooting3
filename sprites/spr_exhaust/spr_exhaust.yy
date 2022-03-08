@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_exhaust","path":"sprites/spr_exhaust/spr_exhaust.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_exhaust",
     "tags": [],
     "resourceType": "GMSequence",

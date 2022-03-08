@@ -111,7 +111,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_enemy4_deth","path":"sprites/spr_enemy4_deth/spr_enemy4_deth.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_enemy4_deth",
     "tags": [],
     "resourceType": "GMSequence",

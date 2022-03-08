@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_slicerock","path":"sprites/spr_slicerock/spr_slicerock.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_slicerock",
     "tags": [],
     "resourceType": "GMSequence",

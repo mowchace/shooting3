@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Animal_Chicken","path":"sprites/_Animal_Chicken/_Animal_Chicken.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Animal_Chicken",
     "tags": [],
     "resourceType": "GMSequence",

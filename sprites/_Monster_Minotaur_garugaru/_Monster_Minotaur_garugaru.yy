@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Monster_Minotaur_garugaru","path":"sprites/_Monster_Minotaur_garugaru/_Monster_Minotaur_garugaru.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Monster_Minotaur_garugaru",
     "tags": [],
     "resourceType": "GMSequence",

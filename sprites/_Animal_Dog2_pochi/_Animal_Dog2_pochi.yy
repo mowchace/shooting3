@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Animal_Dog2_pochi","path":"sprites/_Animal_Dog2_pochi/_Animal_Dog2_pochi.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Animal_Dog2_pochi",
     "tags": [],
     "resourceType": "GMSequence",

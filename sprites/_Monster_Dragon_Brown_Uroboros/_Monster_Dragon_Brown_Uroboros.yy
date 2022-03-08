@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Monster_Dragon_Brown_Uroboros","path":"sprites/_Monster_Dragon_Brown_Uroboros/_Monster_Dragon_Brown_Uroboros.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Monster_Dragon_Brown_Uroboros",
     "tags": [],
     "resourceType": "GMSequence",

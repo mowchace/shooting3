@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"move_obj5","path":"sprites/move_obj5/move_obj5.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "move_obj5",
     "tags": [],
     "resourceType": "GMSequence",

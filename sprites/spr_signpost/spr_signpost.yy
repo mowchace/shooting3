@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_signpost","path":"sprites/spr_signpost/spr_signpost.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_signpost",
     "tags": [],
     "resourceType": "GMSequence",

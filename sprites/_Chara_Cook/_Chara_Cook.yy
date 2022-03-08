@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Chara_Cook","path":"sprites/_Chara_Cook/_Chara_Cook.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Chara_Cook",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_Monster_Mandrake_pochi","path":"sprites/_Monster_Mandrake_pochi/_Monster_Mandrake_pochi.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "_Monster_Mandrake_pochi",
     "tags": [],
     "resourceType": "GMSequence",
