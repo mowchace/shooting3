@@ -3,8 +3,8 @@ global.cameraX = 0;
 global.cameraY = 0;
 global.cameraShake = 0;
 
-global.cameraWidth = 512;
-global.cameraHeight = 500;
+global.cameraWidth = RESOLUTION_W;
+global.cameraHeight = RESOLUTION_H;
 
 displayscale = 2;
 displaywidth = displayscale*global.cameraWidth;

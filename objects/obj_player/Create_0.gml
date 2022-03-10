@@ -3,6 +3,15 @@ state = playerstate_free;
 laststate = state;
 
 global.pickupmode = false;
+//room_ext spawn draw
+input_hide = false;
+
+//trandition respawn
+if(global.targetX != -1){
+	x = global.targetX;
+	y = global.targetY;
+	direction = global.targetDirection;
+}
 
 faction = factions.ally;
 

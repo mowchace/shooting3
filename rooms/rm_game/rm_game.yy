@@ -111,6 +111,11 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_tree","path":"objects/obj_tree/obj_tree.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":780.0,"y":120.0,"resourceVersion":"1.0","name":"inst_10D4CA90","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_tree","path":"objects/obj_tree/obj_tree.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":780.0,"y":156.0,"resourceVersion":"1.0","name":"inst_722B8D42","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_tree","path":"objects/obj_tree/obj_tree.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":816.0,"y":180.0,"resourceVersion":"1.0","name":"inst_7D446C3A","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"targetX","path":"objects/obj_roomext_ShawnSpalding/obj_roomext_ShawnSpalding.yy",},"objectId":{"name":"obj_roomext_ShawnSpalding","path":"objects/obj_roomext_ShawnSpalding/obj_roomext_ShawnSpalding.yy",},"value":"50","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"targetY","path":"objects/obj_roomext_ShawnSpalding/obj_roomext_ShawnSpalding.yy",},"objectId":{"name":"obj_roomext_ShawnSpalding","path":"objects/obj_roomext_ShawnSpalding/obj_roomext_ShawnSpalding.yy",},"value":"665","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"targetRoom","path":"objects/obj_roomext_ShawnSpalding/obj_roomext_ShawnSpalding.yy",},"objectId":{"name":"obj_roomext_ShawnSpalding","path":"objects/obj_roomext_ShawnSpalding/obj_roomext_ShawnSpalding.yy",},"value":"rm_river","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_roomext_ShawnSpalding","path":"objects/obj_roomext_ShawnSpalding/obj_roomext_ShawnSpalding.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":34.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1008.0,"y":-24.0,"resourceVersion":"1.0","name":"inst_4DDFD61","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":12,"gridY":12,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"TileSet_siba_bg","path":"tilesets/TileSet_siba_bg/TileSet_siba_bg.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":64,"SerialiseHeight":48,"TileSerialiseData":[
 4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,
@@ -209,6 +214,7 @@
     {"name":"inst_10D4CA90","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_722B8D42","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_7D446C3A","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_4DDFD61","path":"rooms/rm_game/rm_game.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

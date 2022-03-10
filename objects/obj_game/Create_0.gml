@@ -1,5 +1,10 @@
 global.gamePaused = false;
 global.textSpeed = 0.75;
+global.targetroom = -1;
+global.targetX = -1;
+global.targetY = -1;
+global.targetDirection = 0;
+
 Pausebltlife = 0;
 Pausebltspeed = 0;
 viewX = 0;

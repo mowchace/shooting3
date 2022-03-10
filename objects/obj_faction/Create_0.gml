@@ -12,12 +12,14 @@ animelength = 0;
 flamewidh = 0;
 flameheight = 0;
 
-shadow_instance = instance_create_layer(x+Shadow_positionX_plus,y+Shadow_positionY_plus,"Instances",obj_shadow);
-shadow_instance_id = shadow_instance.id;
-with(shadow_instance_id){
-	Xscal = other.Shadow_Xscal;	
-	Yscal = other.Shadow_Yscal;
-}
+#region old_shadow
+//shadow_instance = instance_create_layer(x+Shadow_positionX_plus,y+Shadow_positionY_plus,"Instances",obj_shadow);
+//shadow_instance_id = shadow_instance.id;
+//with(shadow_instance_id){
+//	Xscal = other.Shadow_Xscal;	
+//	Yscal = other.Shadow_Yscal;
+//}
+#endregion
 
 attack_positionX = 0;
 attack_positionY = 0;
