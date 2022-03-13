@@ -94,7 +94,7 @@ if(!global.show_inventory){
 cooldown -= 1;
 powerfullcooldown -= 1;
 snipecooldown -= 1;
-move_wrap(true,true,0)
+//move_wrap(true,true,0)
 depth = -bbox_bottom;
 //global.playerHP = HP
 if(HP <= 0){

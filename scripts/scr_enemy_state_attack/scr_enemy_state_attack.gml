@@ -23,8 +23,10 @@ function enemy_state_attack(){
 			if(collision_circle(x,y,range_base,obj_player,0,0)){
 				// Melee attack
 				if(cooltime <= 0 && Meelatktype1 != -1){
+					show_debug_message("Meelatktype1"+string(Meelatktype1));
 					switch(Meelatktype1){
-						case 22: create_melee_attack(Meelatktype1,attack,_dir,atkspd,faction,id,noone,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);break;
+						//why 2X?
+						case 25: create_melee_attack(Meelatktype1,attack,_dir,atkspd,faction,id,noone,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);break;
 						default: create_range_attack(Meelatktype1,attack,_dir,atkspd,faction,id,noone,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);break;
 						
 					}

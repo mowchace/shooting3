@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Text&portrait",
+    "path": "folders/Sprites/Text&portrait.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_textbox_bg1",
