@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "_Animal_Dog1_pochi",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"cf20b762-1e20-4755-92c5-cd6cef400eb7","path":"sprites/_Animal_Dog1_pochi/_Animal_Dog1_pochi.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cf20b762-1e20-4755-92c5-cd6cef400eb7","path":"sprites/_Animal_Dog1_pochi/_Animal_Dog1_pochi.yy",},"LayerId":{"name":"ead69eb4-42ed-48b5-9075-1309e4305e89","path":"sprites/_Animal_Dog1_pochi/_Animal_Dog1_pochi.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"_Animal_Dog1_pochi","path":"sprites/_Animal_Dog1_pochi/_Animal_Dog1_pochi.yy",},"resourceVersion":"1.0","name":"cf20b762-1e20-4755-92c5-cd6cef400eb7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cf20b762-1e20-4755-92c5-cd6cef400eb7",},
   ],
   "sequence": {
-    "spriteId": {"name":"_Animal_Dog1_pochi","path":"sprites/_Animal_Dog1_pochi/_Animal_Dog1_pochi.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "_Animal_Dog1_pochi",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"1c0fb932-0fe9-4fd1-adc0-3059aa909bad","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cf20b762-1e20-4755-92c5-cd6cef400eb7","path":"sprites/_Animal_Dog1_pochi/_Animal_Dog1_pochi.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"_Animal_Dog1_pochi","path":"sprites/_Animal_Dog1_pochi/_Animal_Dog1_pochi.yy",},
-    "resourceVersion": "1.4",
-    "name": "_Animal_Dog1_pochi",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ead69eb4-42ed-48b5-9075-1309e4305e89","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ead69eb4-42ed-48b5-9075-1309e4305e89","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "enemy",
     "path": "folders/Sprites/object/enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "_Animal_Dog1_pochi",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

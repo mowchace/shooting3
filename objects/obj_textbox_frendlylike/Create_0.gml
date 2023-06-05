@@ -31,10 +31,9 @@ text_max_width = box_width - (2*x_buffer);
 
 portrate_index = 0;
 
-text[0] = "this is test string this is test stringthis is test stringthis is test stringthis is test stringthis is test stringthis is test stringthis is test stringthis is test stringthis is test string";
-text[1] = "this is the second page";
+text[0] = "";
 page = 0;
-name = "name";
+name = "";
 text_col = c_black;
 name_text_col = c_black;
 font = fnt_text;

@@ -1,4 +1,3 @@
 function stateLocked(){
 // do nothing
-
 }

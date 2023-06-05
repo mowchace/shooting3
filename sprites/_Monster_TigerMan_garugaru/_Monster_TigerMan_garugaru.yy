@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "_Monster_TigerMan_garugaru",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6d065a5f-3bc6-43c1-8fe6-70149d5306f8","path":"sprites/_Monster_TigerMan_garugaru/_Monster_TigerMan_garugaru.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6d065a5f-3bc6-43c1-8fe6-70149d5306f8","path":"sprites/_Monster_TigerMan_garugaru/_Monster_TigerMan_garugaru.yy",},"LayerId":{"name":"5a69e4d3-4b2f-4dad-aa49-16c06eb09e92","path":"sprites/_Monster_TigerMan_garugaru/_Monster_TigerMan_garugaru.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"_Monster_TigerMan_garugaru","path":"sprites/_Monster_TigerMan_garugaru/_Monster_TigerMan_garugaru.yy",},"resourceVersion":"1.0","name":"6d065a5f-3bc6-43c1-8fe6-70149d5306f8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6d065a5f-3bc6-43c1-8fe6-70149d5306f8",},
   ],
   "sequence": {
-    "spriteId": {"name":"_Monster_TigerMan_garugaru","path":"sprites/_Monster_TigerMan_garugaru/_Monster_TigerMan_garugaru.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "_Monster_TigerMan_garugaru",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"9a83659e-2b13-4c4c-a1c9-65aa91af6f41","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6d065a5f-3bc6-43c1-8fe6-70149d5306f8","path":"sprites/_Monster_TigerMan_garugaru/_Monster_TigerMan_garugaru.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"_Monster_TigerMan_garugaru","path":"sprites/_Monster_TigerMan_garugaru/_Monster_TigerMan_garugaru.yy",},
-    "resourceVersion": "1.4",
-    "name": "_Monster_TigerMan_garugaru",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5a69e4d3-4b2f-4dad-aa49-16c06eb09e92","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5a69e4d3-4b2f-4dad-aa49-16c06eb09e92","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "enemy",
     "path": "folders/Sprites/object/enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "_Monster_TigerMan_garugaru",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

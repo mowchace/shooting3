@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "_Animal_Chameleon_Uroboros",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3a56a222-73f3-4016-962f-ca811b8fa76e","path":"sprites/_Animal_Chameleon_Uroboros/_Animal_Chameleon_Uroboros.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3a56a222-73f3-4016-962f-ca811b8fa76e","path":"sprites/_Animal_Chameleon_Uroboros/_Animal_Chameleon_Uroboros.yy",},"LayerId":{"name":"14b5386c-4dd3-4d2a-bcf9-06b1b050fe63","path":"sprites/_Animal_Chameleon_Uroboros/_Animal_Chameleon_Uroboros.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"_Animal_Chameleon_Uroboros","path":"sprites/_Animal_Chameleon_Uroboros/_Animal_Chameleon_Uroboros.yy",},"resourceVersion":"1.0","name":"3a56a222-73f3-4016-962f-ca811b8fa76e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3a56a222-73f3-4016-962f-ca811b8fa76e",},
   ],
   "sequence": {
-    "spriteId": {"name":"_Animal_Chameleon_Uroboros","path":"sprites/_Animal_Chameleon_Uroboros/_Animal_Chameleon_Uroboros.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "_Animal_Chameleon_Uroboros",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"7e047110-c7ad-40a2-8331-440803de4dd4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3a56a222-73f3-4016-962f-ca811b8fa76e","path":"sprites/_Animal_Chameleon_Uroboros/_Animal_Chameleon_Uroboros.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"_Animal_Chameleon_Uroboros","path":"sprites/_Animal_Chameleon_Uroboros/_Animal_Chameleon_Uroboros.yy",},
-    "resourceVersion": "1.4",
-    "name": "_Animal_Chameleon_Uroboros",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"14b5386c-4dd3-4d2a-bcf9-06b1b050fe63","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"14b5386c-4dd3-4d2a-bcf9-06b1b050fe63","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "enemy",
     "path": "folders/Sprites/object/enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "_Animal_Chameleon_Uroboros",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

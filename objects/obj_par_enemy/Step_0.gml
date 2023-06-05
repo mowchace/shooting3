@@ -9,10 +9,10 @@ if(global.gamePaused){
 	image_speed = 10;
 	animespeed = 10;
 }
-if(entityNPC == true){state = choose(states.idle,states.wander)};
-if(alert_flag == true){state = states.alert};
-if(attack_flag == true){state = states.attack};
-script_execute(states_array[state])
+if(entityNPC == true){enemystate = choose(states.idle,states.wander)};
+if(alert_flag == true){enemystate = states.alert};
+if(attack_flag == true){enemystate = states.attack};
+script_execute(states_array[enemystate])
 if(entityNPC != true){
 	if(rotate_speed_count >= const_rotate_speed_time){
 		rotate_speed = -rotate_speed;
@@ -44,15 +44,15 @@ if(entityNPC != true){
 				var _dir = point_direction(x,y,obj_par_ally.x,obj_par_ally.y)
 				//if(inst == noone && inst2 == noone && inst3 == noone){
 				if(inst2 == noone && inst3 == noone){
-					if(state == states.idle || state == states.wander){create_emotion(emotion.question);}
-					else if(state == states.alert){create_emotion(emotion.alertextensyon);}
-					else if(state == states.attack){create_emotion(emotion.attackextensyon);}
+					if(enemystate == states.idle || enemystate == states.wander){create_emotion(emotion.question);}
+					else if(enemystate == states.alert){create_emotion(emotion.alertextensyon);}
+					else if(enemystate == states.attack){create_emotion(emotion.attackextensyon);}
 					range_direction = _dir;
 					moveX = lengthdir_x(spd,_dir);
 					moveY = lengthdir_y(spd,_dir);
 				} else {
 					create_emotion(emotion.question);
-					if(state != states.attack){
+					if(enemystate != states.attack){
 						moveX = 0;
 						moveY = 0;
 					}
@@ -70,7 +70,8 @@ if(entityNPC != true){
 		// Find_flag remove
 		if(attack_time <= 0){
 			attack_flag = false;
-			state = states.wander;
+			enemystate = states.wander;
+			global.enemystate = enemy_state.evasion;
 			spd = r_spd;
 		};
 	};
@@ -80,6 +81,7 @@ if(entityNPC != true){
 		if(!attack_flag){
 			if(alert_time <= 0){
 				create_emotion(emotion.question);
+				global.enemystate = enemy_state.hide;
 				alert_flag = false;
 				range_plus = 0;
 			}
@@ -99,7 +101,7 @@ y += moveY;
 
 // Exhaust
 exhaustCounter++;
-if(exhaustCounter >= 10 && spd != 0 && state != states.idle && state != states.wander){
+if(exhaustCounter >= 10 && spd != 0 && enemystate != states.idle && enemystate != states.wander){
 	exhaustCounter = 0;
 	create_dash_exhaust("obj_par_enemy");
 }

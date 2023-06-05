@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "_Monster_Dragon_B_pochi",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e1855c98-e964-45ad-9218-3ac820012162","path":"sprites/_Monster_Dragon_B_pochi/_Monster_Dragon_B_pochi.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e1855c98-e964-45ad-9218-3ac820012162","path":"sprites/_Monster_Dragon_B_pochi/_Monster_Dragon_B_pochi.yy",},"LayerId":{"name":"ad526222-098e-4aba-a787-6008a3bdd926","path":"sprites/_Monster_Dragon_B_pochi/_Monster_Dragon_B_pochi.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"_Monster_Dragon_B_pochi","path":"sprites/_Monster_Dragon_B_pochi/_Monster_Dragon_B_pochi.yy",},"resourceVersion":"1.0","name":"e1855c98-e964-45ad-9218-3ac820012162","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e1855c98-e964-45ad-9218-3ac820012162",},
   ],
   "sequence": {
-    "spriteId": {"name":"_Monster_Dragon_B_pochi","path":"sprites/_Monster_Dragon_B_pochi/_Monster_Dragon_B_pochi.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "_Monster_Dragon_B_pochi",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"135d0038-90a7-4d85-9d0a-b132990d0b9c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e1855c98-e964-45ad-9218-3ac820012162","path":"sprites/_Monster_Dragon_B_pochi/_Monster_Dragon_B_pochi.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"_Monster_Dragon_B_pochi","path":"sprites/_Monster_Dragon_B_pochi/_Monster_Dragon_B_pochi.yy",},
-    "resourceVersion": "1.4",
-    "name": "_Monster_Dragon_B_pochi",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ad526222-098e-4aba-a787-6008a3bdd926","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ad526222-098e-4aba-a787-6008a3bdd926","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "enemy",
     "path": "folders/Sprites/object/enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "_Monster_Dragon_B_pochi",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "_Animal_Horse_pochi",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"740e5967-4640-48e9-b504-2c0b2505d464","path":"sprites/_Animal_Horse_pochi/_Animal_Horse_pochi.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"740e5967-4640-48e9-b504-2c0b2505d464","path":"sprites/_Animal_Horse_pochi/_Animal_Horse_pochi.yy",},"LayerId":{"name":"84cc82d6-0012-4550-a0c3-fda97bf3c88c","path":"sprites/_Animal_Horse_pochi/_Animal_Horse_pochi.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"_Animal_Horse_pochi","path":"sprites/_Animal_Horse_pochi/_Animal_Horse_pochi.yy",},"resourceVersion":"1.0","name":"740e5967-4640-48e9-b504-2c0b2505d464","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"740e5967-4640-48e9-b504-2c0b2505d464",},
   ],
   "sequence": {
-    "spriteId": {"name":"_Animal_Horse_pochi","path":"sprites/_Animal_Horse_pochi/_Animal_Horse_pochi.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "_Animal_Horse_pochi",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"045ae76f-98b0-4eed-9058-b94c363aab2f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"740e5967-4640-48e9-b504-2c0b2505d464","path":"sprites/_Animal_Horse_pochi/_Animal_Horse_pochi.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"_Animal_Horse_pochi","path":"sprites/_Animal_Horse_pochi/_Animal_Horse_pochi.yy",},
-    "resourceVersion": "1.4",
-    "name": "_Animal_Horse_pochi",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"84cc82d6-0012-4550-a0c3-fda97bf3c88c","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"84cc82d6-0012-4550-a0c3-fda97bf3c88c","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "enemy",
     "path": "folders/Sprites/object/enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "_Animal_Horse_pochi",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

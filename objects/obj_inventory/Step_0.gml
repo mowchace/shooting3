@@ -1,7 +1,19 @@
 /// @description
-if(keyboard_check_pressed(ord("I"))){global.show_inventory = !global.show_inventory;
-									 global.gamePaused = !global.gamePaused;}
+//show_inventory switch
+//if paused.not show on
+if(keyboard_check_pressed(ord("I"))){
+	if(!global.gamePaused && !global.show_inventory){
+		//show_inventry and gamepause on
+		global.show_inventory = true;
+		global.gamePaused = true;
+	}else if(global.show_inventory){
+		//show_inventry and gamepause off
+		global.show_inventory = false;
+		global.gamePaused = false;
+	}
+}
 
+//if !show_inventry skip action
 if(!global.show_inventory) exit;
 #region Mouse slot
 // get mouse position for GUI_layer(inventory)

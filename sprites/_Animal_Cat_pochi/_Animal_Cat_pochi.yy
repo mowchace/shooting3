@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "_Animal_Cat_pochi",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"bb4f490b-a3fb-4e25-9150-0dae87a6a66a","path":"sprites/_Animal_Cat_pochi/_Animal_Cat_pochi.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bb4f490b-a3fb-4e25-9150-0dae87a6a66a","path":"sprites/_Animal_Cat_pochi/_Animal_Cat_pochi.yy",},"LayerId":{"name":"fd157da0-54a9-4b97-acde-fa054d75dfa2","path":"sprites/_Animal_Cat_pochi/_Animal_Cat_pochi.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"_Animal_Cat_pochi","path":"sprites/_Animal_Cat_pochi/_Animal_Cat_pochi.yy",},"resourceVersion":"1.0","name":"bb4f490b-a3fb-4e25-9150-0dae87a6a66a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bb4f490b-a3fb-4e25-9150-0dae87a6a66a",},
   ],
   "sequence": {
-    "spriteId": {"name":"_Animal_Cat_pochi","path":"sprites/_Animal_Cat_pochi/_Animal_Cat_pochi.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "_Animal_Cat_pochi",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"04d69186-f4e9-440b-9619-173f3d7c3fd5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bb4f490b-a3fb-4e25-9150-0dae87a6a66a","path":"sprites/_Animal_Cat_pochi/_Animal_Cat_pochi.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"_Animal_Cat_pochi","path":"sprites/_Animal_Cat_pochi/_Animal_Cat_pochi.yy",},
-    "resourceVersion": "1.4",
-    "name": "_Animal_Cat_pochi",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"fd157da0-54a9-4b97-acde-fa054d75dfa2","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fd157da0-54a9-4b97-acde-fa054d75dfa2","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "enemy",
     "path": "folders/Sprites/object/enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "_Animal_Cat_pochi",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

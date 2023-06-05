@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "_Chara_Girl1_USM",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ee1f94b5-0fb5-4658-b42c-7579683da5f8","path":"sprites/_Chara_Girl1_USM/_Chara_Girl1_USM.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ee1f94b5-0fb5-4658-b42c-7579683da5f8","path":"sprites/_Chara_Girl1_USM/_Chara_Girl1_USM.yy",},"LayerId":{"name":"e61dbb4c-cc36-4093-932c-473a7e308ecc","path":"sprites/_Chara_Girl1_USM/_Chara_Girl1_USM.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"_Chara_Girl1_USM","path":"sprites/_Chara_Girl1_USM/_Chara_Girl1_USM.yy",},"resourceVersion":"1.0","name":"ee1f94b5-0fb5-4658-b42c-7579683da5f8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ee1f94b5-0fb5-4658-b42c-7579683da5f8",},
   ],
   "sequence": {
-    "spriteId": {"name":"_Chara_Girl1_USM","path":"sprites/_Chara_Girl1_USM/_Chara_Girl1_USM.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "_Chara_Girl1_USM",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"a028c696-1649-45f5-b627-649016ad1eb3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ee1f94b5-0fb5-4658-b42c-7579683da5f8","path":"sprites/_Chara_Girl1_USM/_Chara_Girl1_USM.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"_Chara_Girl1_USM","path":"sprites/_Chara_Girl1_USM/_Chara_Girl1_USM.yy",},
-    "resourceVersion": "1.4",
-    "name": "_Chara_Girl1_USM",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e61dbb4c-cc36-4093-932c-473a7e308ecc","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e61dbb4c-cc36-4093-932c-473a7e308ecc","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "enemy",
     "path": "folders/Sprites/object/enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "_Chara_Girl1_USM",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

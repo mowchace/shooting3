@@ -1,17 +1,18 @@
 function draw_flash(_spriteType){
-	
+	//no 8direction sprite
 	if(_spriteType == noone){
-		// 敵スプライトの描画
+		//draw sprite
 		draw_self();
-		//攻撃命中時白く発光
+		//do frash when take attack
 		if(flash > 0){
 			flash -= 1;
 			shader_set(shwhite);
 			draw_self();
 			shader_reset();
 		}
+	//8direction sprite
 	}else{
-		//攻撃命中時白く発光
+		//do frash when take attack
 		if(flash > 0){
 			flash -= 1;
 			shader_set(shwhite);

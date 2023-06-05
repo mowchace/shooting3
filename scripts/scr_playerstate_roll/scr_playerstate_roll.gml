@@ -11,13 +11,13 @@ function playerstate_roll(){
  	//var _totalFrames = sprite_get_number(sprite_index/4);
 	//image_index = (CARDINAL_DIR * _totalFrames) + ((1-(moveDistanceRemaining/roll_distance)))*_totalFrames;
 	throu_flag = 1;
-	//Change state
+	//Change playerstate
 	if(moveDistanceRemaining <= 0){
-		state = playerstate_free;
+		playerstate = playerstate_free;
 	}
 	
 	if(_collided){
-		state = playerstate_bonk;
+		playerstate = playerstate_bonk;
 		moveDistanceRemaining = bonk_distance;
 		global.cameraShake = 4;
 	}

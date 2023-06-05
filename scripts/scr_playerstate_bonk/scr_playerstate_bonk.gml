@@ -1,10 +1,12 @@
+//Single execution script
+//player Touch the collision while dash.
 function playerstate_bonk(){
 	// Movement
 	moveX = lengthdir_x(inputmagnitude*bonk_speed,inputDirection-180);
 	moveY = lengthdir_y(inputmagnitude*bonk_speed,inputDirection-180);
 	moveDistanceRemaining = max(0,moveDistanceRemaining-bonk_speed);
 	//Collision check
-	var _collided = Collision(throu_flag);
+	//var _collided = Collision(throu_flag);
 	
 	//Update sprite
 	//sprite_index = spriteRoll;
@@ -12,9 +14,10 @@ function playerstate_bonk(){
 	//image_index = (CARDINAL_DIR * _totalFrames) + ((1-(moveDistanceRemaining/roll_distance)))*_totalFrames;
 	//x += moveX;
 	//y += moveY;
+	
 	//Change height
 	z = sin((moveDistanceRemaining/bonk_distance)*pi)*bonk_distanceheight;
 	if(moveDistanceRemaining <= 0){
-		state = playerstate_free;
+		playerstate = playerstate_free;
 	}
 }

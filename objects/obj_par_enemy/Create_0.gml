@@ -3,7 +3,7 @@ event_inherited();
 faction = factions.enemy;
 animespeed = 10;
 
-n_spd = 2;
+normal_speed = 2;
 w_spd = 0.5;
 r_spd = 1.3;
 spd = w_spd;
@@ -18,7 +18,7 @@ healthbar_y = 0;
 healthbar_x_plus = 0;
 healthbar_y_plus = 22;
 
-//state
+//enemystate
 enum states {
 	stop,
 	idle,
@@ -26,8 +26,8 @@ enum states {
 	alert,
 	attack,
 }
-state = states.idle;
-laststate = state;
+enemystate = states.idle;
+laststate = enemystate;
 attack_flag = false;
 attack_time = 0;
 alert_flag = false;
@@ -70,13 +70,13 @@ sprites_array[states.wander] = spr_wander;
 sprites_array[states.alert] = spr_alert;
 sprites_array[states.attack] = spr_attack;
 sprites_array[states.evasion] = spr_evasion;
-sprite_index = sprites_array[state];
+sprite_index = sprites_array[enemystate];
 
 dialogue_array[states.idle]=["*Whistles*","Hmm."]
 dialogue_array[states.alert]=["待て!","止まれ!"]
 
-var len = array_length_1d(dialogue_array[state]);
-text = dialogue_array[state[irandom_range(0,len-1)]];
+var len = array_length_1d(dialogue_array[enemystate]);
+text = dialogue_array[enemystate[irandom_range(0,len-1)]];
 */
 //Status Date
 

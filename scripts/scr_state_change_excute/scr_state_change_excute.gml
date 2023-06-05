@@ -1,3 +1,5 @@
+//Level up after process
+//Character Status change
 function statas_change_excute(_inst){
 	with(_inst){
 		Strength_MeleeATK = ((Strength+StrengthPlus)+(Dexterity+DexterityPlus)/10)+(Strength+StrengthPlus)/10*Equipment_StrengthMeleeATK_point;

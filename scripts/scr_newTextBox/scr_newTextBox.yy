@@ -1,12 +1,11 @@
 {
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "scr_newTextBox",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Texts",
+    "path": "folders/Scripts/Meta/Texts.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scr_newTextBox",
-  "tags": [],
-  "resourceType": "GMScript",
 }

@@ -15,6 +15,6 @@ with(other){
 		}
 	}
 }
-create_damege(damegePoint_Calculated_value,other,direction)
-audio_play_sound(hit_SE,0,0);
+create_damege(damegePoint_Calculated_value,fixed_damage,other,direction)
+//audio_play_sound(hit_SE,0,0);
 instance_destroy();

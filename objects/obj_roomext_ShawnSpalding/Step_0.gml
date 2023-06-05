@@ -1,4 +1,5 @@
-/// @description Insert description here
+//Translate main character
+//if main character tuch this object.start transration
 if(instance_exists(obj_player)&&position_meeting(obj_player.x,obj_player.y,id))
 {
 	if(!instance_exists(obj_transition_ShawnSpalding)){

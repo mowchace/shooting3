@@ -1,12 +1,11 @@
 {
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "scr_roomtransition_ShawnSpalding",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Meta",
+    "path": "folders/Scripts/Meta.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scr_roomtransition_ShawnSpalding",
-  "tags": [],
-  "resourceType": "GMScript",
 }

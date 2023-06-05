@@ -7,7 +7,7 @@ function enemy_state_idle(){
 	if(counter >= room_speed*2){
 		var _change = choose(0,1);
 		switch(_change){
-			case 0: state =states.wander;
+			case 0: enemystate =states.wander;
 			case 1: counter = 0;break;
 		}
 	}
@@ -18,7 +18,7 @@ function enemy_state_idle(){
 		if(collision_circle(x,y,_range,obj_player,0,0)){
 			var _inst1 = collision_line(x, y, obj_par_ally.x, obj_par_ally.y, obj_par_nutral, false, true);
 			if(_inst1 == noone){
-				state = states.alert;
+				enemystate = states.alert;
 			}
 		}
 	}

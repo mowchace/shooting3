@@ -3,7 +3,7 @@ event_inherited();
 //var _XX = x-x_offset;
 //var _YY = y-y_offset;
 
-switch(state){
+switch(enemystate){
 	case states.idle:
 		sprite_index = spr_enemy4_idle;
 	break;

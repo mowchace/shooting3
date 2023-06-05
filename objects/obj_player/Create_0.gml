@@ -1,6 +1,6 @@
 event_inherited();
-state = playerstate_free;
-laststate = state;
+playerstate = playerstate_free;
+laststate = playerstate;
 
 global.pickupmode = false;
 //room_ext spawn draw
@@ -15,7 +15,7 @@ if(global.targetX != -1){
 
 faction = factions.ally;
 
-n_spd = 5;
+normal_speed = 5;
 w_spd = 0.5;
 r_spd = 1.3;
 roll_speed = 10;
@@ -50,7 +50,6 @@ returnflug = false;
 
 
 damegeinvisibletime = 5;
-invisibletimecool = 5;
 
 // bullet setting
 bltdir = 0;
@@ -60,14 +59,15 @@ bltspd = 16;
 
 //Player Status
 NextLevelbaseEXP = 50;
+
+#region Player status date
+
 if(file_exists("PlayerData.csv"))
 	ds_characterData = load_csv("PlayerData.csv");
 else{
 	ds_characterData = ds_grid_create(25,3);
 }
-
 var _YY,_XX;
-
 ds_grid_value_exists(ds_characterData, 0, 0, 0, ds_grid_height(ds_characterData), CharacterDataID){
 	_XX = 1;
 	_YY = ds_grid_value_y(ds_characterData, 0, 0, 0, ds_grid_height(ds_characterData), CharacterDataID);
@@ -112,6 +112,8 @@ ds_grid_value_exists(ds_characterData, 0, 0, 0, ds_grid_height(ds_characterData)
 	Luck = ds_characterData[# _XX++,_YY];
 	LuckPlus = ds_characterData[# _XX++,_YY];
 }
+
+#endregion
 
 Level -= 0;
 MaxHP -= 0;

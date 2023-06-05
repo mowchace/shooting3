@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "_Chara_Civilian_Male_A",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"45189979-17d4-42e6-9c86-4b0fab0dc74f","path":"sprites/_Chara_Civilian_Male_A/_Chara_Civilian_Male_A.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"45189979-17d4-42e6-9c86-4b0fab0dc74f","path":"sprites/_Chara_Civilian_Male_A/_Chara_Civilian_Male_A.yy",},"LayerId":{"name":"76e07281-3ecf-4168-b687-15e8fe589a71","path":"sprites/_Chara_Civilian_Male_A/_Chara_Civilian_Male_A.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"_Chara_Civilian_Male_A","path":"sprites/_Chara_Civilian_Male_A/_Chara_Civilian_Male_A.yy",},"resourceVersion":"1.0","name":"45189979-17d4-42e6-9c86-4b0fab0dc74f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"45189979-17d4-42e6-9c86-4b0fab0dc74f",},
   ],
   "sequence": {
-    "spriteId": {"name":"_Chara_Civilian_Male_A","path":"sprites/_Chara_Civilian_Male_A/_Chara_Civilian_Male_A.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "_Chara_Civilian_Male_A",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"5071b4e6-281f-49d1-a3c5-f424f54c32c8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"45189979-17d4-42e6-9c86-4b0fab0dc74f","path":"sprites/_Chara_Civilian_Male_A/_Chara_Civilian_Male_A.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"_Chara_Civilian_Male_A","path":"sprites/_Chara_Civilian_Male_A/_Chara_Civilian_Male_A.yy",},
-    "resourceVersion": "1.4",
-    "name": "_Chara_Civilian_Male_A",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"76e07281-3ecf-4168-b687-15e8fe589a71","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"76e07281-3ecf-4168-b687-15e8fe589a71","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "enemy",
     "path": "folders/Sprites/object/enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "_Chara_Civilian_Male_A",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

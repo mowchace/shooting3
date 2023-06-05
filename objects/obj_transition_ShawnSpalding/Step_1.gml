@@ -18,5 +18,4 @@ if(leading = OUT){
 		instance_destroy();
 	}
 }
-//show_debug_message("leading"+string(leading));
 #endregion

@@ -1,4 +1,4 @@
-collisionmap = layer_tilemap_get_id(layer_get_id("Tcol"));
+event_inherited();
 faction =factions.nutral;
 flash = 0;
 attribute = AttributeType;
@@ -12,15 +12,6 @@ animelength = 0;
 flamewidh = 0;
 flameheight = 0;
 
-#region old_shadow
-//shadow_instance = instance_create_layer(x+Shadow_positionX_plus,y+Shadow_positionY_plus,"Instances",obj_shadow);
-//shadow_instance_id = shadow_instance.id;
-//with(shadow_instance_id){
-//	Xscal = other.Shadow_Xscal;	
-//	Yscal = other.Shadow_Yscal;
-//}
-#endregion
-
 attack_positionX = 0;
 attack_positionY = 0;
 attack_particlepositionX = 0;
@@ -32,3 +23,11 @@ destroy_enemy = noone;
 destroy_enemy_num = 1;
 moveX = 0;
 moveY = 0;
+
+// Not enemy NPC Status
+if(entityNPC){
+	portrate_index = 0;
+	name = "Anonymas";
+	text = ["こんにちは"];
+	speakers = [id];
+}

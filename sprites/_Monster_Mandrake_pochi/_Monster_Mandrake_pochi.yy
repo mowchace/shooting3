@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "_Monster_Mandrake_pochi",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"9f34bba5-90c3-4707-927d-84bb01ad98f3","path":"sprites/_Monster_Mandrake_pochi/_Monster_Mandrake_pochi.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9f34bba5-90c3-4707-927d-84bb01ad98f3","path":"sprites/_Monster_Mandrake_pochi/_Monster_Mandrake_pochi.yy",},"LayerId":{"name":"3fdfb3a1-00c3-429b-a64c-1ff52c4b25d4","path":"sprites/_Monster_Mandrake_pochi/_Monster_Mandrake_pochi.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"_Monster_Mandrake_pochi","path":"sprites/_Monster_Mandrake_pochi/_Monster_Mandrake_pochi.yy",},"resourceVersion":"1.0","name":"9f34bba5-90c3-4707-927d-84bb01ad98f3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9f34bba5-90c3-4707-927d-84bb01ad98f3",},
   ],
   "sequence": {
-    "spriteId": {"name":"_Monster_Mandrake_pochi","path":"sprites/_Monster_Mandrake_pochi/_Monster_Mandrake_pochi.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "_Monster_Mandrake_pochi",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"19620338-22cb-4676-968a-67a613f2e66f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9f34bba5-90c3-4707-927d-84bb01ad98f3","path":"sprites/_Monster_Mandrake_pochi/_Monster_Mandrake_pochi.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"_Monster_Mandrake_pochi","path":"sprites/_Monster_Mandrake_pochi/_Monster_Mandrake_pochi.yy",},
-    "resourceVersion": "1.4",
-    "name": "_Monster_Mandrake_pochi",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3fdfb3a1-00c3-429b-a64c-1ff52c4b25d4","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3fdfb3a1-00c3-429b-a64c-1ff52c4b25d4","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "enemy",
     "path": "folders/Sprites/object/enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "_Monster_Mandrake_pochi",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

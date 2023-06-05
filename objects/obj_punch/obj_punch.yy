@@ -1,7 +1,11 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_punch",
   "spriteId": null,
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_punching",
     "path": "sprites/spr_punching/spr_punching.yy",
@@ -24,18 +28,14 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"LifeTime","path":"objects/obj_par_attack/obj_par_attack.yy",},"objectId":{"name":"obj_par_attack","path":"objects/obj_par_attack/obj_par_attack.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"LifeTime","path":"objects/obj_par_attack/obj_par_attack.yy",},"objectId":null,"value":"1",},
   ],
   "parent": {
     "name": "atk",
-    "path": "folders/Objects/gameobject/effect/atk.yy",
+    "path": "folders/Objects/gameobject/atk.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_punch",
-  "tags": [],
-  "resourceType": "GMObject",
 }

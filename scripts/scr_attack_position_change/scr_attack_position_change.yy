@@ -1,12 +1,11 @@
 {
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "scr_attack_position_change",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "attack",
+    "path": "folders/Scripts/attack.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scr_attack_position_change",
-  "tags": [],
-  "resourceType": "GMScript",
 }

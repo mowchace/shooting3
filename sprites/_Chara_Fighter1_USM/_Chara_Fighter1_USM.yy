@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "_Chara_Fighter1_USM",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"082ed06e-aa0b-4e67-b5c5-653ce5cddcd6","path":"sprites/_Chara_Fighter1_USM/_Chara_Fighter1_USM.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"082ed06e-aa0b-4e67-b5c5-653ce5cddcd6","path":"sprites/_Chara_Fighter1_USM/_Chara_Fighter1_USM.yy",},"LayerId":{"name":"08b3a47f-753a-4c80-86cd-a751c5116abc","path":"sprites/_Chara_Fighter1_USM/_Chara_Fighter1_USM.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"_Chara_Fighter1_USM","path":"sprites/_Chara_Fighter1_USM/_Chara_Fighter1_USM.yy",},"resourceVersion":"1.0","name":"082ed06e-aa0b-4e67-b5c5-653ce5cddcd6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"082ed06e-aa0b-4e67-b5c5-653ce5cddcd6",},
   ],
   "sequence": {
-    "spriteId": {"name":"_Chara_Fighter1_USM","path":"sprites/_Chara_Fighter1_USM/_Chara_Fighter1_USM.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "_Chara_Fighter1_USM",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"2883e589-6729-40d8-8841-a9dfcdaf3026","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"082ed06e-aa0b-4e67-b5c5-653ce5cddcd6","path":"sprites/_Chara_Fighter1_USM/_Chara_Fighter1_USM.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"_Chara_Fighter1_USM","path":"sprites/_Chara_Fighter1_USM/_Chara_Fighter1_USM.yy",},
-    "resourceVersion": "1.4",
-    "name": "_Chara_Fighter1_USM",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"08b3a47f-753a-4c80-86cd-a751c5116abc","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"08b3a47f-753a-4c80-86cd-a751c5116abc","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "enemy",
     "path": "folders/Sprites/object/enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "_Chara_Fighter1_USM",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

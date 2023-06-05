@@ -1,5 +1,4 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+//----
 function scr_ExcuteArray(_scr,_args){
 	switch(array_length(_args)){
 		case 1: return script_execute(_scr,_args[0]);

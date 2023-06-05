@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_bullet",
   "spriteId": {
     "name": "spr_bullet",
     "path": "sprites/spr_bullet/spr_bullet.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -26,16 +30,13 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"animationnum","path":"objects/obj_par_attack/obj_par_attack.yy",},"objectId":{"name":"obj_par_attack","path":"objects/obj_par_attack/obj_par_attack.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"damegePoint_max","path":"objects/obj_par_attack/obj_par_attack.yy",},"objectId":{"name":"obj_par_attack","path":"objects/obj_par_attack/obj_par_attack.yy",},"value":"1.5","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"Characteristic","path":"objects/obj_par_attack/obj_par_attack.yy",},"objectId":{"name":"obj_par_attack","path":"objects/obj_par_attack/obj_par_attack.yy",},"value":"\"normal\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"animationnum","path":"objects/obj_par_attack/obj_par_attack.yy",},"objectId":null,"value":"1",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"damegePoint_max","path":"objects/obj_par_attack/obj_par_attack.yy",},"objectId":null,"value":"1.5",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Characteristic","path":"objects/obj_par_attack/obj_par_attack.yy",},"objectId":null,"value":"\"normal\"",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"fixed_damage","path":"objects/obj_par_attack/obj_par_attack.yy",},"objectId":{"name":"obj_par_attack","path":"objects/obj_par_attack/obj_par_attack.yy",},"value":"3",},
   ],
   "parent": {
     "name": "atk",
-    "path": "folders/Objects/gameobject/effect/atk.yy",
+    "path": "folders/Objects/gameobject/atk.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_bullet",
-  "tags": [],
-  "resourceType": "GMObject",
 }

@@ -21,7 +21,6 @@ function playerstate_free(){
 	//Collision check
 	Collision(throu_flag);
 
-
 	// APLLY MOVEMENT
 	//particle FX
 	exhaustCounter++;

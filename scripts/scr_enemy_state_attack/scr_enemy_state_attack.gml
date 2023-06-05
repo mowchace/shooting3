@@ -1,4 +1,7 @@
 function enemy_state_attack(){
+	if(global.enemystate != enemy_state.Alert){
+		global.enemystate = enemy_state.Alert
+	}
 	/*if(my_slash == noone){
 		my_slash = instance_create_layer(
 			x+image_xscale*16,y,"Instances",obj_meat
@@ -9,7 +12,7 @@ function enemy_state_attack(){
 	}
 	
 	//Transition Triggers
-	if(image_index > image_number-1){state = states.alert;}
+	if(image_index > image_number-1){enemystate = states.alert;}
 	*/
 	if(instance_exists(obj_par_ally)){
 		//var _inst = collision_line(x,y,obj_par_ally.x,obj_par_ally.y,obj_par_nutral,false,true);
@@ -23,7 +26,6 @@ function enemy_state_attack(){
 			if(collision_circle(x,y,range_base,obj_player,0,0)){
 				// Melee attack
 				if(cooltime <= 0 && Meelatktype1 != -1){
-					show_debug_message("Meelatktype1"+string(Meelatktype1));
 					switch(Meelatktype1){
 						//why 2X?
 						case 25: create_melee_attack(Meelatktype1,attack,_dir,atkspd,faction,id,noone,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);break;
@@ -43,10 +45,10 @@ function enemy_state_attack(){
 		//}
 		//Transition Triggers
 		if(!collision_circle(x,y,(range_base+range_plus)*4-range_minus,obj_player,0,0)){
-			state = states.alert;
+			enemystate = states.alert;
 		}
 	}else{
-		state = states.idle;
+		enemystate = states.idle;
 	}
 	//Sprite
 	//sprite_index = spr_attack;

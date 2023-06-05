@@ -9,7 +9,7 @@ if((direction > 315 || direction <= 45) || (direction > 135 && direction <= 225)
 }
 with(other){
 	range_plus = 30;
-	spd = n_spd;
+	spd = normal_speed;
 	alert_flag = true;
 	alert_time = room_speed;
 	create_emotion(emotion.alertextensyon);
@@ -21,6 +21,6 @@ with(other){
 		}
 	}
 }
-create_damege(damegePoint_Calculated_value,other,direction)
-audio_play_sound(hit_SE,0,0);
+create_damege(damegePoint_Calculated_value,fixed_damage,other,direction)
+//audio_play_sound(hit_SE,0,0);
 instance_destroy();

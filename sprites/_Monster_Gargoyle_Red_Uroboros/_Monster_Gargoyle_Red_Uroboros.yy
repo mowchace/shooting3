@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "_Monster_Gargoyle_Red_Uroboros",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7939ece6-b2a8-417c-b7b4-8576c1b7d90d","path":"sprites/_Monster_Gargoyle_Red_Uroboros/_Monster_Gargoyle_Red_Uroboros.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7939ece6-b2a8-417c-b7b4-8576c1b7d90d","path":"sprites/_Monster_Gargoyle_Red_Uroboros/_Monster_Gargoyle_Red_Uroboros.yy",},"LayerId":{"name":"34fdc009-ad0b-471a-8304-25d39a4a0f47","path":"sprites/_Monster_Gargoyle_Red_Uroboros/_Monster_Gargoyle_Red_Uroboros.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"_Monster_Gargoyle_Red_Uroboros","path":"sprites/_Monster_Gargoyle_Red_Uroboros/_Monster_Gargoyle_Red_Uroboros.yy",},"resourceVersion":"1.0","name":"7939ece6-b2a8-417c-b7b4-8576c1b7d90d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7939ece6-b2a8-417c-b7b4-8576c1b7d90d",},
   ],
   "sequence": {
-    "spriteId": {"name":"_Monster_Gargoyle_Red_Uroboros","path":"sprites/_Monster_Gargoyle_Red_Uroboros/_Monster_Gargoyle_Red_Uroboros.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "_Monster_Gargoyle_Red_Uroboros",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"6488048d-a89d-455c-a94a-a29a6921f2e7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7939ece6-b2a8-417c-b7b4-8576c1b7d90d","path":"sprites/_Monster_Gargoyle_Red_Uroboros/_Monster_Gargoyle_Red_Uroboros.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"_Monster_Gargoyle_Red_Uroboros","path":"sprites/_Monster_Gargoyle_Red_Uroboros/_Monster_Gargoyle_Red_Uroboros.yy",},
-    "resourceVersion": "1.4",
-    "name": "_Monster_Gargoyle_Red_Uroboros",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"34fdc009-ad0b-471a-8304-25d39a4a0f47","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"34fdc009-ad0b-471a-8304-25d39a4a0f47","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "enemy",
     "path": "folders/Sprites/object/enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "_Monster_Gargoyle_Red_Uroboros",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

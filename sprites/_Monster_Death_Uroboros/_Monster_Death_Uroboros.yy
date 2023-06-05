@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "_Monster_Death_Uroboros",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"372fb495-1887-4117-b81f-e2481886fd94","path":"sprites/_Monster_Death_Uroboros/_Monster_Death_Uroboros.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"372fb495-1887-4117-b81f-e2481886fd94","path":"sprites/_Monster_Death_Uroboros/_Monster_Death_Uroboros.yy",},"LayerId":{"name":"7951237f-b13d-4933-a30e-2eb3811c6ed3","path":"sprites/_Monster_Death_Uroboros/_Monster_Death_Uroboros.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"_Monster_Death_Uroboros","path":"sprites/_Monster_Death_Uroboros/_Monster_Death_Uroboros.yy",},"resourceVersion":"1.0","name":"372fb495-1887-4117-b81f-e2481886fd94","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"372fb495-1887-4117-b81f-e2481886fd94",},
   ],
   "sequence": {
-    "spriteId": {"name":"_Monster_Death_Uroboros","path":"sprites/_Monster_Death_Uroboros/_Monster_Death_Uroboros.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "_Monster_Death_Uroboros",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"30e07b62-fbbb-4db8-96ae-3b38711035f0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"372fb495-1887-4117-b81f-e2481886fd94","path":"sprites/_Monster_Death_Uroboros/_Monster_Death_Uroboros.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"_Monster_Death_Uroboros","path":"sprites/_Monster_Death_Uroboros/_Monster_Death_Uroboros.yy",},
-    "resourceVersion": "1.4",
-    "name": "_Monster_Death_Uroboros",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7951237f-b13d-4933-a30e-2eb3811c6ed3","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7951237f-b13d-4933-a30e-2eb3811c6ed3","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "enemy",
     "path": "folders/Sprites/object/enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "_Monster_Death_Uroboros",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

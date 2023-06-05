@@ -1,5 +1,6 @@
 function create_range_attack(_objType,_atk,_dir,_spd,_faction,_id,_player_hide_state,_attackpositionX,_attackpositionY,_attackparticlepositionX,_attackparticlepositionY){
-	// Empty cartridge case
+#region particle position settings
+// Empty cartridge case
 	var _X_plus = lengthdir_x(sprite_width/2,_dir);
 	var _Y_plus = lengthdir_y(sprite_height/3,_dir);
 	var _particlepositionX = _attackparticlepositionX;
@@ -23,8 +24,9 @@ function create_range_attack(_objType,_atk,_dir,_spd,_faction,_id,_player_hide_s
 
 	_particlepositionX2 += _X_plus2;
 	_particlepositionY2 += _Y_plus2;
-	
-// Create bullet particle
+#endregion
+
+#region set particle type and SE
 	var _inst;
 	switch (_objType){
 		case obj_bullet: {
@@ -49,20 +51,19 @@ function create_range_attack(_objType,_atk,_dir,_spd,_faction,_id,_player_hide_s
 			audio_play_sound(SE_bullet_reflect,1,0);
 		}break;
 	}
-	_inst = instance_create_layer(_attackpositionX,_attackpositionY,"Instances",_objType);
-	with (_inst){
-		direction = _dir;
-		image_angle = _dir;
-		baseSpeed = _spd;
-		attack = _atk;
-		faction = _faction;
-		creater = _id;
-		hideattack = _player_hide_state;
-		if(faction == factions.enemy) image_blend = c_red;
-	}
-	//if(_objType != "meeleattack"){
-	//	var _inst = instance_create_layer(x,y-5,"Instances",obj_gunflash);
-	//	direction = _dir;
-	//	image_angle = _dir;
-	//}
+#endregion
+
+//create bullet setting with Instance_layer
+_inst = instance_create_layer(_attackpositionX,_attackpositionY,"Instances",_objType);
+//add bullet status
+with (_inst){
+	direction = _dir;
+	image_angle = _dir;
+	baseSpeed = _spd;
+	attack = _atk;
+	faction = _faction;
+	creater = _id;
+	hideattack = _player_hide_state;
+	if(faction == factions.enemy) image_blend = c_red;
+}
 }

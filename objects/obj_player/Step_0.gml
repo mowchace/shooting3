@@ -1,74 +1,94 @@
 event_inherited();
-if(global.gamePaused){
+//if game pousing or show inventry active.exit step event
+#region action stop
+if(global.gamePaused || global.show_inventory){
+	//stop animetion speed
 	animespeed = 0;
 	 exit;
 }else{
+	//begin animetion
 	animespeed = 10;
 }
-// UPDATE INPUT
+#endregion
+
+#region UPDATE INPUT
+//---?
 speed = 0;
+//character direction turn of the mousepointer
 direction = point_direction(x,y,mouse_x,mouse_y)
+//keyboard check section
 input_Left = keyboard_check(ord("A"));
 input_Right = keyboard_check(ord("D"));
 input_Up = keyboard_check(ord("W"));
 input_Down = keyboard_check(ord("S"));
 
+//Dash
 input_run = keyboard_check(vk_shift);
+//Hide
 input_hide = keyboard_check(vk_control);
+//Emergency Dash
 input_action = keyboard_check_pressed(vk_space);
-input_action_other = keyboard_check_pressed(ord("E"));
+//talk and etc action
+input_action_E = keyboard_check_pressed(ord("E"));
+//Item pick up
 if(keyboard_check_pressed(ord("Z"))){global.pickupmode = !global.pickupmode}
+#endregion
 
-// RESET MOVE VARIABLES
+#region move action
+//RESET MOVE VARIABLES
 moveX = 0;
 moveY = 0;
-if(invisibletimecool <= damegeinvisibletime){
-	invisibletimecool += 1;
-}
 
 // INTENDED MOVEMENT
 if (input_hide || input_run) {
-	spd = abs((input_hide*w_spd*n_spd) + (input_run*r_spd*n_spd));
+	spd = abs(((input_hide*w_spd) + (input_run*r_spd))*normal_speed);
 } else {
-	spd = n_spd;
+	spd = normal_speed;
 }
-//moveY = (input_Down - input_Up) * spd;
-//moveX = (input_Right - input_Left) * spd;
+
 inputDirection = point_direction(0,0,input_Right-input_Left,input_Down-input_Up);
 inputmagnitude = (input_Right-input_Left != 0) || (input_Down-input_Up != 0);
 
-// Change state
+// Rolling dash action
 if(input_action){
-	if(state != playerstate_bonk){
-		state = playerstate_roll;
+	//if player not staning.action dash
+	if(playerstate != playerstate_bonk){
+		playerstate = playerstate_roll;
 		moveDistanceRemaining = roll_distance;
 	}
 }
-// Activekey logic
-if(input_action_other){
-	var _activateX = lengthdir_x(10,direction);
-	var _activateY = lengthdir_y(30,direction);
-	activate = instance_position(x+_activateX,y+_activateY,obj_par_entities);
-	
-	if(activate != noone && activate.entityActivateScript != -1){
-		scr_ExcuteArray(activate.entityActivateScript,activate.entityActivateArgs);
-		// Make an npc face the player
-		if(activate.entityNPC){
-			with(activate){
-				direction = point_direction(x,y,other.x,other.y);
-				image_index = CARDINAL_DIR;
-			}
-		}
-	}
-}
-script_execute(state);
+
+script_execute(playerstate);
 
 x += moveX;
 y += moveY;
+#endregion
 
-// don't shoot pickupmode or showinventorymode
-if(!global.show_inventory){
-	// Shoot
+#region talk pickup(kari)
+// action Talk and pick up
+if(input_action_E){
+	#region Activekey logic Shawn
+	// action effective range
+	var _radius = 10;
+	activate = collision_rectangle(x-_radius,y-_radius,x+_radius,y+_radius,obj_par_entities,1,1);
+	
+	// action logic
+	//if(activate != noone && activate.entityActivateScript != -1){
+	//	scr_ExcuteArray(activate.entityActivateScript,activate.entityActivateArgs);
+	//	// Make an npc face the player
+	//	if(activate.entityNPC){
+	//		with(activate){
+	//			direction = point_direction(x,y,other.x,other.y);
+	//			image_index = CARDINAL_DIR;
+	//		}
+	//	}
+	//}
+	#endregion
+}
+#endregion
+
+
+#region attack
 	direction = point_direction(x,y,mouse_x,mouse_y);
 	if (mouse_check_button(mb_left) && cooldown < 1) {
 		switch(Equipment_weapon_1){
@@ -90,10 +110,11 @@ if(!global.show_inventory){
 		create_range_attack(obj_snipe,RangeATK,direction,_bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
 		snipecooldown = 30;
 	}
-}
 cooldown -= 1;
 powerfullcooldown -= 1;
 snipecooldown -= 1;
+
+#endregion
 //move_wrap(true,true,0)
 depth = -bbox_bottom;
 //global.playerHP = HP
