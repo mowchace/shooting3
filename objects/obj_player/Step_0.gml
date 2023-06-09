@@ -91,14 +91,19 @@ if(input_action_E){
 #region attack
 	direction = point_direction(x,y,mouse_x,mouse_y);
 	if (mouse_check_button(mb_left) && cooldown < 1) {
-		switch(Equipment_weapon_1){
-			case "obj_punch":{
-				create_melee_attack(asset_get_index(Equipment_weapon_1),Strength_MeleeATK,direction,0,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
-			}break;
-			default:{
-				create_range_attack(asset_get_index(Equipment_weapon_1),RangeATK,direction,bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
-			}break
+		var _blt_num = 0
+		repeat(5){
+			create_range_attack(asset_get_index(Equipment_weapon_1),RangeATK,direction+irandom_range(-_blt_num,_blt_num),bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
+			_blt_num += 1;
 		}
+		//switch(Equipment_weapon_1){
+		//	case "obj_punch":{
+		//		create_melee_attack(asset_get_index(Equipment_weapon_1),Strength_MeleeATK,direction,0,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
+		//	}break;
+		//	default:{
+		//		create_range_attack(asset_get_index(Equipment_weapon_1),RangeATK,direction,bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
+		//	}break
+		//}
 		cooldown = 5;
 		}
 	if (mouse_check_button(mb_right) && powerfullcooldown < 1) {

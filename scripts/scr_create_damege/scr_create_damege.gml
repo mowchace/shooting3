@@ -8,7 +8,6 @@ function create_damege(_damegepoint,_fixeDamege,_obj,_direction){
 		if(_damege <= 0){_damege = 0}
 		//add fixed_damege
 		_damege += _fixeDamege;
-		show_debug_message("_damage = "+string(_damege));
 		 //if damege value more 1.process start
 		if(_damege > 1){
 			if(object_index != obj_player){

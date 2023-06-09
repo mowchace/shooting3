@@ -5,7 +5,6 @@ global.targetX = -1;
 global.targetY = -1;
 global.targetDirection = 0;
 
-Pausebltlife = 0;
 Pausebltspeed = 0;
 viewX = 0;
 viewY = 0;

@@ -3,6 +3,8 @@ faction =factions.nutral;
 flash = 0;
 attribute = AttributeType;
 depth = -bbox_bottom;
+//take damage obj_bomb.get id
+get_bomb_id = noone;
 
 spritePart = noone;
 x_offset = sprite_get_xoffset(mask_index);
@@ -23,6 +25,9 @@ destroy_enemy = noone;
 destroy_enemy_num = 1;
 moveX = 0;
 moveY = 0;
+
+//take hit count
+hit_count = 0
 
 // Not enemy NPC Status
 if(entityNPC){

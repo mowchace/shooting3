@@ -4,26 +4,20 @@ damegePoint_Calculated_value = floor(damegePoint*attack/10);
 if(other == creater || other.faction == faction) exit;
 //Damege object
 create_particles(x+irandom_range(0,gunhit_rangeplus),y+irandom_range(-gunhit_rangeplus,0),direction,"obj_gunhit");
-if((direction > 315 || direction <= 45) || (direction > 135 && direction <= 225)){
-	direction += 180;
-}
+
 with(other){
+	//enemy_object status change
 	range_plus = 30;
 	spd = normal_speed;
 	alert_flag = true;
 	alert_time = room_speed;
 	create_emotion(emotion.alertextensyon);
+	//enemy_object type is Iron.create reflect attack
 	if(attribute == "Iron"){
-		audio_play_sound(choose(SE_gunhit_metal1,SE_gunhit_metal2,SE_gunhit_metal3),0,0)
+		//make player attack power/2 bullet
 		if(other.Characteristic == "normal"){
 			other.damegePoint_Calculated_value /= 2;
-			//if characte position (direction > 315 || direction <= 45.direction)||(direction > 135 && direction <= 225)
-			//direction + 180.else + 360
-			var _dir = 0
-			if(direction > 315 || direction <= 45)||(direction > 135 && direction <= 225)
-			{_dir = 0}else{_dir = 90};
-			_dir += _dir+irandom_range(-10,10);
-			create_range_attack(obj_reflect,attack,other.direction+_dir,other.speed,faction,id,noone,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
+			create_reflect_attack(attack,other.direction,other.speed,0,faction,id,attack_positionX,attack_positionY);
 		}
 	}
 }

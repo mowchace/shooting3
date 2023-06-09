@@ -13,5 +13,8 @@ attack_positionY = y-5;
 attack_particlepositionX = x;
 attack_particlepositionY = y-sprite_height/3;
 
+//reflect number of times
+reflect_num = 0;
+
 // hit SE
 hit_SE = SE_gunhit_normal;
