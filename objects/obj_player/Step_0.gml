@@ -94,6 +94,7 @@ if(input_action_E){
 		var _blt_num = 0
 		repeat(5){
 			create_range_attack(asset_get_index(Equipment_weapon_1),RangeATK,direction+irandom_range(-_blt_num,_blt_num),bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
+			//create_range_attack(obj_bullet,RangeATK,direction+irandom_range(-_blt_num,_blt_num),bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
 			_blt_num += 1;
 		}
 		//switch(Equipment_weapon_1){

@@ -9,5 +9,6 @@ switch (room){
 		if(global.pickupmode){
 			draw_text(x,y+20,"PickUpMode");
 		}
+
 	} break;
 }

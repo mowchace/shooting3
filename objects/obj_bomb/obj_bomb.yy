@@ -9,7 +9,10 @@
   "solid": false,
   "visible": false,
   "managed": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_bomb_effect_collision",
+    "path": "sprites/spr_bomb_effect_collision/spr_bomb_effect_collision.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "obj_par_attack",

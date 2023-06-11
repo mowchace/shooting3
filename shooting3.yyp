@@ -3,6 +3,7 @@
   "resourceVersion": "1.6",
   "name": "shooting3",
   "resources": [
+    {"id":{"name":"obj_players_status","path":"objects/obj_players_status/obj_players_status.yy",},"order":18,},
     {"id":{"name":"scr_enemy_state_attack","path":"scripts/scr_enemy_state_attack/scr_enemy_state_attack.yy",},"order":3,},
     {"id":{"name":"_Monster_Dragon_B_pochi","path":"sprites/_Monster_Dragon_B_pochi/_Monster_Dragon_B_pochi.yy",},"order":56,},
     {"id":{"name":"spr_healthbar","path":"sprites/spr_healthbar/spr_healthbar.yy",},"order":10,},
@@ -14,6 +15,7 @@
     {"id":{"name":"spr_inventory_misc_item","path":"sprites/spr_inventory_misc_item/spr_inventory_misc_item.yy",},"order":4,},
     {"id":{"name":"spr_bigrock","path":"sprites/spr_bigrock/spr_bigrock.yy",},"order":5,},
     {"id":{"name":"_Chara_Civilian_Female_B","path":"sprites/_Chara_Civilian_Female_B/_Chara_Civilian_Female_B.yy",},"order":28,},
+    {"id":{"name":"spr_bomb_effect_collision","path":"sprites/spr_bomb_effect_collision/spr_bomb_effect_collision.yy",},"order":6,},
     {"id":{"name":"obj_snipe","path":"objects/obj_snipe/obj_snipe.yy",},"order":7,},
     {"id":{"name":"spr_gunhit","path":"sprites/spr_gunhit/spr_gunhit.yy",},"order":3,},
     {"id":{"name":"bgm_mgs2alert1","path":"sounds/bgm_mgs2alert1/bgm_mgs2alert1.yy",},"order":11,},
@@ -370,6 +372,8 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"CharacterEnemysData.csv","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"ItemData.csv","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"PlayerData.csv","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"PlayerData.xlsx","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"PlayerData.csv_test_end","CopyToMask":-1,"filePath":"datafiles",},
   ],
   "MetaData": {
     "IDEVersion": "2022.8.1.37",
