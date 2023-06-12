@@ -91,12 +91,11 @@ if(input_action_E){
 #region attack
 	direction = point_direction(x,y,mouse_x,mouse_y);
 	if (mouse_check_button(mb_left) && cooldown < 1) {
-		var _blt_num = 0
-		repeat(5){
-			create_range_attack(asset_get_index(Equipment_weapon_1),RangeATK,direction+irandom_range(-_blt_num,_blt_num),bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
-			//create_range_attack(obj_bullet,RangeATK,direction+irandom_range(-_blt_num,_blt_num),bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
-			_blt_num += 1;
-		}
+		//create bullet shot_gun
+		create_range_attack_shot_gun(asset_get_index(Equipment_weapon_1),RangeATK,5,direction,bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
+		
+		//create bullet machin_gun
+		//create_range_attack(obj_bullet,RangeATK,direction+irandom_range(-_blt_num,_blt_num),bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
 		//switch(Equipment_weapon_1){
 		//	case "obj_punch":{
 		//		create_melee_attack(asset_get_index(Equipment_weapon_1),Strength_MeleeATK,direction,0,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);

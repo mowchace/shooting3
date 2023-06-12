@@ -189,6 +189,7 @@
     {"id":{"name":"spr_inventory_UI","path":"sprites/spr_inventory_UI/spr_inventory_UI.yy",},"order":4,},
     {"id":{"name":"scr_create_particles","path":"scripts/scr_create_particles/scr_create_particles.yy",},"order":4,},
     {"id":{"name":"SE_rolling_rocket","path":"sounds/SE_rolling_rocket/SE_rolling_rocket.yy",},"order":6,},
+    {"id":{"name":"scr_create_range_attack_shot_gun","path":"scripts/scr_create_range_attack_shot_gun/scr_create_range_attack_shot_gun.yy",},"order":6,},
     {"id":{"name":"scr_equipment_Item","path":"scripts/scr_equipment_Item/scr_equipment_Item.yy",},"order":6,},
     {"id":{"name":"move_obj3","path":"sprites/move_obj3/move_obj3.yy",},"order":6,},
     {"id":{"name":"move_obj1","path":"sprites/move_obj1/move_obj1.yy",},"order":4,},
