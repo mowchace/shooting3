@@ -1,7 +1,12 @@
 # shooting3
 The concept of this game is to add "Metal gia solid" and elements of "elona" to the game "Tenchi Sozo".
 Note: The current BGM, SE, and sprites are mixed with non-free materials, so please do not use them for other works.
+
 Game engine: GameMaker2
+To play games, you need to install Gamemaker2.
+After that, download shooting3.yyz in this file, install Gamemaker2, and select shooting3.yyz in import on the file tab.
+After the import is complete, you can start the game with the "F5" key.
+
 
 How to play: After pressing the Enter button on the start screen to start the game, access the part not surrounded by the blue frame at the bottom left to transition the screen. After the transition, let's aim and destroy the enemies and natural objects.
 
@@ -22,7 +27,12 @@ Open and close Item Inventory: I, Some items in the inventory will be consumed w
 
 このゲームのコンセプトはゲーム「天地創造」に「elona」の何でもできる要素と「メタルギアソリッド」を足したようなゲームにしたいと思っています。
 注意:現段階ではBGMおよびSE、spriteはフリー素材ではないものが混ざっています。他の作品などに使用しないでください。
+
 Game engine: GameMaker2
+shooting3.yyz
+ゲームで遊ぶ場合は、Gamemaker2をインストールする必要があります。
+その後このファイル内のshooting3.yyzをダウンロードし、Gamemaker2をインストール後、ファイルタブのimportでshooting3.yyzを選択してください。
+インポート完了後「F5」キーでゲームを開始できます。
 
 遊び方：
 開始画面でEnterボタンを押すとスタート
