@@ -1,6 +1,7 @@
 # shooting3
 The concept of this game is to add "Metal gia solid" and elements of "elona" to the game "Tenchi Sozo".
 Note: The current BGM, SE, and sprites are mixed with non-free materials, so please do not use them for other works.
+Game engine: GameMaker2
 
 How to play: After pressing the Enter button on the start screen to start the game, access the part not surrounded by the blue frame at the bottom left to transition the screen. After the transition, let's aim and destroy the enemies and natural objects.
 
@@ -21,6 +22,7 @@ Open and close Item Inventory: I, Some items in the inventory will be consumed w
 
 このゲームのコンセプトはゲーム「天地創造」に「elona」の何でもできる要素と「メタルギアソリッド」を足したようなゲームにしたいと思っています。
 注意:現段階ではBGMおよびSE、spriteはフリー素材ではないものが混ざっています。他の作品などに使用しないでください。
+Game engine: GameMaker2
 
 遊び方：
 開始画面でEnterボタンを押すとスタート
