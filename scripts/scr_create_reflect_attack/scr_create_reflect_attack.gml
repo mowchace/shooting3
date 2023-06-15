@@ -8,7 +8,7 @@ _reflect_num += 1;
 audio_play_sound(SE_bullet_reflect,1,0);
 
 //create bullet setting with Instance_layer
-_inst = instance_create_layer(_attackpositionX,_attackpositionY,"Instances",obj_reflect);
+var _inst = instance_create_layer(_attackpositionX,_attackpositionY,"Instances",obj_reflect);
 //add bullet status
 with (_inst){
 	direction = _dir;

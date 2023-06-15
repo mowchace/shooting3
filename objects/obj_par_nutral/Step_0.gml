@@ -8,8 +8,3 @@ if(global.gamePaused){
 }
 
 attack_position_change(x,y-5,x,y-sprite_height/3);
-
-if(HP <= 0){
-	audio_play_sound(SE,1,0);
-	instance_destroy();
-}

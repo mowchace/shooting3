@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "TileSet_siba_bg",
   "spriteId": {
     "name": "spr_siba_bg",
     "path": "sprites/spr_siba_bg/spr_siba_bg.yy",
@@ -40,8 +43,4 @@
     "name": "Tile Sets",
     "path": "folders/Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "TileSet_siba_bg",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

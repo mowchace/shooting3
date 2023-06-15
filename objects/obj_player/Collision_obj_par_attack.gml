@@ -33,7 +33,7 @@ with(other){
 			//if player stutas type is Iron.create reflect attack
 			if(attribute == "Iron" && other.Characteristic == "normal"){
 				other.damegePoint_Calculated_value /= 2;
-				create_reflect_attack(RangeATK,other.direction,other.speed,0,faction,id,attack_positionX,attack_positionY);
+				create_reflect_attack(getStatusTarget.RangeATK,other.direction,other.speed,0,faction,id,attack_positionX,attack_positionY);
 			}
 		}
 		create_damege(damegePoint_Calculated_value,fixed_damage,other,direction)

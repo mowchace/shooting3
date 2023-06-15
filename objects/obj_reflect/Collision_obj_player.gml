@@ -9,7 +9,7 @@ with(other){
 	if(attribute == "Iron" && other.reflect_num <= 4){
 		//make player attack power/2 bullet
 		other.damegePoint_Calculated_value /= 2;
-		create_reflect_attack(RangeATK,other.direction,other.speed,other.reflect_num,faction,id,attack_positionX,attack_positionY);
+		create_reflect_attack(getStatusTarget.RangeATK,other.direction,other.speed,other.reflect_num,faction,id,attack_positionX,attack_positionY);
 	}
 }
 //player take damege point

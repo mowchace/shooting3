@@ -2,7 +2,10 @@ event_inherited();
 faction =factions.nutral;
 flash = 0;
 attribute = AttributeType;
-depth = -bbox_bottom;
+
+//this is highest depth.
+//depth = bbox_bottom;
+
 //take damage obj_bomb.get id
 get_bomb_id = noone;
 

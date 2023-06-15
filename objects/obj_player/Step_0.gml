@@ -92,7 +92,7 @@ if(input_action_E){
 	direction = point_direction(x,y,mouse_x,mouse_y);
 	if (mouse_check_button(mb_left) && cooldown < 1) {
 		//create bullet shot_gun
-		create_range_attack_shot_gun(asset_get_index(Equipment_weapon_1),RangeATK,5,direction,bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
+		create_range_attack_shot_gun(asset_get_index(getStatusTarget.Equipment_weapon_1),getStatusTarget.RangeATK,5,direction,bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
 		
 		//create bullet machin_gun
 		//create_range_attack(obj_bullet,RangeATK,direction+irandom_range(-_blt_num,_blt_num),bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
@@ -107,12 +107,12 @@ if(input_action_E){
 		cooldown = 5;
 		}
 	if (mouse_check_button(mb_right) && powerfullcooldown < 1) {
-		create_range_attack(obj_missile,RangeATK,direction,bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
+		create_range_attack(obj_missile,getStatusTarget.RangeATK,direction,bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
 		powerfullcooldown = 30;
 	}
 	if (mouse_check_button(mb_middle) && snipecooldown < 1) {
 		var _bltspd = 20;
-		create_range_attack(obj_snipe,RangeATK,direction,_bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
+		create_range_attack(obj_snipe,getStatusTarget.RangeATK,direction,_bltspd,faction,id,input_hide,attack_positionX,attack_positionY,attack_particlepositionX,attack_particlepositionY);
 		snipecooldown = 30;
 	}
 cooldown -= 1;
@@ -121,8 +121,6 @@ snipecooldown -= 1;
 
 #endregion
 //move_wrap(true,true,0)
-depth = -bbox_bottom;
-//global.playerHP = HP
-if(HP <= 0){
-	instance_destroy();
-}
+
+//this switch on.player highest depth
+//depth = -bbox_bottom;

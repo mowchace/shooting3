@@ -106,7 +106,4 @@ if(exhaustCounter >= 10 && spd != 0 && enemystate != states.idle && enemystate !
 	create_dash_exhaust("obj_par_enemy");
 }
 
-if(HP <= 0){
-	instance_destroy();
-}
 move_wrap(true,true,0);

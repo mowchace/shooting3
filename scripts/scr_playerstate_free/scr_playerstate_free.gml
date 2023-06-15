@@ -5,7 +5,7 @@ function playerstate_free(){
 	// HideLevel hand over the obj_par_enemy
 	if(input_hide){
 		with(obj_par_enemy){
-			range_minus = other.HideLevel;
+			range_minus = other.getStatusTarget.HideLevel;
 		}
 	} else {
 		with(obj_par_enemy){
