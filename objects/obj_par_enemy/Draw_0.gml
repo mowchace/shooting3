@@ -1,4 +1,3 @@
-event_inherited();
 var col = c_white;
 var _Searchplayerrange = Searchplayerrange-range_minus;
 if(_Searchplayerrange <= range_base/4){_Searchplayerrange = range_base/4;}
@@ -82,17 +81,19 @@ if(sprite_8direction_switch){
 		else						{returnflug = !returnflug;}
 	}
 	
-	// HPバー表示
+	//helth_bar draw
 	if(health_bar_draw){
 		healthbar_x = x+healthbar_x_plus;
 		healthbar_y = y-healthbar_y_plus;
+		draw_sprite_stretched_ext(spr_healthbar,0,healthbar_x,healthbar_y,healthbar_width,healthbar_height,c_black,1);
 		draw_sprite_stretched(spr_healthbar,0,healthbar_x,healthbar_y,(HP/MaxHP)*healthbar_width,healthbar_height);
 	}
 }else{
-	// HPバー表示
+	//helth_bar draw
 	if(health_bar_draw){
 		healthbar_x = x;
 		healthbar_y = y-sprite_height*3/4;
+		draw_sprite_stretched_ext(spr_healthbar,0,healthbar_x,healthbar_y,healthbar_width,healthbar_height,c_black,1);
 		draw_sprite_stretched(spr_healthbar,0,healthbar_x,healthbar_y,(HP/MaxHP)*healthbar_width,healthbar_height);
 	}
 }

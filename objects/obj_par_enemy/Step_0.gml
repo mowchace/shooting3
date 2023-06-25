@@ -106,4 +106,12 @@ if(exhaustCounter >= 10 && spd != 0 && enemystate != states.idle && enemystate !
 	create_dash_exhaust("obj_par_enemy");
 }
 
+///Did I move up or down
+if(visible && y != yprevious){
+	//I am in the room
+	if( y >= 0 && y < room_height){
+		//layer updating
+		updatelayer();
+	}
+}
 move_wrap(true,true,0);

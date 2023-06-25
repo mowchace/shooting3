@@ -8,3 +8,8 @@ if(global.gamePaused){
 }
 
 attack_position_change(x,y-5,x,y-sprite_height/3);
+
+//layer update
+if(visible && y >= 0 && y < room_height){
+	updatelayer();
+}

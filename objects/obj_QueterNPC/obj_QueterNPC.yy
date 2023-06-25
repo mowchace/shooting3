@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_QueterNPC",
   "spriteId": {
     "name": "spr_enemy1",
     "path": "sprites/spr_enemy1/spr_enemy1.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -26,15 +30,11 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"entityNPC","path":"objects/obj_par_entities/obj_par_entities.yy",},"objectId":{"name":"obj_par_entities","path":"objects/obj_par_entities/obj_par_entities.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"sprite_8direction_switch","path":"objects/obj_faction/obj_faction.yy",},"objectId":{"name":"obj_faction","path":"objects/obj_faction/obj_faction.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityNPC","path":"objects/obj_par_entities/obj_par_entities.yy",},"objectId":{"name":"obj_par_entities","path":"objects/obj_par_entities/obj_par_entities.yy",},"value":"True",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"sprite_8direction_switch","path":"objects/obj_faction/obj_faction.yy",},"objectId":{"name":"obj_faction","path":"objects/obj_faction/obj_faction.yy",},"value":"False",},
   ],
   "parent": {
     "name": "enemy",
     "path": "folders/Objects/gameobject/enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_QueterNPC",
-  "tags": [],
-  "resourceType": "GMObject",
 }

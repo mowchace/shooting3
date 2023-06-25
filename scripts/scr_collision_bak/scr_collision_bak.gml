@@ -1,10 +1,10 @@
 //----All collision check script
-function Collision(_throu_flag){
+function Collision_bak(_throu_flag){
 	var _collided = false;
 	switch(_throu_flag){
 		case 0: 
+		//obj_nutral collision check
 		if(moveX != 0){
-			//obj_nutral collision check
 			if(place_meeting(x+moveX,y,obj_par_nutral) || tilemap_get_at_pixel(collisionmap,x+moveX,y)){
 				repeat(abs(moveX)){
 					if (!place_meeting(x+sign(moveX),y,obj_par_nutral) && !tilemap_get_at_pixel(collisionmap,x+sign(moveX),y)){

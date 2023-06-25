@@ -19,3 +19,8 @@ DEF = 0;
 EXP = MaxHP/3;
 SE = SE_elona_crush;
 particleName = "";
+
+//layer update
+if(y >= 0 && y < room_height){
+	updatelayer();
+}

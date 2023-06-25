@@ -121,7 +121,7 @@ if(pickup_slot != -1){
 				if(inv_grid[# 1,selected_slot] == 0){
 					inv_grid[# 0,selected_slot] = item.None;
 				}
-				use_Item(obj_player,selectingslot_item,_item_info);
+				use_Item(obj_players_status,selectingslot_item,_item_info);
 			}break;
 			case itemType.EquipmentItem: {
 				EquipmentFlag = true;
