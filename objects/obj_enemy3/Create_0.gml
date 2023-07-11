@@ -1,9 +1,5 @@
 event_inherited();
 spr_base = spr_enemy3;
-x_offset = 10;
-y_offset = 17;
-spritePart = 1;
 
-animelength = 3;
-flamewidh = 20;
-flameheight = 16;
+create_object = obj_enemy5;
+create_object_num = 2;

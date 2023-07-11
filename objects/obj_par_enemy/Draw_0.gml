@@ -23,8 +23,10 @@ draw_line_colour(x+dx1, y+dy1, x+dx2, y+dy2, col, col);
 
 //８方向スプライト表示
 if(sprite_8direction_switch){
+	#region old draw sprite 
+	/*
 	var _animelength = animelength;
-	var _flamewidh = flamewidh;
+	var _flamewidth = flamewidh;
 	var _flameheight = flameheight;
 
 	var _XX = x-x_offset;
@@ -67,11 +69,35 @@ if(sprite_8direction_switch){
 	if (moveX = 0 && moveY = 0) {
 			x_frame = Row*3;
 	}
+*/
+	#endregion
+	
+	#region var setting
+	var _animelength = 4;
+	var _flamewidth = sprite_get_width(spr_base)/4;
+	var _flameheight = sprite_get_height(spr_base)/8;
+
+	var _XX = x-x_offset;
+	var _YY = y-y_offset;
+	#endregion
+
+	//moving check
+	//direction sprite
+	y_frame = floor(direction/45);
+	if(moveX !=0 || moveY != 0){
+		//Increment Frame for animetion
+		x_frame += animespeed/room_speed;
+		if(x_frame >= _animelength) x_frame = 0
+	}else{
+		//idle.x_frame = 0.9 is change sprite litle quick
+		x_frame = 0.9;
+	}
 
 
 	// DRAW SPRITE
-	spritePart = draw_sprite_part(spr_base,0,floor(x_frame)*_flamewidh,y_frame*_flameheight,_flamewidh,_flameheight,_XX,_YY);
-
+	//spritePart = draw_sprite_part(spr_base,0,floor(x_frame)*_flamewidth,y_frame*_flameheight,_flamewidth,_flameheight,_XX,_YY);
+	spritePart = draw_sprite_part_ext(spr_base,0,floor(x_frame)*_flamewidth,y_frame*_flameheight,_flamewidth,_flameheight,floor(_XX),floor(_YY),1,1,c_white,1);
+/*
 	// INCRIMENT FRAME ANIMATION
 	if(!returnflug){
 		if(x_frame < _animelength*(Row+1))	{x_frame += animespeed/60;}
@@ -80,7 +106,8 @@ if(sprite_8direction_switch){
 		if(x_frame > (Row*_animelength))	{x_frame -= animespeed/60;x_frame =floor(x_frame);}
 		else						{returnflug = !returnflug;}
 	}
-	
+*/
+
 	//helth_bar draw
 	if(health_bar_draw){
 		healthbar_x = x+healthbar_x_plus;

@@ -8,7 +8,7 @@ healthbar_height = 2;
 healthbar_x = 0;
 healthbar_y = 0;
 
-create_instance = noone;
+create_object = noone;
 respawn_instance_num = 1;
 
 MaxHP = irandom_range(100,500);

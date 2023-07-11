@@ -20,3 +20,14 @@ if(instance_exists(obj_player)){
 		}
 	}
 }
+
+//instance_destroy(shadow_instance_id);
+if(create_object != noone && instance_count <= 100){
+	var _flamewidth = sprite_get_width(spr_base)/4;
+	var _flameheight = sprite_get_height(spr_base)/8;
+	if(!sprite_8direction_switch){
+		_flamewidth = sprite_width;
+		_flameheight = sprite_height;
+	}
+	deth_and_create_object(x,y,_flamewidth,_flameheight,create_object,create_object_num);
+}

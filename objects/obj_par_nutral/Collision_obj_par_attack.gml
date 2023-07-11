@@ -6,6 +6,9 @@ with(other){
 		if(id != other.get_bomb_id){
 			//Damege calculated
 			damegePoint_Calculated_value = floor(damegePoint*attack/10);
+			show_debug_message("damegePoint_Calculated_value = "+string(damegePoint_Calculated_value));
+			show_debug_message("fixed_damage = "+string(fixed_damage));
+			show_debug_message("other = "+string(other));
 			create_damege(damegePoint_Calculated_value,fixed_damage,other,direction);
 			
 			other.get_bomb_id = id

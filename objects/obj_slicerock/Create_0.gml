@@ -1,5 +1,5 @@
 event_inherited();
 
 particleName = "obj_rock";
-create_instance = obj_midlerock;
+create_object = obj_midlerock;
 respawn_instance_num = 2;

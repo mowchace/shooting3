@@ -24,8 +24,8 @@ attack_particlepositionY = 0;
 
 health_bar_draw = false;
 
-destroy_enemy = noone;
-destroy_enemy_num = 1;
+create_object = noone;
+create_object_num = 1;
 moveX = 0;
 moveY = 0;
 

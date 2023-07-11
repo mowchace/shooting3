@@ -35,6 +35,8 @@
 1023,-2147483648,428,429,989,990,991,1021,1022,1023,-18,-2147483648,2,1022,1023,-6,-2147483648,3,1021,1022,1023,-181,-2147483648,],},"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7A0A5E35","properties":[],"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":256.0,"y":320.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2BA90D25","properties":[],"isDnd":false,"objectId":{"name":"obj_enemy5","path":"objects/obj_enemy5/obj_enemy5.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":352.0,"y":352.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5BBD9CB3","properties":[],"isDnd":false,"objectId":{"name":"obj_enemy5","path":"objects/obj_enemy5/obj_enemy5.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":448.0,"y":320.0,},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_cottage1","tilesetId":{"name":"Tile_cottage","path":"tilesets/Tile_cottage/Tile_cottage.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":32,"SerialiseHeight":24,"TileCompressedData":[
 -45,-2147483648,3,70,71,72,-29,-2147483648,3,102,103,104,-3,-2147483648,3,358,359,360,-23,-2147483648,9,3,4,5,0,-2147483648,-2147483648,355,356,357,-23,-2147483648,
@@ -65,6 +67,8 @@
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_7A0A5E35","path":"rooms/rm_village/rm_village.yy",},
+    {"name":"inst_2BA90D25","path":"rooms/rm_village/rm_village.yy",},
+    {"name":"inst_5BBD9CB3","path":"rooms/rm_village/rm_village.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

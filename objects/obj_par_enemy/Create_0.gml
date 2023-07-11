@@ -51,7 +51,9 @@ my_dir = irandom_range(0,359);
 moveX = lengthdir_x(spd,my_dir);
 moveY = lengthdir_y(spd,my_dir);
 
+//sprite
 spr_base = noone;
+
 spr_idle = spr_base;
 spr_wander = spr_base;
 spr_alert = spr_base;
@@ -99,6 +101,10 @@ cooldown = Attackcooldown;
 //Sprite setting
 x_offset = sprite_get_xoffset(mask_index);
 y_offset = sprite_get_yoffset(mask_index);
+if(spr_base != noone){
+	x_offset = sprite_get_width(spr_base)/4;
+	y_offset = sprite_get_height(spr_base)/8;
+}
 x_frame = 0;
 y_frame = 0;
 

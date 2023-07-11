@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_destroy_create_enemy",
+  "name": "scr_deth_and_create_object",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
